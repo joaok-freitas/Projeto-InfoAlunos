@@ -9,10 +9,314 @@
 <body>
     <div class="container">
         <h1>Caderno de Estilos</h1>
-        <div class="buttons-div">
-            <h3>Botões</h3>
-            <button class="btn btn-primary">Botão Primário</button>
-            <button class="btn btn-secondary">Botão Secundário</button>
+
+        <div class="darkmode-div separation">
+            <h3>1. Darkmode</h3>
+            <input type="checkbox" id="darkmode-toggle"> Toggle theme
+        </div>
+
+        <div class="cores-div separation">
+            <h3>2 - Cores</h3>
+            <div class="div cor-primaria"><p>Primária</p></div>
+            <div class="div cor-secundaria"><p>Secundária</p></div>
+            <div class="div cor-sucesso"><p>Sucesso</p></div>
+            <div class="div cor-perigo"><p>Perigo</p></div>
+            <div class="div cor-aviso"><p>Aviso</p></div>
+            <div class="div cor-informacao"><p>Informação</p></div>
+            <div class="div cor-claro"><p>Claro</p></div>
+            <div class="div cor-escuro"><p>Escuro</p></div>
+        </div>
+
+        <div class="tipografia separation">
+            <h3>3 - Tipografia</h3>
+            <h1 class="titulo1">Page Title</h1>
+            <h2 class="titulo2">Secondary Title</h2>
+            <h3 class="titulo3">Tertiary Title</h3>
+            <h4 class="titulo4">Quaternary Title</h4>
+            <h5 class="titulo5">Quinary Title</h5>
+            <h6 class="titulo6">Senary Title</h6>
+            <p class="paragrafo">Paragraph</p>
+            <a class="link" href="#">link</a>
+        </div>
+
+        <div class="accordion separation">
+            <h3>4 - Accordion</h3>
+            <details class="top" name="requirements" open>
+                <summary>Section 1</summary>
+                <p>This is the content for section 1. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Esse possimus fugiat odio dicta numquam eaque non fuga dolore natus dolores, recusandae minus rem ex, quidem adipisci perferendis aut quia ipsum?</p>
+            </details>
+
+            <details name="requirements">
+                <summary>Section 2</summary>
+                <p>This is the content for section 2.</p>
+            </details>
+
+            <details class="bottom" name="requirements">
+                <summary>Section 3</summary>
+                <p>This is the content for section 3.</p>
+            </details>
+        </div>
+
+        <div class="alerts separation">
+            <h3>5 - Alertas</h3>
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-info-circle-fill" viewBox="0 0 16 16">
+                <symbol id="info-fill" viewBox="0 0 16 16">
+                    <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16m.93-9.412-1 4.705c-.07.34.029.533.304.533.194 0 .487-.07.686-.246l-.088.416c-.287.346-.92.598-1.465.598-.703 0-1.002-.422-.808-1.319l.738-3.468c.064-.293.006-.399-.287-.47l-.451-.081.082-.381 2.29-.287zM8 5.5a1 1 0 1 1 0-2 1 1 0 0 1 0 2"/>
+                </symbol>
+            </svg>
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check-circle" viewBox="0 0 16 16">
+                <symbol id="info-success" viewBox="0 0 16 16">
+                    <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"/>
+                    <path d="m10.97 4.97-.02.022-3.473 4.425-2.093-2.094a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-1.071-1.05"/>
+                </symbol>
+            </svg>
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-exclamation-triangle-fill" viewBox="0 0 16 16">
+                <symbol id="info-warning" viewBox="0 0 16 16">
+                    <path d="M8.982 1.566a1.13 1.13 0 0 0-1.96 0L.165 13.233c-.457.778.091 1.767.98 1.767h13.713c.889 0 1.438-.99.98-1.767zM8 5c.535 0 .954.462.9.995l-.35 3.507a.552.552 0 0 1-1.1 0L7.1 5.995A.905.905 0 0 1 8 5m.002 6a1 1 0 1 1 0 2 1 1 0 0 1 0-2"/>
+                </symbol>
+            </svg>
+            <div class="alert alert-primary" role="alert">
+                <div>
+                    <svg role="img" aria-label="Info:"><use xlink:href="#info-fill"/></svg> Um exemplo de alerta primário
+                </div>
+            </div>
+            <div class="alert alert-success" role="alert">
+                <div>
+                    <svg role="img" aria-label="Info:"><use xlink:href="#info-success"/></svg> Um exemplo de alerta de sucesso
+                </div>
+            </div>
+            <div class="alert alert-warning" role="alert">
+                <div>
+                    <svg role="img" aria-label="Info:"><use xlink:href="#info-warning"/></svg> Um exemplo de alerta de aviso
+                </div>
+            </div>
+            <div class="alert alert-danger" role="alert">
+                <div>
+                    <svg role="img" aria-label="Info:"><use xlink:href="#info-warning"/></svg> Um exemplo de alerta de perigo
+                </div>
+            </div>
+        </div>
+
+        <div class="badge separation">
+            <h3>6 - Badge</h3>
+            <button type="button" class="btn anchor-button">Inbox
+                <span class="anchor-badge">
+                99+ <span class="visually-hidden">unread messages</span>
+                </span>
+            </button>
+        </div>
+
+        <div class="breadcrumb separation">
+            <h3>7 - Breadcrumb Navigation</h3>
+            <nav class="breadcrumb">
+                <a href="#">Home</a>
+                <a href="#">Pagina 1</a>
+                <a href="#">Pagina 2</a>
+                <span>Pagina atual</span>
+            </nav>
+        </div>
+
+        <div class="buttons-div separation">
+            <h3>8 - Botões</h3>
+            <button class="btn btn-primary">Primário</button>
+            <button class="btn btn-secondary">Secundário</button>
+            <button class="btn btn-success">Sucesso</button>
+            <button class="btn btn-danger">Perigo</button>
+            <button class="btn btn-warning">Aviso</button>
+            <button class="btn btn-information">Info</button>
+            <button class="btn btn-light">Claro</button>
+            <button class="btn btn-dark">Escuro</button>
+        </div>
+
+        <div class="cards-div separation">
+            <h3>9 - Cards</h3>
+        </div>
+
+        <div class="dropdown-div separation">
+            <h3>10 - Dropdown</h3>
+            <nav>
+                <button id="anchor" popoveraction="toggle" popovertarget="target">
+                Toggle Dropdown Menu ▾
+                </button>
+                <ul id="target" popover>
+                    <li><a href="#">Link 1</a></li>
+                    <li><a href="#">Link 2</a></li>
+                    <li><a href="#">Link 3</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="forms-div separation">
+            <h3>11 - Formulários</h3>
+            <form>
+                <label for="inputEmail4" class="form-label">Email</label>
+                <input type="email" class="form-control" id="inputEmail4">
+
+                <label for="inputPassword4" class="form-label">Password</label>
+                <input type="password" class="form-control" id="inputPassword4">
+
+                <label for="inputAddress" class="form-label">Address</label>
+                <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+
+                <label for="inputState" class="form-label">State</label>
+                <select id="inputState" class="form-select">
+                    <option selected>Choose...</option>
+                    <option>...</option>
+                </select>
+
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="gridCheck">
+                    <label class="form-check-label" for="gridCheck">
+                    Confira o meu perfil
+                    </label>
+                </div>
+            </form>
+        </div>
+
+        <div class="lists-div separation">
+            <h3>12 - Listas</h3>
+            <ul class="list-group">
+                <li class="list-group-item">An item</li>
+                <li class="list-group-item">A second item</li>
+                <li class="list-group-item">A third item</li>
+            </ul>
+        </div>
+
+        <div class="modal-div separation">
+            <h3>13 - Modal</h3>
+            <button class="btn" popovertarget="my-popover">Toggle Popover</button>
+            </div>
+            <div popover id="my-popover" class="box">
+                <div class="title">
+                    <h2>This is a popover.</h2> <button class="exit-btn" popovertarget="my-popover" popovertargetaction="hide">X</button>
+                </div>
+                <p>Some content for the popover.</p>
+                <div class="buttons">
+                    <button class="btn btn-secondary" popovertarget="my-popover" popovertargetaction="hide">Fechar</button>
+                    <button class="btn btn-primary" popovertarget="my-popover" popovertargetaction="hide">Salvar Alterações</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="navbar-div separation">
+            <h3>14 - Navbar</h3>
+            <div class="navbar">
+                <div class="subnav-content nav-direct-link">
+                    <a href="#">Início</a>
+                </div>
+                <details class="subnav" name="subnav-btn">
+                    <summary class="subnavbtn">Geral<i class="navbar-dropdown-icon"></i></summary>  <!-- ALTERAR O ICON E DEPOIS REMOVER ESTE COMMENT -->
+                    <div class="subnav-content">
+                        <a href="#">Processos</a>
+                        <a href="#">Dados Pessoais</a>
+                        <a href="#">Privacidade</a>
+                        <a href="#">Ajuda</a>
+                    </div>
+                </details>
+                <details class="subnav" name="subnav-btn">
+                    <summary class="subnavbtn">Serviços<i class="navbar-dropdown-icon"></i></summary>
+                    <div class="subnav-content">
+                        <a href="#">Pagamentos</a>
+                        <a href="#">Matrículas/Inscrições</a>
+                        <a href="#">Inscrição em Turmas</a>
+                        <a href="#">Requerimentos</a>
+                        <a href="#">Cartão Universitário</a>
+                        <a href="#">SASUMa-Bolsas</a>
+                    </div>
+                </details>
+            </div>
+        </div>
+
+        <div class="navtab-div separation">
+            <h3>15 - Navs e Tabs</h3>
+            <div class="grid">
+                <details name="tabs" open>
+                    <summary data-tab-order="1">Tab1</summary>
+                    <div>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eius molestias repell
+                </details>
+                <details name="tabs">
+                    <summary data-tab-order="2">Tab2</summary>
+                    <div>Voluptatibus quam consectetur fuga dolorem praesentium atque facere nam distinctio
+                </details>
+                <details name="tabs">
+                    <summary data-tab-order="3">Tab3</summary>
+                    <div>Sapiente ea nulla, reiciendis non harum sed delectus error laudantium impedit
+                </details>
+            </div>
+        </div>
+
+        <div class="pagination-div separation">
+            <h3>16 - Pagination</h3>
+            <nav aria-label="Page navigation example">
+                <ul class="pagination">
+                    <li class="page-item">
+                        <a class="page-link" href="#" aria-label="Previous">
+                            <span aria-hidden="true">&laquo;</span>
+                        </a>
+                    </li>
+                    <li class ="page-item">
+                        <a class ="page-link" href="#">1</a>
+                    </li>
+                    <li class ="page-item active" aria-current="page">
+                        <a class ="page-link" href="#">2</a>
+                    </li>
+                    <li class ="page-item">
+                        <a class="page-link" href="#">3</a>
+                    </li>
+                    <li class="page-item">
+                        <a class="page-link" href="#" aria-label="Next">
+                            <span aria-hidden="true">&raquo;</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <div class="progress-div separation">
+            <h3>17 - Progress</h3>
+            <label for="file">File progress:</label>
+            <progress id="file" max="100" value="70">70%</progress>
+        </div>
+        <div class="spinners-div separation">
+            <h3>18 - Spinners</h3>
+        </div>
+        <div class="tables-div separation">
+            <h3>19 - Tabelas</h3>
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">First</th>
+                        <th scope="col">Last</th>
+                        <th scope="col">Handle</th>
+                    </tr>
+                </thead>
+                <tbody class="table-group-divider">
+                    <tr>
+                        <th scope="row">1</th>
+                        <td>Mark</td>
+                        <td>Otto</td>
+                        <td>@mdo</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">2</th>
+                        <td>Jacob</td>
+                        <td>Thornton</td>
+                        <td>@fat</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">3</th>
+                        <td colspan="2">Larry the Bird</td>
+                        <td>@twitter</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="tooltip-div separation">
+            <h3>20 - Tooltip (popover e anchor positioning)</h3>
+            <button id="info-opener" popovertarget="info" class="btn btn-information">informação</button>
+            <div id="info" popover class="info-tooltip forma">
+            Lorem ipsum dolor sit amet
+            </div>
         </div>
     </div>
 </body>
