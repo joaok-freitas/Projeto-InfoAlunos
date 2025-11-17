@@ -28,6 +28,7 @@
 }
 
 body {
+    margin: 0;
     background-color: var(--cor-claro);
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
@@ -197,13 +198,13 @@ body {
     background-color: var(--cor-primaria);
     color: var(--cor-claro);
     padding: 10px 20px;
-    border: 3px solid transparent;
+    border: 2px solid var(--cor-escuro);
     border-radius: 5px;
     cursor: pointer;
 }
 
 .btn:hover {
-    border: 3px solid var(--cor-perigo);
+    filter: brightness(70%);
 }
 
 .btn-secondary {
@@ -432,33 +433,93 @@ ul[popover] {
 
 /* spinners styles */
 
+.loader {
+    height: 100px;
+    width: 95px;
+    margin: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.barra1, .barra2, .barra3, .barra4, .barra5 {
+    background-color: var(--cor-primaria);
+    height: 50px;
+    width: 15px;
+    animation: animacao 1s infinite;
+}
+
+@keyframes animacao {
+    0% {
+        transform: scaleY(1);
+    }
+    50% {
+        transform: scaleY(2);
+    }
+    100% {
+        transform: scaleY(1);
+    }
+}
+.barra2 {
+    animation-delay: 0.2s;
+}
+.barra3 {
+    animation-delay: 0.4s;
+}
+.barra4 {
+    animation-delay: 0.6s;
+}
+.barra5 {
+    animation-delay: 0.8s;
+}
+
+
 /* tables styles */
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid var(--cor-escuro);
+  padding: 8px;
+}
+
+tr:nth-child(even){background-color: var(--cor-claro);}
+
+tr:hover {background-color: var(--cor-sucesso);}
+
+th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: var(--cor-informacao);
+  color: var(--cor-claro);
+}
 
 /* doesnt work */
 /* tooltip styles */
 .forma {
     padding-left: .75rem;
     clip-path: polygon(
-        100% 0%,
-        100% 100%,
-        5px 100%,
-        5px calc(50% + 5px),
-        0% 50%,
-        5px calc(50% - 5px),
-        5px 0%
-    );
+    100% 0%,
+    100% 100%,
+    5px 100%,
+    5px calc(50% + 5px),
+    0% 50%,
+    5px calc(50% - 5px),
+    5px 0%);
 }
+
 #info-opener {
     anchor-name: --info-opener;
 }
-
 .info-tooltip[popover] {
     background: #007bff;
     padding:5px 10px;
     border:none;
     color: #fff;
 }
-
 #info {
     margin:0;
     position: absolute;
