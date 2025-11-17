@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="Stylesheet/styles.css">
     <link rel="stylesheet" href="login.css">
     <title>InfoAlunos: Serviço de Informação dos Alunos</title>
 </head>
@@ -12,10 +12,23 @@
         <!-- <img src="https://www.uma.pt/wp-content/themes/uma/images/Logo_UMa_site-01.png" alt="Logo da Universidade da Madeira" class="login-logo"> -->
         <img src="https://www.uma.pt/wp-content/themes/uma/images/logo2_cor.png" alt="Logo da Universidade da Madeira" class="login-logo">
         <h1>infoalunos.uma.pt</h1>
-        <input type="number" placeholder="Nº de Aluno">
-        <input type="password" placeholder="Password">
-        <a href="/index.html">Entrar</a>
-        <a class="recover-password" href="/index.html">Recuperar password</a>
+        <input class="form-control" type="text" placeholder="Nº de Aluno">
+        <input class="form-control" type="password" placeholder="Password">
+        <a class="login-btn" href="index.html"><button class="btn btn-primary login-btn">Entrar</button></a>
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-exclamation-triangle-fill" viewBox="0 0 16 16">
+            <symbol id="info-warning" viewBox="0 0 16 16">
+                <path d="M8.982 1.566a1.13 1.13 0 0 0-1.96 0L.165 13.233c-.457.778.091 1.767.98 1.767h13.713c.889 0 1.438-.99.98-1.767zM8 5c.535 0 .954.462.9.995l-.35 3.507a.552.552 0 0 1-1.1 0L7.1 5.995A.905.905 0 0 1 8 5m.002 6a1 1 0 1 1 0 2 1 1 0 0 1 0-2"/>
+            </symbol>
+        </svg>
+        <div class="alert alert-warning alert-password" role="alert">
+            <div>
+                <svg role="img" aria-label="Info:"><use xlink:href="#info-warning"/></svg> Nº de aluno ou password incorretos.
+            </div>
+        </div>
+        <div class="bottom-section">
+            <span><input type="checkbox" id="darkmode-toggle"> Modo Escuro</span>
+            <a class="recover-password" href="index.html">Recuperar password</a>
+        </div>
     </div>
 </body>
 </html>

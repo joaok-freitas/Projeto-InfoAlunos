@@ -1,73 +1,20 @@
 body {
-  font-family: Arial, Helvetica, sans-serif;
-  display: grid;
-  grid-template: "nav content content";
-  margin: 0;
-  background-color: grey;
+  background-color: var(--cor-claro);
+}
+
+/* .top-bar {
+  grid-area: topbar;
+  background-color: var(--cor-escuro);
+  color: var(--cor-claro);
+  padding: 10px;
 }
 
 .navbar {
   grid-area: nav;
-  overflow: hidden;
-  background-color: #333;
-  max-width: 200px;
 }
 
-/* Navigation links  - ESTILO DOS LINKS*/
-.navbar a {
-  font-size: 13px;
-  color: white;
-  text-align: center;
-  padding: 10px 12px;
-  text-decoration: none;
-}
-
-/* The subnavigation menu   - ISTO COLOCA TUDO SEGUIDO  */
-/* .subnav {
-  float: left;
-  overflow: hidden;
-} */
-
-/* Subnav button   - ESTILO DOS BOTOES SEM LINK*/
-.subnav .subnavbtn {
-  font-size: 13px;
-  border: none;
-  outline: none;
-  color: white;
-  padding: 10px 12px;
-  background-color: inherit;
-  font-family: inherit;
-  margin: 0;
-}
-
-/* Add a red background color to navigation links on hover */
-.navbar a:hover, .subnav:hover .subnavbtn {
-  background-color: red;
-}
-
-/* ESTILO DA ABERTURA DOS NAVS */
-/* .subnav-content {
-  background-color: red;
-} */
-
-/* Style the subnav links */
-.subnav-content a {
-  padding-left: 25px; /* ESPAÇAMENTO DOS SUBLINKS*/
-  display: flex;
-  flex-direction: column;
-  text-align: left;
-  color: white;
-  text-decoration: none;
-}
-
-/* MARGEM DOS LINKS DIRETOS DA NAVBAR */
-.nav-direct-link a {
-  margin: 0px;
-  padding: 10px 12px;
-}
-
-/* HOVER DOS LINKS TODOS DA NAV */
-/* .subnav-content a:hover {
-  background-color: #eee;
-  color: black;
+.content {
+  grid-area: content;
+  padding: 20px;
+  width: 100%;
 } */
