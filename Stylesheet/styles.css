@@ -5,18 +5,18 @@
     --cor-perigo: #dc3545;
     --cor-aviso: #ffc107;
     --cor-informacao: #17a2b8;
-    --cor-claro: #f8f9fa;
+    --cor-claro: #eceae3;
     --cor-escuro: #343a40;
 }
 :root:has(#darkmode-toggle:checked) {
-    --cor-primaria: #6c757d;
-    --cor-secundaria: #007bff;
+    --cor-primaria: #007bff;
+    --cor-secundaria:#6c757d;
     --cor-sucesso: #4CAF50;
     --cor-perigo: #dc3545;
     --cor-aviso: #ffc107;
     --cor-informacao: #17a2b8;
     --cor-claro: #343a40;
-    --cor-escuro: #f8f9fa;
+    --cor-escuro: #eceae3;
 }
 
 .separation {
@@ -232,6 +232,38 @@ body {
     color: var(--cor-claro);
 }
 
+/* card styles */
+.card {
+    border-radius: 15px;
+    padding: 30px;
+    margin: 10px 0;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+    text-align: justify;
+    background-color: var(--cor-claro);
+}
+
+.card img {
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+}
+
+.personcard {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.personcard-text {
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+}
+.personcard-text h6 {
+    margin: 0;
+}
+
 /* not working */
 /* Dropdown Styles */
 ul[popover] {
@@ -252,11 +284,15 @@ ul[popover] {
 .form-control, .form-select {
     padding: 10px;
     border: 2px solid var(--cor-escuro);
-    outline-color: var(--cor-aviso);
+    outline: none;
     border-radius: 5px;
     width: 100%;
     box-sizing: border-box;
     margin: 10px 0;
+}
+
+.form-control:focus, .form-select:focus {
+    border-color: var(--cor-aviso);
 }
 
 .form-select:open {
@@ -515,10 +551,10 @@ th {
     anchor-name: --info-opener;
 }
 .info-tooltip[popover] {
-    background: #007bff;
+    background: var(--cor-primaria);
     padding:5px 10px;
     border:none;
-    color: #fff;
+    color: var(--cor-claro);
 }
 #info {
     margin:0;
