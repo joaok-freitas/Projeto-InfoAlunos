@@ -16,7 +16,7 @@
     --cor-aviso: #ffc107;
     --cor-informacao: #17a2b8;
     --cor-claro: #343a40;
-    --cor-escuro: #eceae3;
+    --cor-escuro: #000000;
 }
 
 .separation {
@@ -198,9 +198,11 @@ body {
     background-color: var(--cor-primaria);
     color: var(--cor-escuro);
     padding: 10px 20px;
-    border: 1px solid var(--cor-escuro);
+    border: 1px solid transparent;
     border-radius: 10px;
     cursor: pointer;
+    font-size: large;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.35);
 }
 
 .btn:hover {
@@ -284,6 +286,7 @@ ul[popover] {
 .form-control, .form-select {
     padding: 10px;
     border: 2px solid var(--cor-escuro);
+    background-color: var(--cor-claro);
     outline: none;
     border-radius: 5px;
     width: 100%;
@@ -301,6 +304,11 @@ ul[popover] {
 
 .form-select {
     outline: none;
+}
+
+.form-select option {
+    padding: 10px;
+    background-color: var(--cor-claro);
 }
 
 /* Lists styles */

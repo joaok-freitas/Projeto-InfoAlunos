@@ -1,12 +1,25 @@
 body {
   background-color: var(--cor-claro);
+  display: grid;
+  grid-template-areas:
+    "topbar topbar"
+    "nav content"
+    "nav content";
 }
 
-/* .top-bar {
+.top-bar {
   grid-area: topbar;
   background-color: var(--cor-escuro);
   color: var(--cor-claro);
   padding: 10px;
+}
+
+.login-logo {
+  width: 200px;
+}
+
+.top-bar-content {
+  display: flex;
 }
 
 .navbar {
@@ -15,6 +28,47 @@ body {
 
 .content {
   grid-area: content;
+  position: absolute;
   padding: 20px;
-  width: 100%;
-} */
+  width: 600px;
+}
+
+.content-box1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: var(--cor-escuro);
+  color: var(--cor-claro);
+  padding: 20px;
+  margin-bottom: 10px;
+}
+
+.content-box2 {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: var(--cor-primaria);
+  color: var(--cor-claro);
+  padding: 20px;
+  margin-bottom: 10px;
+}
+
+.content-box3 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background-color: var(--cor-secundaria);
+  color: var(--cor-escuro);
+  padding: 20px;
+  margin-bottom: 10px;
+}
+
+.content-box4 {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  background-color: var(--cor-claro);
+  color: var(--cor-escuro);
+  padding: 20px;
+  margin-bottom: 10px;
+}
