@@ -3,8 +3,14 @@ body {
   display: grid;
   grid-template-areas:
     "topbar topbar"
-    "nav content"
-    "nav content";
+    "nav content ";
+  grid-template-columns: auto 1fr;
+  grid-template-rows: auto 1fr;
+  height: 100vh;
+}
+
+.site-title {
+  margin-left: 100px;
 }
 
 .top-bar {
@@ -24,19 +30,20 @@ body {
 
 .navbar {
   grid-area: nav;
+  min-width: 150px;
+  max-width: 150px;
 }
 
 .content {
   grid-area: content;
-  position: absolute;
+  display: grid;
+  grid-template-areas:
+    "b1 b2"
+    "b3 b4";
   padding: 20px;
-  width: 600px;
 }
-
 .content-box1 {
-  position: absolute;
-  top: 0;
-  left: 0;
+  grid-area: b1;
   background-color: var(--cor-escuro);
   color: var(--cor-claro);
   padding: 20px;
@@ -44,9 +51,7 @@ body {
 }
 
 .content-box2 {
-  position: absolute;
-  top: 0;
-  right: 0;
+  grid-area: b2;
   background-color: var(--cor-primaria);
   color: var(--cor-claro);
   padding: 20px;
@@ -54,9 +59,7 @@ body {
 }
 
 .content-box3 {
-  position: absolute;
-  bottom: 0;
-  left: 0;
+  grid-area: b3;
   background-color: var(--cor-secundaria);
   color: var(--cor-escuro);
   padding: 20px;
@@ -64,10 +67,8 @@ body {
 }
 
 .content-box4 {
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  background-color: var(--cor-claro);
+  grid-area: b4;
+  background-color: var(--cor-aviso);
   color: var(--cor-escuro);
   padding: 20px;
   margin-bottom: 10px;
