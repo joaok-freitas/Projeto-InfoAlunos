@@ -49,7 +49,7 @@ body {
     width: 100%;
 }
 
-.login-container label {
+.login-container .form-label {
     align-self: flex-start;
     font-weight: bold;
     color: var(--cor-escuro);
