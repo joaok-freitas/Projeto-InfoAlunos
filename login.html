@@ -12,8 +12,10 @@
         <!-- <img src="https://www.uma.pt/wp-content/themes/uma/images/Logo_UMa_site-01.png" alt="Logo da Universidade da Madeira" class="login-logo"> -->
         <img src="https://www.uma.pt/wp-content/themes/uma/images/logo2_cor.png" alt="Logo da Universidade da Madeira" class="login-logo">
         <h1>infoalunos.uma.pt</h1>
-        <input class="form-control" type="text" placeholder="Nº de Aluno">
-        <input class="form-control" type="password" placeholder="Password">
+        <label for="inputUserId" class="form-label">Nº de Aluno</label>
+        <input class="form-control" type="text" placeholder="Nº de Aluno" required pattern="[0-9]{1,30}">
+        <label for="inputPassword" class="form-label">Password</label>
+        <input class="form-control" type="password" placeholder="Password" required minlength="6">
         <a class="login-btn" href="index.html"><button class="btn btn-primary login-btn">Entrar</button></a>
         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-exclamation-triangle-fill" viewBox="0 0 16 16">
             <symbol id="info-warning" viewBox="0 0 16 16">

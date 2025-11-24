@@ -48,3 +48,15 @@ body {
     align-content: center;
     width: 100%;
 }
+
+.login-container label {
+    align-self: flex-start;
+    font-weight: bold;
+    color: var(--cor-escuro);
+}
+
+@media only screen and (max-width: 480px) {
+    .login-container {
+        padding: 25px;
+    }
+}
