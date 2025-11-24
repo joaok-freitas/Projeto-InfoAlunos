@@ -3,10 +3,21 @@ body {
   display: grid;
   grid-template-areas:
     "topbar topbar"
-    "nav content ";
+    "nav content "
+    "footer footer";
   grid-template-columns: auto 1fr;
   grid-template-rows: auto 1fr;
   height: 100vh;
+}
+
+.footer {
+  grid-area: footer;
+  background-color: var(--cor-escuro);
+  border-top: 5px solid var(--cor-primaria);
+  color: var(--cor-claro);
+  text-align: center;
+  padding: 10px;
+  font-size: 12px;
 }
 
 .site-title {
@@ -30,8 +41,6 @@ body {
 
 .navbar {
   grid-area: nav;
-  min-width: 150px;
-  max-width: 150px;
 }
 
 .content {
