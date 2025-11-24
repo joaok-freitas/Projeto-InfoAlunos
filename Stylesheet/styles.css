@@ -1,20 +1,20 @@
 :root {
-	--cor-primaria: #007bff;
-	--cor-secundaria: #6c757d;
-	--cor-sucesso: #4CAF50;
-	--cor-perigo: #dc3545;
-	--cor-aviso: #ffc107;
-	--cor-informacao: #17a2b8;
-	--cor-claro: #eceae3;
-	--cor-escuro: #343a40;
+	--cor-primaria: #1E90FF;
+	--cor-secundaria: #A9A9A9;
+	--cor-sucesso: #28A745;
+	--cor-perigo: #FF4C4C;
+	--cor-aviso: #FFB300;
+	--cor-informacao: #00B8D9;
+	--cor-claro: #F5F5F5;
+	--cor-escuro: #212121;
 }
 :root:has(#darkmode-toggle:checked) {
-	--cor-primaria: #007bff;
-	--cor-secundaria:#6c757d;
-	--cor-sucesso: #4CAF50;
-	--cor-perigo: #dc3545;
-	--cor-aviso: #ffc107;
-	--cor-informacao: #17a2b8;
+	--cor-primaria: #1E90FF;
+	--cor-secundaria: #B0B0B0;
+	--cor-sucesso: #28A745;
+	--cor-perigo: #FF4C4C;
+	--cor-aviso: #FFD54F;
+	--cor-informacao: #00B8D9;
 	--cor-claro: #343a40;
 	--cor-escuro: #000000;
 }
