@@ -1,177 +1,177 @@
 :root {
-    --cor-primaria: #007bff;
-    --cor-secundaria: #6c757d;
-    --cor-sucesso: #4CAF50;
-    --cor-perigo: #dc3545;
-    --cor-aviso: #ffc107;
-    --cor-informacao: #17a2b8;
-    --cor-claro: #eceae3;
-    --cor-escuro: #343a40;
+	--cor-primaria: #007bff;
+	--cor-secundaria: #6c757d;
+	--cor-sucesso: #4CAF50;
+	--cor-perigo: #dc3545;
+	--cor-aviso: #ffc107;
+	--cor-informacao: #17a2b8;
+	--cor-claro: #eceae3;
+	--cor-escuro: #343a40;
 }
 :root:has(#darkmode-toggle:checked) {
-    --cor-primaria: #007bff;
-    --cor-secundaria:#6c757d;
-    --cor-sucesso: #4CAF50;
-    --cor-perigo: #dc3545;
-    --cor-aviso: #ffc107;
-    --cor-informacao: #17a2b8;
-    --cor-claro: #343a40;
-    --cor-escuro: #000000;
+	--cor-primaria: #007bff;
+	--cor-secundaria:#6c757d;
+	--cor-sucesso: #4CAF50;
+	--cor-perigo: #dc3545;
+	--cor-aviso: #ffc107;
+	--cor-informacao: #17a2b8;
+	--cor-claro: #343a40;
+	--cor-escuro: #000000;
 }
 
 .separation {
-    border-style: solid;
-    border-width: 2px;
-    border-color: var(--cor-escuro);
-    border-radius: 30px;
-    padding: 30px;
+	border-style: solid;
+	border-width: 2px;
+	border-color: var(--cor-escuro);
+	border-radius: 30px;
+	padding: 30px;
 }
 
 body {
-    margin: 0;
-    background-color: var(--cor-claro);
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+	margin: 0;
+	background-color: var(--cor-claro);
+	font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 /* cores styles */
 .cores-div .div {
-    display: inline-block;
-    text-align: center;
-    width: 150px;
-    height: 50px;
-    margin: 5px;
-    border: 1px solid #000;
+	display: inline-block;
+	text-align: center;
+	width: 150px;
+	height: 50px;
+	margin: 5px;
+	border: 1px solid #000;
 }
 .cor-primaria {
-    background-color: var(--cor-primaria);
+	background-color: var(--cor-primaria);
 }
 .cor-secundaria {
-    background-color: var(--cor-secundaria);
+	background-color: var(--cor-secundaria);
 }
 .cor-sucesso {
-    background-color: var(--cor-sucesso);
+	background-color: var(--cor-sucesso);
 }
 .cor-perigo {
-    background-color: var(--cor-perigo);
+	background-color: var(--cor-perigo);
 }
 .cor-aviso {
-    background-color: var(--cor-aviso);
+	background-color: var(--cor-aviso);
 }
 .cor-informacao {
-    background-color: var(--cor-informacao);
+	background-color: var(--cor-informacao);
 }
 .cor-claro {
-    background-color: var(--cor-claro);
-    color: var(--cor-escuro);
+	background-color: var(--cor-claro);
+	color: var(--cor-escuro);
 }
 .cor-escuro {
-    background-color: var(--cor-escuro);
-    color: var(--cor-claro);
+	background-color: var(--cor-escuro);
+	color: var(--cor-claro);
 }
 /* tipography styles */
 
 /* Accordion styles */
 .accordion summary {
-    font-size: 20px;
-    font-weight: bold;
-    margin: 15px;
-    cursor: pointer;
-    background-color: var(--cor-informacao);
-    margin: 0;
-    padding: 10px;
+	font-size: 20px;
+	font-weight: bold;
+	margin: 15px;
+	cursor: pointer;
+	background-color: var(--cor-informacao);
+	margin: 0;
+	padding: 10px;
 }
 
 .accordion details[open] > summary {
-    border-bottom: 2px solid var(--cor-escuro);
+	border-bottom: 2px solid var(--cor-escuro);
 }
 
 .accordion summary::marker {
-    color: var(--cor-escuro);
-    font-size: 25px;
+	color: var(--cor-escuro);
+	font-size: 25px;
 }
 
 .accordion details {
-    list-style-position: right;
-    border: 2px solid var(--cor-escuro);
-    border-top: none;
+	list-style-position: right;
+	border: 2px solid var(--cor-escuro);
+	border-top: none;
 }
 
 .accordion details.top {
-    border-top: 2px solid var(--cor-escuro);
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
+	border-top: 2px solid var(--cor-escuro);
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
 }
 .accordion details.bottom {
-    border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px;
+	border-bottom-left-radius: 10px;
+	border-bottom-right-radius: 10px;
 }
 
 .accordion details > p {
-    margin: 10px;
+	margin: 10px;
 }
 
 /* alert styles */
 .alert {
-    padding: 12px 20px;
-    border: 1px solid transparent;
-    border-radius: 5px;
-    margin-bottom: 16px;
+	padding: 12px 20px;
+	border: 1px solid transparent;
+	border-radius: 5px;
+	margin-bottom: 16px;
 }
 
 .alert svg{
-    vertical-align: middle;
-    margin-right: 8px;
-    width: 20px;
-    height: 20px;
+	vertical-align: middle;
+	margin-right: 8px;
+	width: 20px;
+	height: 20px;
 }
 
 .alert-primary {
-    background-color: var(--cor-primaria);
-    color: var(--cor-claro);
-    fill: var(--cor-claro);
+	background-color: var(--cor-primaria);
+	color: var(--cor-escuro);
+	fill: var(--cor-escuro);
 }
 
 .alert-success {
-    background-color: var(--cor-sucesso);
-    color: var(--cor-claro);
-    fill: var(--cor-claro);
+	background-color: var(--cor-sucesso);
+	color: var(--cor-escuro);
+	fill: var(--cor-escuro);
 }
 
 .alert-warning {
-    background-color: var(--cor-aviso);
-    color: var(--cor-claro);
-    fill: var(--cor-claro);
+	background-color: var(--cor-aviso);
+	color: var(--cor-escuro);
+	fill: var(--cor-escuro);
 }
 
 .alert-danger {
-    background-color: var(--cor-perigo);
-    color: var(--cor-claro);
-    fill: var(--cor-claro);
+	background-color: var(--cor-perigo);
+	color: var(--cor-escuro);
+	fill: var(--cor-escuro);
 }
 
 /* Badge styles */
 
 .anchor-button {
-    position: relative;
+	position: relative;
 }
 .anchor-badge {
-    position: absolute;
-    top: 0;
-    left: 100%;
-    translate: -50% -50%;
-    background-color: var(--cor-perigo);
-    color: var(--cor-claro);
-    padding: 5px 10px;
-    border-radius: 15px;
-    font-size: x-small;
+	position: absolute;
+	top: 0;
+	left: 100%;
+	translate: -50% -50%;
+	background-color: var(--cor-perigo);
+	color: var(--cor-claro);
+	padding: 5px 10px;
+	border-radius: 15px;
+	font-size: x-small;
 }
 
 .visually-hidden {
-    display: none;
+	display: none;
 }
 
 .anchor-badge:hover .visually-hidden {
-    display: block;
+	display: block;
 }
 
 /* breadcrumb styles */
@@ -195,120 +195,129 @@ body {
 
 /* button styles */
 .btn, .btn-primary {
-    background-color: var(--cor-primaria);
-    color: var(--cor-escuro);
-    padding: 10px 20px;
-    border: 1px solid transparent;
-    border-radius: 10px;
-    cursor: pointer;
-    font-size: large;
-    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.35);
+	background-color: var(--cor-primaria);
+	color: var(--cor-escuro);
+	padding: 10px 20px;
+	border: 1px solid transparent;
+	border-radius: 10px;
+	cursor: pointer;
+	font-size: large;
+	box-shadow: 0 6px 18px rgba(0, 0, 0, 0.35);
 }
 
 .btn:hover {
-    filter: brightness(70%);
+	filter: brightness(70%);
 }
 
 .btn-secondary {
-    background-color: var(--cor-secundaria);
+	background-color: var(--cor-secundaria);
 }
 
 .btn-success {
-    background-color: var(--cor-sucesso);
+	background-color: var(--cor-sucesso);
 }
 .btn-danger {
-    background-color: var(--cor-perigo);
+	background-color: var(--cor-perigo);
 }
 .btn-warning {
-    background-color: var(--cor-aviso);
+	background-color: var(--cor-aviso);
 }
 .btn-information {
-    background-color: var(--cor-informacao);
+	background-color: var(--cor-informacao);
 }
 .btn-light {
-    background-color: var(--cor-claro);
-    color: var(--cor-escuro);
+	background-color: var(--cor-claro);
+	color: var(--cor-escuro);
 }
 .btn-dark {
-    background-color: var(--cor-escuro);
-    color: var(--cor-claro);
+	background-color: var(--cor-escuro);
+	color: var(--cor-claro);
 }
 
 /* card styles */
 .card {
-    border-radius: 15px;
-    padding: 30px;
-    margin: 10px 0;
-    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
-    text-align: justify;
-    background-color: var(--cor-claro);
+	border-radius: 15px;
+	padding: 30px;
+	margin: 10px 0;
+	box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+	text-align: justify;
+	background-color: var(--cor-claro);
 }
 
 .card img {
-    border-radius: 50%;
-    width: 50px;
-    height: 50px;
+	border-radius: 50%;
+	width: 50px;
+	height: 50px;
 }
 
 .personcard {
-    display: flex;
-    align-items: center;
-    gap: 15px;
-    margin-bottom: 20px;
+	display: flex;
+	align-items: center;
+	gap: 15px;
+	margin-bottom: 20px;
 }
 
 .personcard-text {
-    display: flex;
-    flex-direction: column;
-    gap: 0px;
+	display: flex;
+	flex-direction: column;
+	gap: 0px;
 }
 .personcard-text h6 {
-    margin: 0;
+	margin: 0;
 }
 
 /* not working */
 /* Dropdown Styles */
 ul[popover] {
-    margin: 0;
+	margin: 0;
 }
 #anchor {
-    anchor-name: --toggle;
+	anchor-name: --toggle;
 }
 #target {
-    position: absolute;
-    position-anchor: --toggle;
-    position-area: bottom;
-    position-try-fallbacks: top;
-    width: anchor-size(width);
+	position: absolute;
+	position-anchor: --toggle;
+	position-area: bottom;
+	position-try-fallbacks: top;
+	width: anchor-size(width);
 }
 
 /* Forms styles */
 .form-control, .form-select {
-    padding: 10px;
-    border: 2px solid var(--cor-escuro);
-    background-color: var(--cor-claro);
-    outline: none;
-    border-radius: 5px;
-    width: 100%;
-    box-sizing: border-box;
-    margin: 10px 0;
+	padding: 10px;
+	border: 2px solid var(--cor-escuro);
+	background-color: var(--cor-claro);
+	outline: none;
+	border-radius: 5px;
+	width: 100%;
+	box-sizing: border-box;
+	margin: 10px 0;
+	transition: border-color .2s ease;
 }
 
 .form-control:focus, .form-select:focus {
-    border-color: var(--cor-aviso);
+	border-color: var(--cor-informacao);
 }
 
 .form-select:open {
-    border-color: var(--cor-aviso);
+	border-color: var(--cor-informacao);
 }
 
 .form-select {
-    outline: none;
+	outline: none;
 }
 
 .form-select option {
-    padding: 10px;
-    background-color: var(--cor-claro);
+	padding: 10px;
+	background-color: var(--cor-claro);
+}
+
+.form-control:invalid:not(:placeholder-shown) {
+	border-color: var(--cor-perigo);
+}
+
+.form-control:valid:not(:placeholder-shown) {
+	border-color: var(--cor-sucesso);
 }
 
 /* Lists styles */
@@ -316,53 +325,54 @@ ul[popover] {
 
 /* Modal styles */
 .box {
-    padding: 0px;
-    min-width: 30vw;
-    border: 5px transparent;
-    border-radius: 5px;
-    background-color: var(--cor-claro);
+	padding: 0px;
+	min-width: 30vw;
+	border: 5px transparent;
+	border-radius: 5px;
+	background-color: var(--cor-claro);
 }
 
 .box::backdrop {
-    background-color: rgba(0, 0, 0, 0.8);
+	background-color: rgba(0, 0, 0, 0.8);
 }
 
 .box .buttons {
-    display: flex;
-    justify-content: end;
-    gap: 10px;
-    margin: 10px;
+	display: flex;
+	justify-content: end;
+	gap: 10px;
+	margin: 10px;
 }
 
 .box .title h2 {
-    margin: 10px;
+	margin: 10px;
 }
 
 .box p {
-    padding: 20px;
-    border-bottom: 1px solid var(--cor-escuro);
-    border-top: 1px solid var(--cor-escuro);
+	padding: 20px;
+	border-bottom: 1px solid var(--cor-escuro);
+	border-top: 1px solid var(--cor-escuro);
 }
 
 .box .title {
-    position: relative;
+	position: relative;
 }
 
 .exit-btn {
-    position: absolute;
-    top: 5px;
-    right: 10px;
-    background-color: transparent;
-    border: none;
-    color: var(--cor-escuro);
-    cursor: pointer;
+	position: absolute;
+	top: 5px;
+	right: 10px;
+	background-color: transparent;
+	border: none;
+	color: var(--cor-escuro);
+	cursor: pointer;
 }
 
 /* Navbar styles */
 
 .navbar {
-  overflow: hidden;
+  /* overflow: hidden; */
   background-color: var(--cor-escuro);
+  min-width: 200px;
   max-width: 200px;
 }
 
@@ -389,70 +399,78 @@ ul[popover] {
 
 /* Add a red background color to navigation links on hover */
 .navbar a:hover, .subnav:hover .subnavbtn {
-  background-color: var(--cor-perigo);
+  background-color: var(--cor-primaria);
+  transition: background-color .5s ease;
 }
 
 /* Style the subnav links */
 .subnav-content a {
-  padding-left: 25px; /* ESPAÇAMENTO DOS SUBLINKS*/
-  display: flex;
-  flex-direction: column;
-  text-align: left;
-  color: var(--cor-claro);
-  text-decoration: none;
+	padding: 8px;
+	padding-left: 25px; /* ESPAÇAMENTO DOS SUBLINKS*/
+	display: flex;
+	flex-direction: column;
+	text-align: left;
+	color: var(--cor-claro);
+	text-decoration: none;
+	font-size: 10px;
 }
 
 /* MARGEM DOS LINKS DIRETOS DA NAVBAR */
 .nav-direct-link a {
-  margin: 0px;
-  padding: 10px 12px;
+	margin: 0px;
+	padding: 10px 12px;
+	font-size: 13px;
 }
 
+/* cor do fundo dos subnavs */
+/* .subnav-content {
+	background-color: var(--cor-secundaria);
+} */
 
 /* navstabs styles */
 
 .grid {
-    display: grid;
-    grid-template-columns: repeat(3, minmax(200px, 1fr));
-    grid-template-rows: auto 1fr;
+	display: grid;
+	grid-template-columns: repeat(3, minmax(200px, 1fr));
+	grid-template-rows: auto 1fr;
 }
 
 .grid details{
-    /* Arrebenta tudo idk why? literally copy paste form moodle
-    display: grid;
-    grid-template-columns: subgrid;
-    grid-template-rows: subgrid;
-    grid-column: 1 / -1;
-    grid-row: 1 / span 2;
-    */
-    border-bottom: 1px solid var(--cor-escuro);
+	/* Arrebenta tudo idk why? literally copy paste form moodle
+	display: grid;
+	grid-template-columns: subgrid;
+	grid-template-rows: subgrid;
+	grid-column: 1 / -1;
+	grid-row: 1 / span 2;
+	*/
+	border-bottom: 1px solid var(--cor-escuro);
 }
 
 .grid summary{
-    --tab-order: attr(data-tab-order type(<integer>));
-    grid-column: var(--tab-order) / span 1;
-    grid-row: 1;
-    display: grid;
-    padding: 1rem;
-    border-bottom: 1px solid var(--cor-escuro);
-    cursor: pointer;
-    z-index: 1;
+	--tab-order: attr(data-tab-order type(<integer>));
+	grid-column: var(--tab-order) / span 1;
+	grid-row: 1;
+	display: grid;
+	padding: 1rem;
+	border-bottom: 1px solid var(--cor-escuro);
+	cursor: pointer;
+	z-index: 1;
 }
 .grid details[open] :is(summary){
-    font-weight: bold;
-    pointer-events: none;
-    border: 1px solid var(--cor-escuro);
-    border-top-left-radius: 8px;
-    border-top-right-radius: 8px;
-    border-bottom: none;
+	font-weight: bold;
+	pointer-events: none;
+	border: 1px solid var(--cor-escuro);
+	border-top-left-radius: 8px;
+	border-top-right-radius: 8px;
+	border-bottom: none;
 }
 .grid details::details-content{
-    grid-column: 1 / -1;
-    grid-row: 2;
-    padding: 1rem;
+	grid-column: 1 / -1;
+	grid-row: 2;
+	padding: 1rem;
 }
 .grid details:not([open])::details-content{
-    display: none;
+	display: none;
 }
 
 /* pagination styles */
@@ -478,42 +496,42 @@ ul[popover] {
 /* spinners styles */
 
 .loader {
-    height: 100px;
-    width: 95px;
-    margin: 20px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+	height: 100px;
+	width: 95px;
+	margin: 20px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
 }
 .barra1, .barra2, .barra3, .barra4, .barra5 {
-    background-color: var(--cor-primaria);
-    height: 50px;
-    width: 15px;
-    animation: animacao 1s infinite;
+	background-color: var(--cor-primaria);
+	height: 50px;
+	width: 15px;
+	animation: animacao 1s infinite;
 }
 
 @keyframes animacao {
-    0% {
-        transform: scaleY(1);
-    }
-    50% {
-        transform: scaleY(2);
-    }
-    100% {
-        transform: scaleY(1);
-    }
+	0% {
+		transform: scaleY(1);
+	}
+	50% {
+		transform: scaleY(2);
+	}
+	100% {
+		transform: scaleY(1);
+	}
 }
 .barra2 {
-    animation-delay: 0.2s;
+	animation-delay: 0.2s;
 }
 .barra3 {
-    animation-delay: 0.4s;
+	animation-delay: 0.4s;
 }
 .barra4 {
-    animation-delay: 0.6s;
+	animation-delay: 0.6s;
 }
 .barra5 {
-    animation-delay: 0.8s;
+	animation-delay: 0.8s;
 }
 
 
@@ -544,30 +562,30 @@ th {
 /* doesnt work */
 /* tooltip styles */
 .forma {
-    padding-left: .75rem;
-    clip-path: polygon(
-    100% 0%,
-    100% 100%,
-    5px 100%,
-    5px calc(50% + 5px),
-    0% 50%,
-    5px calc(50% - 5px),
-    5px 0%);
+	padding-left: .75rem;
+	clip-path: polygon(
+	100% 0%,
+	100% 100%,
+	5px 100%,
+	5px calc(50% + 5px),
+	0% 50%,
+	5px calc(50% - 5px),
+	5px 0%);
 }
 
 #info-opener {
-    anchor-name: --info-opener;
+	anchor-name: --info-opener;
 }
 .info-tooltip[popover] {
-    background: var(--cor-primaria);
-    padding:5px 10px;
-    border:none;
-    color: var(--cor-claro);
+	background: var(--cor-primaria);
+	padding:5px 10px;
+	border:none;
+	color: var(--cor-claro);
 }
 #info {
-    margin:0;
-    position: absolute;
-    position-anchor: --info-opener;
-    position-area: right;
-    position-try-fallbacks: left;
+	margin:0;
+	position: absolute;
+	position-anchor: --info-opener;
+	position-area: right;
+	position-try-fallbacks: left;
 }
