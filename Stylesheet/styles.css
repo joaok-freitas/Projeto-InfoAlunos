@@ -1,4 +1,5 @@
 :root {
+	 color-scheme: light;
 	--cor-primaria: #1E90FF;
 	--cor-secundaria: #A9A9A9;
 	--cor-sucesso: #28A745;
@@ -9,6 +10,7 @@
 	--cor-escuro: #212121;
 }
 :root:has(#darkmode-toggle:checked) {
+	 color-scheme: dark;
 	--cor-primaria: #1E90FF;
 	--cor-secundaria: #B0B0B0;
 	--cor-sucesso: #28A745;
@@ -371,15 +373,16 @@ ul[popover] {
 
 .navbar {
   /* overflow: hidden; */
-  background-color: var(--cor-escuro);
+  background-color: light-dark(var(--cor-secundaria), var(--cor-claro));
   min-width: 200px;
   max-width: 200px;
+  /* border-right: black 2px solid; */
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.35);
 }
 
 /* Navigation links  - ESTILO DOS LINKS*/
 .navbar a {
   font-size: 13px;
-  color: var(--cor-claro);
   text-align: center;
   padding: 10px 12px;
   text-decoration: none;
@@ -390,17 +393,17 @@ ul[popover] {
   font-size: 13px;
   border: none;
   outline: none;
-  color: var(--cor-claro);
+  color: light-dark(var(--cor-escuro), var(--cor-secundaria));
   padding: 10px 12px;
   background-color: inherit;
   font-family: inherit;
   margin: 0;
 }
 
-/* Add a red background color to navigation links on hover */
+/* Add a background color to navigation links on hover */
 .navbar a:hover, .subnav:hover .subnavbtn {
   background-color: var(--cor-primaria);
-  transition: background-color .5s ease;
+  transition: background-color .3s ease;
 }
 
 /* Style the subnav links */
@@ -410,7 +413,7 @@ ul[popover] {
 	display: flex;
 	flex-direction: column;
 	text-align: left;
-	color: var(--cor-claro);
+	color: light-dark(var(--cor-escuro), var(--cor-secundaria));
 	text-decoration: none;
 	font-size: 10px;
 }

@@ -26,9 +26,10 @@ body {
 
 .top-bar {
   grid-area: topbar;
-  background-color: var(--cor-escuro);
-  color: var(--cor-claro);
+  background-color: var(--cor-primaria);
+  color: var(--cor-escuro);
   padding: 10px;
+  border-bottom: 5px solid var(--cor-secundaria);
 }
 
 .login-logo {
