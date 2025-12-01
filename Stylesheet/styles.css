@@ -421,12 +421,15 @@ ul[popover] {
 	background-color: inherit;
 	font-family: inherit;
 	margin: 0;
+	list-style: none;
+	display: flex;
 }
 
 /* Add a background color to navigation links on hover */
 .navbar a:hover, .subnav:hover .subnavbtn {
 	background-color: var(--cor-primaria);
 	transition: background-color .3s ease;
+	cursor: pointer;
 }
 
 /* Style the subnav links */
@@ -446,6 +449,40 @@ ul[popover] {
 	margin: 0px;
 	padding: 10px 12px;
 	font-size: 13px;
+}
+
+.navbar-dropdown-icon {
+    position: relative;
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    margin-left: auto;
+}
+
+.navbar-dropdown-icon::before, .navbar-dropdown-icon::after {
+    content: "";
+    position: absolute;
+    background: currentColor;
+    transition: 0.2s ease;
+}
+
+.navbar-dropdown-icon::before {
+    width: 10px;
+    height: 2px;
+    top: 4px;
+    left: 0;
+}
+
+.navbar-dropdown-icon::after {
+    width: 2px;
+    height: 10px;
+    top: 0;
+    left: 4px;
+}
+
+/* Alterar icon de mais para menos quando aberto */
+details[open] .navbar-dropdown-icon::after {
+    transform: scaleY(0);
 }
 
 /* cor do fundo dos subnavs */
