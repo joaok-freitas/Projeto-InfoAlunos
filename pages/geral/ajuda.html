@@ -169,14 +169,20 @@
             <div class="content-box2">
                 <h6>Contacto Directo</h6>
                 <p>Se preferir, pode contactar-nos directamente a partir deste formulário. Seleccione o destinatário, escreva a mensagem e já está!</p>
-
-                Para: 	gabinete de apoio ao estudante
-                Nome: 	nome colocado automaticamente
-                E-Mail: textbox
-                Assunto: textbox
-
-                Mensagem: textbox
-                <button class="btn" type="submit">Enviar Mensagem</button>
+                <label for="inputState" class="form-label">Para</label>
+                <select id="inputState" class="form-select">
+                    <option selected>Gabinete de Apoio ao Estudante</option>
+                    <option>...</option>
+                </select>
+                <label for="inputName" class="form-label">Nome</label>
+                <input type="text" class="form-control" id="inputName" value="Marcelo Rebelo de Sousa" readonly>
+                <label for="inputEmail4" class="form-label">Email</label>
+                <input type="email" class="form-control" id="inputEmail4" placeholder="email@email.com">
+                <label for="inputSubject" class="form-label">Assunto</label>
+                <input type="text" class="form-control" id="inputSubject" maxlength="50" placeholder="Assunto da mensagem">
+                <label for="inputMessage" class="form-label">Mensagem</label>
+                <textarea class="form-control" id="inputMessage" maxlength="500" placeholder="Escreva a sua mensagem aqui..." rows="4" style="resize: vertical;"></textarea>
+                <button class="btn btn-success" type="submit">Enviar Mensagem</button>
             </div>
         </div>
     </div>
