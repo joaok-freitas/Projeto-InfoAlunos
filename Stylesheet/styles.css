@@ -85,6 +85,10 @@ body {
 
 /* tipography styles */
 
+h1, h2, h3, h4, h5, h6, p {
+	color: light-dark(var(--cor-preto), var(--cor-branco));
+}
+
 a {
 	color: var(--cor-informacao);
 }
@@ -672,7 +676,11 @@ th {
 	left: -130%;
 	transform: translateX(-50%);
 	box-shadow: 0 6px 18px rgba(0, 0, 0, 0.8);
-	color: var(--cor-escuro);
+	color: var(--cor-preto);
+}
+
+.tooltiptext h4, .tooltiptext h5, .tooltiptext p {
+	color: var(--cor-preto);
 }
 
 .tooltiptext::after {
