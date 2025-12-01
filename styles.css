@@ -1,145 +1,146 @@
 .fullpage-container {
-  background-color: var(--cor-claro);
-  display: grid;
-  grid-template-areas:
-    "topbar topbar"
-    "nav content "
-    "footer footer";
-  grid-template-columns: auto 1fr;
-  grid-template-rows: auto 1fr;
-  height: 100vh;
+	background-color: var(--cor-claro);
+	display: grid;
+	grid-template-areas:
+		"topbar topbar"
+		"nav content "
+		"footer footer";
+	grid-template-columns: auto 1fr;
+	grid-template-rows: auto 1fr;
+	height: 100vh;
 }
 
 .footer {
-  grid-area: footer;
-  background-color: var(--cor-escuro);
-  border-top: 5px solid var(--cor-primaria);
-  color: var(--cor-claro);
-  text-align: center;
-  padding: 10px;
-  font-size: 12px;
+	grid-area: footer;
+	background-color: var(--cor-escuro);
+	border-top: 5px solid var(--cor-primaria);
+	color: var(--cor-claro);
+	text-align: center;
+	padding: 10px;
+	font-size: 12px;
 }
 
 .site-title {
-  margin-left: 100px;
+	margin-left: 100px;
 }
+
 .top-bar-user-div {
-  margin-left: auto;
-  margin-right: 20px;
-  align-self: center;
+	margin-left: auto;
+	margin-right: 20px;
+	align-self: center;
 }
+
 .user-image {
-  width: 64px;
-  height: 64px;
-  border-radius: 50%;
+	width: 64px;
+	height: 64px;
+	border-radius: 50%;
 }
 
 .top-bar {
-  grid-area: topbar;
-  background-color: var(--cor-primaria);
-  color: var(--cor-escuro);
-  padding: 10px;
-  border-bottom: 5px solid var(--cor-secundaria);
+	grid-area: topbar;
+	background-color: var(--cor-primaria);
+	color: var(--cor-escuro);
+	padding: 10px;
+	border-bottom: 5px solid var(--cor-secundaria);
 }
 
 .website-logo {
-  width: 200px;
+	width: 200px;
 }
 
 .top-bar-content {
-  display: flex;
+	display: flex;
 }
 
 .navbar {
-  grid-area: nav;
+	grid-area: nav;
 }
 
 .content {
-  grid-area: content;
-  display: grid;
-  grid-template-areas:
-    "tb1 tb1 tb1 tb2 tb2 tb2"
-    "cb cb cb cb cb cb"
-    "b1 b1 b2 b2 b3 b3";
-  padding: 20px;
-  gap: 10px;
-  grid-template-columns: repeat(6, 1fr);
-  grid-template-rows: auto auto auto;
+	grid-area: content;
+	display: grid;
+	grid-template-areas:
+		"tb1 tb1 tb1 tb2 tb2 tb2"
+		"cb cb cb cb cb cb"
+		"b1 b1 b2 b2 b3 b3";
+	padding: 20px;
+	gap: 10px;
+	grid-template-columns: repeat(6, 1fr);
+	grid-template-rows: auto auto auto;
 }
 
 .content-box1, .content-box2, .content-box3, .center-box, .top-box1, .top-box2 {
-  background-color: var(--cor-claro);
-  color: var(--cor-escuro);
-  padding: 20px;
+	background-color: var(--cor-claro);
+	color: var(--cor-escuro);
+	padding: 20px;
 	box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
-  border-radius: 8px;
+	border-radius: 8px;
 }
 
 .content-box1 {
-  grid-area: b1;
+	grid-area: b1;
 }
 
 .content-box2 {
-  grid-area: b2;
+	grid-area: b2;
 }
 
 .content-box3 {
-  grid-area: b3;
-  overflow-y: auto;
-  max-height: 250px;
+	grid-area: b3;
+	overflow-y: auto;
+	max-height: 250px;
 }
 
 .center-box {
-  grid-area: cb;
+	grid-area: cb;
 }
 
 .top-box1 {
-  grid-area: tb1;
+	grid-area: tb1;
 }
 
 .top-box2 {
-  grid-area: tb2;
-  overflow-y: auto;
-  max-height: 250px;
+	grid-area: tb2;
+	overflow-y: auto;
+	max-height: 250px;
 }
 
 .content h6 {
-  margin: 0;
-  margin-bottom: 10px;
+	margin: 0;
+	margin-bottom: 10px;
 }
 
 /* LOADER SCREEN STYLES */
-/*
+
 .loader-screen {
-  position: fixed;
-  inset: 0;
-  background: var(--cor-secundaria);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  animation: fadeOut 2s forwards;
-  animation-delay: 3s; /* Tempo de load *//*
-  z-index: 9999;
+	position: fixed;
+	inset: 0;
+	background: var(--cor-secundaria);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	animation: fadeOut 2s forwards;
+	animation-delay: 3s; /* Tempo de load */
+	z-index: 9999;
 }
 
 /* Esconder loader depois do fadeout */
-/*
+
 @keyframes fadeOut {
-  to {
-    opacity: 0;
-    visibility: hidden;
-  }
+	to {
+		opacity: 0;
+		visibility: hidden;
+	}
 }
-*/
+
 /* Página começa escondida */
-/*
+
 .fullpage-container {
-  opacity: 0;
-  animation: showContent 0.5s forwards;
-  animation-delay: 5s; /* Mesmo tempo da duração do loader + fade *//*
+	opacity: 0;
+	animation: showContent 0.5s forwards;
+	animation-delay: 5s; /* Mesmo tempo da duração do loader + fade */
 }
 
 @keyframes showContent {
-  to { opacity: 1; }
+	to { opacity: 1; }
 }
-  */

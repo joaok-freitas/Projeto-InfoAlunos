@@ -12,7 +12,11 @@
 
         <div class="darkmode-div separation">
             <h3>1. Darkmode</h3>
-            <input type="checkbox" id="darkmode-toggle"> Toggle theme
+            <input type="checkbox" id="darkmode-toggle">
+            <label for="darkmode-toggle">
+                <span class="toggle-track"></span>
+                <span class="toggle-text">Modo escuro</span>
+            </label>
         </div>
 
         <div class="cores-div separation">
@@ -25,6 +29,8 @@
             <div class="div cor-informacao"><p>Informação</p></div>
             <div class="div cor-claro"><p>Claro</p></div>
             <div class="div cor-escuro"><p>Escuro</p></div>
+            <div class="div cor-branco"><p>Branco</p></div>
+            <div class="div cor-preto"><p>Preto</p></div>
         </div>
 
         <div class="tipografia separation">
@@ -340,10 +346,33 @@
             </table>
         </div>
         <div class="tooltip-div separation">
-            <h3>20 - Tooltip (popover e anchor positioning)</h3>
-            <button id="info-opener" popovertarget="info" class="btn btn-information">Informação</button>
-            <div id="info" popover class="info-tooltip forma">
-                Lorem ipsum dolor sit amet
+            <h3>20 - Tooltip</h3>
+            <div class="tooltip-stylesheet-div">
+                <label class="tooltip">
+                    <input type="checkbox" class="tooltip-toggle">
+                    <span class="tooltip-button"><img src="https://placehold.co/64x64/png" alt="Foto do utilizador" class="user-image"></span>
+                    <div class="tooltiptext">
+                        <h4>Marcelo Rebelo de Sousa</h4>
+                        <h5>Tecnologias e Programação de Sistemas de Informação</h5>
+                        <input type="checkbox" id="darkmode-toggle">
+                        <label for="darkmode-toggle">
+                            <span class="toggle-track"></span>
+                            <span class="toggle-text">Modo escuro</span>
+                        </label>
+                        <div class="tooltip-link-div">
+                            <a href="#">curso@mail.uma.pt</a>
+                        </div>
+                        <div class="tooltip-link-div">
+                            <a href="#">Alterar Password</a>
+                        </div>
+                        <div class="tooltip-link-div">
+                            <a href="#">Alterar Foto</a>
+                        </div>
+                        <div class="tooltip-link-div">
+                            <a href="#">Sair</a>
+                        </div>
+                    </div>
+                </label>
             </div>
         </div>
     </div>

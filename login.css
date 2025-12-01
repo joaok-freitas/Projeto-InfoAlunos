@@ -28,7 +28,7 @@ body {
 }
 
 .recover-password {
-    color: var(--cor-escuro);
+    color: light-dark(var(--cor-escuro), var(--cor-secundaria));
 }
 
 .login-btn {
@@ -52,7 +52,7 @@ body {
 .login-container .form-label {
     align-self: flex-start;
     font-weight: bold;
-    color: var(--cor-escuro);
+    color: light-dark(var(--cor-escuro), var(--cor-secundaria));
 }
 
 @media only screen and (max-width: 480px) {
