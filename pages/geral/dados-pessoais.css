@@ -1,0 +1,118 @@
+.content {
+	grid-area: content;
+	display: grid;
+	grid-template-areas:
+        "b1 b2"
+        "b3 b4";
+	padding: 20px;
+	gap: 10px;
+	grid-template-columns: repeat(2, 1fr);
+	grid-template-rows: auto auto auto;
+}
+
+.content-box1, .content-box2, .content-box3, .content-box4 {
+	background-color: var(--cor-claro);
+	color: var(--cor-escuro);
+	padding: 20px;
+	box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+	border-radius: 8px;
+}
+
+.content-box1 {
+    position: relative;
+    grid-area: b1;
+}
+
+.content-box2 {
+    position: relative;
+    grid-area: b2;
+}
+.content-box3 {
+    grid-area: b3;
+}
+.content-box4 {
+    position: relative;
+    grid-area: b4;
+}
+
+.content h6 {
+	margin-top: 0;
+}
+
+.content-box1 .user-image {
+    width: 128px;
+    height: 128px;
+}
+
+.user-information-div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+.user-information-subdiv {
+    width: 90%;
+    display: flex;
+    gap: 15px;
+    justify-content: flex-start;
+}
+
+.user-data-div {
+    position: relative;
+    border-radius: 15px;
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--cor-claro);
+    padding: 8px;
+    padding-top: 20px;
+    padding-left: 25px;
+    padding-right: 25px;
+    text-align: center;
+    box-shadow: inset 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+.user-data-div div {
+    min-width: 70px;
+}
+
+.user-data-div h5, .user-data-div p {
+    margin: 8px;
+}
+.user-data-div p {
+    font-size: small;
+}
+
+.content-box3 .user-data-div {
+    flex-direction: column;
+    text-align: left;
+}
+
+.edit-icon {
+    display: flex;
+    gap: 3px;
+    position: absolute;
+    top: 9px;
+    right: 10px;
+    cursor: pointer;
+    font-size: 15px;
+    opacity: 0.7;
+    transition: opacity 0.2s;
+    color: light-dark(var(--cor-preto), var(--cor-branco));
+}
+
+.edit-icon:hover {
+    opacity: 1;
+}
+
+td, th {
+    border: none;
+	border-bottom: 1px solid var(--cor-secundaria);
+	padding: 8px 15px;
+	background-color: initial;
+	color: light-dark(var(--cor-preto), var(--cor-branco));
+}
+
+tr:hover {
+    background-color: initial;
+}

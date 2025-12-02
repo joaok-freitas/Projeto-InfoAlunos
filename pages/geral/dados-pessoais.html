@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/Stylesheet/styles.css">
+    <link rel="stylesheet" href="/default.css">
+    <link rel="stylesheet" href="dados-pessoais.css">
+    <title>InfoAlunos: Serviço de Informação dos Alunos</title>
+</head>
+<body>
+    <div class="fullpage-container">
+        <div class="top-bar">
+            <div class="top-bar-content">
+                <div class="top-bar-item">
+                    <!-- <img src="https://www.uma.pt/wp-content/themes/uma/images/logo2_cor.png" alt="Logo da Universidade da Madeira" class="website-logo"> -->
+                    <img src="https://www.uma.pt/wp-content/themes/uma/images/Logo_UMa_site-01.png" alt="Logo da Universidade da Madeira" class="website-logo">
+                </div>
+                <div class="top-bar-item">
+                    <h3 class="site-title">InfoAlunos - Serviço de Informação dos Alunos</h1>
+                </div>
+                <div class="top-bar-user-div">
+                    <label class="tooltip">
+                        <input type="checkbox" class="tooltip-toggle">
+                        <span class="tooltip-button"><img src="https://placehold.co/64x64/png" alt="Foto do utilizador" class="user-image"></span>
+                        <div class="tooltiptext">
+                            <h4>Marcelo Rebelo de Sousa</h4>
+                            <h5>Tecnologias e Programação de Sistemas de Informação</h5>
+                            <input type="checkbox" id="darkmode-toggle">
+                            <label for="darkmode-toggle">
+                                <span class="toggle-track"></span>
+                                <span class="toggle-text">Modo escuro</span>
+                            </label>
+                            <div class="tooltip-link-div">
+                                <a href="#">curso@mail.uma.pt</a>
+                            </div>
+                            <div class="tooltip-link-div">
+                                <a href="#">Alterar Password</a>
+                            </div>
+                            <div class="tooltip-link-div">
+                                <a href="#">Alterar Foto</a>
+                            </div>
+                            <div class="tooltip-link-div">
+                                <a href="#">Sair</a>
+                            </div>
+                        </div>
+                    </label>
+                </div>
+            </div>
+        </div>
+        <div class="navbar">
+            <div class="subnav-content nav-direct-link">
+                <a href="/index.html">Início</a>
+            </div>
+            <details class="subnav" name="subnav-btn">
+                <summary class="subnavbtn">Geral<i class="navbar-dropdown-icon"></i></summary>  <!-- ALTERAR O ICON E DEPOIS REMOVER ESTE COMMENT -->
+                <div class="subnav-content">
+                    <a href="/pages/geral/processos.html">Processos</a>
+                    <a href="/pages/geral/dados-pessoais.html">Dados Pessoais</a>
+                    <a href="/pages/geral/privacidade.html">Privacidade</a>
+                    <a href="/pages/geral/ajuda.html">Ajuda</a>
+                </div>
+            </details>
+            <details class="subnav" name="subnav-btn">
+                <summary class="subnavbtn">Serviços<i class="navbar-dropdown-icon"></i></summary>
+                <div class="subnav-content">
+                    <a href="/pages/servicos/pagamentos.html">Pagamentos</a>
+                    <a href="/pages/servicos/matriculas-inscricoes.html">Matrículas/Inscrições</a>
+                    <a href="/pages/servicos/inscricao-turmas.html">Inscrição em Turmas</a>
+                    <a href="/pages/servicos/requerimentos.html">Requerimentos</a>
+                    <a href="/pages/servicos/cartao-universitario.html">Cartão Universitário</a>
+                    <a href="/pages/servicos/sasuma-bolsas.html">SASUMa-Bolsas</a>
+                </div>
+            </details>
+            <details class="subnav" name="subnav-btn">
+                <summary class="subnavbtn">Concursos<i class="navbar-dropdown-icon"></i></summary>
+                <div class="subnav-content">
+                    <a href="/pages/concursos/candidaturas.html">Candidaturas</a>
+                </div>
+            </details>
+            <details class="subnav" name="subnav-btn">
+                <summary class="subnavbtn">Avaliação<i class="navbar-dropdown-icon"></i></summary>
+                <div class="subnav-content">
+                    <a href="/pages/avaliacao/pautas.html">Pautas</a>
+                    <a href="/pages/avaliacao/reclamacao-notas.html">Reclamação de Notas</a>
+                    <a href="/pages/avaliacao/inqueritos.html">Inquéritos</a>
+                    <a href="/pages/avaliacao/resultado-inqueritos.html">Resultado de Inquéritos</a>
+                    <a href="/pages/avaliacao/inquerito-raides.html">Inquérito RAIDES</a>
+                </div>
+            </details>
+            <details class="subnav" name="subnav-btn">
+                <summary class="subnavbtn">Creditações<i class="navbar-dropdown-icon"></i></summary>
+                <div class="subnav-content">
+                    <a href="/pages/creditacoes/lista-processos.html">Lista Processos</a>
+                    <a href="/pages/creditacoes/novo-processo.html">Novo Processo</a>
+                </div>
+            </details>
+            <details class="subnav" name="subnav-btn">
+                <summary class="subnavbtn">Documentos<i class="navbar-dropdown-icon"></i></summary>
+                <div class="subnav-content">
+                    <a href="/pages/documentos/academicos.html">Académicos</a>
+                    <a href="/pages/documentos/declaracoes.html">Declarações</a>
+                </div>
+            </details>
+            <details class="subnav" name="subnav-btn">
+                <summary class="subnavbtn">Aula<i class="navbar-dropdown-icon"></i></summary>
+                <div class="subnav-content">
+                    <a href="/pages/aula/calendario.html">Calendário</a>
+                    <a href="/pages/aula/sumarios.html">Sumários</a>
+                </div>
+            </details>
+            <details class="subnav" name="subnav-btn">
+                <summary class="subnavbtn">Disciplina<i class="navbar-dropdown-icon"></i></summary>
+                <div class="subnav-content">
+                    <a href="/pages/disciplina/ficha.html">Ficha</a>
+                    <a href="/pages/disciplina/programa.html">Programa</a>
+                    <a href="/pages/disciplina/ficheiros.html">Ficheiros</a>
+                </div>
+            </details>
+            <details class="subnav" name="subnav-btn">
+                <summary class="subnavbtn">Curso<i class="navbar-dropdown-icon"></i></summary>
+                <div class="subnav-content">
+                    <a href="/pages/curso/ficha-curricular.html">Ficha Curricular</a>
+                    <a href="/pages/curso/horarios.html">Horários</a>
+                    <a href="/pages/curso/historico-matriculas.html">Histórico de Matrículas-Inscrições</a>
+                    <a href="/pages/curso/historico-disciplinas.html">Histórico de Disciplinas Aprovadas</a>
+                    <a href="/pages/curso/transicao-bolonha.html">Transição para Bolonha</a>
+                    <a href="/pages/curso/plano-conclusao.html">Plano de conclusão</a>
+                    <a href="/pages/curso/quadro-prescricao.html">Quadro de Prescrição</a>
+                    <a href="/pages/curso/atividades-academicas.html">Atividades Académicas do Aluno</a>
+                </div>
+            </details>
+            <details class="subnav" name="subnav-btn">
+                <summary class="subnavbtn">Instituição<i class="navbar-dropdown-icon"></i></summary>
+                <div class="subnav-content">
+                    <a href="/pages/instituicao/estrutura-organica.html">Estrutura Orgânica</a>
+                </div>
+            </details>
+            <div class="subnav-content nav-direct-link">
+                <a href="/pages/eleicoes.html">Eleições</a>
+            </div>
+        </div>
+        <div class="footer">
+            <p>© Universidade da Madeira - Gabinete de Desenvolvimento de Aplicações Informáticas - <a href="https://www.uma.pt/privacidade-e-termos-de-utilizacao/">Proteção de Dados e Termos de Utilização</a><br>
+            Colégio dos Jesuitas, 9000-081 Funchal | Tel: +351 291 209400 | Fax: +351 291 209410</p>
+        </div>
+        <div class="content">
+            <div class="content-box1">
+                <h6>Nome e Informação Biográfica</h6>
+                <div class="user-information-div">
+                    <div class="user-information-subdiv">
+                        <img src="https://placehold.co/128x128/png" alt="Foto do utilizador" class="user-image">
+                        <div>
+                            <h4>Nome Completo</h4>
+                            <h3>Marcelo Rebelo de Sousa</h3>
+                        </div>
+                    </div>
+                    <div>
+                        <table class="table">
+                            <tr>
+                                <th scope="row">Nome Abreviado</th>
+                                <td>Marcelo</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Nomes Próprios</th>
+                                <td>Marcelo</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Apelidos</th>
+                                <td>Rebelo de Sousa</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Data de Nascimento</th>
+                                <td>1986-06-01</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Sexo</th>
+                                <td>Masculino</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Estado Civil</th>
+                                <td>Solteiro</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Naturalidade</th>
+                                <td>Portugal (Região Autónoma da Madeira | Funchal | Santa Luzia)</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Nacionalidade</th>
+                                <td>Portugal</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Pai - Nome Completo</th>
+                                <td>Baltazar Rebelo de Sousa</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Mãe - Nome Completo</th>
+                                <td>Maria das Neves Fernandes Duarte</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Aluno nº</th>
+                                <td>1234567</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+                <span class="edit-icon">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M3 17.25V21h3.75L17.81 9.94l-3.75-3.75L3 17.25zM20.71 7.04c.39-.39.39-1.02 
+                        0-1.41l-2.34-2.34a1 1 0 0 0-1.41 0l-1.83 1.83 3.75 3.75 1.83-1.83z"/>
+                    </svg>
+                    Alterar
+                </span>
+            </div>
+            <div class="content-box2">
+                <h6>Documentos de Identificação</h6>
+                <h5>Número de Identificação Fiscal</h5>
+                <div class="user-data-div">
+                    <div><h5>Número</h5> <p>123456789</p></div>
+                    <div><h5>País de Emissão</h5> <p>Portugal</p></div>
+                    <div></div>
+                    <span class="edit-icon">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M3 17.25V21h3.75L17.81 9.94l-3.75-3.75L3 17.25zM20.71 7.04c.39-.39.39-1.02 
+                            0-1.41l-2.34-2.34a1 1 0 0 0-1.41 0l-1.83 1.83 3.75 3.75 1.83-1.83z"/>
+                        </svg>
+                        Alterar
+                    </span>
+                </div>
+                <h5>Número de Identificação Civil</h5>
+                <div class="user-data-div">
+                    <div><h5>Número</h5> <p>12345678 1AB1</p></div>
+                    <div><h5>País de Emissão</h5> <p>Portugal</p></div>
+                    <div><h5>Validade</h5> <p>2029-05-23</p></div>
+                    <span class="edit-icon">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M3 17.25V21h3.75L17.81 9.94l-3.75-3.75L3 17.25zM20.71 7.04c.39-.39.39-1.02 
+                            0-1.41l-2.34-2.34a1 1 0 0 0-1.41 0l-1.83 1.83 3.75 3.75 1.83-1.83z"/>
+                        </svg>
+                        Alterar
+                    </span>
+                </div>
+                <h5>Segurança Social (Caixa)</h5>
+                <div class="user-data-div">
+                    <div><h5>Número</h5> <p>12345678901</p></div>
+                    <div><h5>País de Emissão</h5> <p>Portugal</p></div>
+                    <div></div>
+                    <span class="edit-icon">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M3 17.25V21h3.75L17.81 9.94l-3.75-3.75L3 17.25zM20.71 7.04c.39-.39.39-1.02 
+                            0-1.41l-2.34-2.34a1 1 0 0 0-1.41 0l-1.83 1.83 3.75 3.75 1.83-1.83z"/>
+                        </svg>
+                        Alterar
+                    </span>
+                </div>
+                <span class="edit-icon">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M3 17.25V21h3.75L17.81 9.94l-3.75-3.75L3 17.25zM20.71 7.04c.39-.39.39-1.02 
+                        0-1.41l-2.34-2.34a1 1 0 0 0-1.41 0l-1.83 1.83 3.75 3.75 1.83-1.83z"/>
+                    </svg>
+                    Adicionar
+                </span>
+            </div>
+            <div class="content-box3">
+                <h6>Morada</h6>
+                <h5>Morada de Correspondência</h5>
+                <div class="user-data-div">
+                    <h5>Marcelo Rebelo de Sousa</h5>
+                    <p>Rua de Exemplo, nº 123</p>
+                    <p>1234-567 Funchal</p>
+                    <p>Portugal</p>
+                    <span class="edit-icon">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M3 17.25V21h3.75L17.81 9.94l-3.75-3.75L3 17.25zM20.71 7.04c.39-.39.39-1.02 
+                            0-1.41l-2.34-2.34a1 1 0 0 0-1.41 0l-1.83 1.83 3.75 3.75 1.83-1.83z"/>
+                        </svg>
+                        Alterar
+                    </span>
+                </div>
+            </div>
+            <div class="content-box4">
+                <h6>Contactos</h6>
+                <table class="table">
+                    <tr>
+                        <th scope="row">Número de telefone</th>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Número de telemóvel</th>
+                        <td>123456789</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Email Pessoal</th>
+                        <td>exemplo@email.com</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Email Institucional</th>
+                        <td>1234567@student.uma.pt</td>
+                    </tr>
+                </table>
+                <span class="edit-icon">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M3 17.25V21h3.75L17.81 9.94l-3.75-3.75L3 17.25zM20.71 7.04c.39-.39.39-1.02 
+                        0-1.41l-2.34-2.34a1 1 0 0 0-1.41 0l-1.83 1.83 3.75 3.75 1.83-1.83z"/>
+                    </svg>
+                    Alterar
+                </span>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
