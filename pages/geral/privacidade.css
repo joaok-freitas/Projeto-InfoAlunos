@@ -1,0 +1,74 @@
+.content {
+	grid-area: content;
+	display: grid;
+	grid-template-areas:
+        "b1";
+	padding: 20px;
+	gap: 10px;
+	grid-template-columns: repeat(1, 1fr);
+	grid-template-rows: auto auto auto;
+}
+
+.content-box1 {
+    grid-area: b1;
+	background-color: var(--cor-claro);
+	color: var(--cor-escuro);
+	padding: 20px;
+	box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+	border-radius: 8px;
+}
+
+.first-box, .second-box, .third-box {
+    position: relative;
+    border-top: 1px solid var(--cor-secundaria);
+    padding: 15px;
+}
+
+.title-box {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid var(--cor-secundaria);
+    align-items: center;
+    width: 90%;
+    padding: 0px 20px;
+    margin: auto;
+}
+
+.text-box {
+    text-align: justify;
+    margin-top: 10px;
+    line-height: 1.5;
+    font-size: small;
+}
+
+.text-box p {
+    margin: 0;
+    padding: 0px 70px;
+}
+
+.first-box h1, .second-box h1, .third-box h1 {
+    font-size: large;
+}
+
+.second-box .btn, .third-box .buttons-div {
+    position: absolute;
+    right: 30px;
+    bottom: 15px;
+}
+
+.buttons-div {
+    display: flex;
+    gap: 20px;
+}
+
+h4.agree {
+    color: var(--cor-sucesso);
+}
+
+h4.disagree {
+    color: var(--cor-perigo);
+}
+
+h4.pending {
+    color: var(--cor-aviso);
+}
