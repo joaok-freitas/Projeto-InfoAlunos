@@ -1,0 +1,89 @@
+.content {
+	grid-area: content;
+	display: grid;
+	grid-template-areas:
+        "b1";
+	padding: 20px;
+	gap: 10px;
+	grid-template-columns: repeat(1, 1fr);
+	grid-template-rows: auto auto auto;
+}
+
+.content-box1 {
+    grid-area: b1;
+	background-color: var(--cor-claro);
+	color: var(--cor-escuro);
+	padding: 20px;
+	box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+	border-radius: 8px;
+}
+
+h1.center-text {
+    text-align: center;
+    color: var(--cor-informacao);
+}
+
+.dcl-div {
+    display: flex;
+    gap: 20px;
+}
+
+.dcl-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+	background-color: var(--cor-claro);
+	color: var(--cor-escuro);
+	padding: 20px;
+	box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+	border-radius: 8px;
+    min-height: 300px;
+    max-width: 300px;
+    text-align: center;
+}
+
+.title-box {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid var(--cor-secundaria);
+    align-items: center;
+    width: 90%;
+    padding: 0px 20px;
+    margin: auto;
+}
+
+.text-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    padding: 0px 20px;
+    margin-top: 10px;
+}
+
+.text-box div {
+    width: 60%;
+}
+
+.text-box div p, .text-box div h4 {
+    margin: 0;
+}
+
+.icon-declaracao {
+	background-image: url(/img/dcl-icon.svg);
+	background-repeat: no-repeat;
+	background-position: center;
+	min-height: 110px;
+	width: 110px;
+	margin-top: 20px;
+}
+
+.icon-pdf {
+    margin-left: 65px;
+    background-image: url(/img/pdf-icon.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    max-width: 32px;
+    height: 32px;
+}
