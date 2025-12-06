@@ -69,7 +69,7 @@
                     <a href="/pages/servicos/inscricao-turmas.html">Inscrição em Turmas</a>
                     <a href="/pages/servicos/requerimentos.html">Requerimentos</a>
                     <a href="/pages/servicos/cartao-universitario.html">Cartão Universitário</a>
-                    <a href="/pages/servicos/sasuma-bolsas.html">SASUMa-Bolsas</a>
+                    <a target="_blank" rel="noopener noreferrer" href="http://www.sasuma.pt/?IDM=PT&ID0=1765029136&ID1=&ID2=0&ID3=3e3cf8a5f53db6eaef66ad737916e2f7">SASUMa-Bolsas</a>
                 </div>
             </details>
             <details class="subnav" name="subnav-btn">
@@ -146,29 +146,31 @@
         </div>
         <div class="content">
             <div class="content-box1">
-                <div class="payment-filter">
-                    <h6>Filtrar Pagamentos</h6>
-                    <label for="inputPaymentYear" class="form-label">Ano Lectivo</label>
-                    <select id="inputPaymentYear" class="form-select">
-                        <option selected></option>
-                        <option>2025/26</option>
-                        <option>2024/25</option>
-                        <option>2023/24</option>
-                    </select>
-                    <label for="inputPaymentState" class="form-label">Situação do Pagamento</label>
-                    <select id="inputPaymentState" class="form-select">
-                        <option selected></option>
-                        <option>Cancelado</option>
-                        <option>Pagos</option>
-                        <option>Por Pagar</option>
-                        <option>Reembolsos</option>
-                        <option>Substituído por Prestações</option>
-                    </select>
-                    <button type="button" class="btn btn-primary">Pesquisar</button>
-                </div>
-                <div class="payment-total">
-                    <h6>Total em Dívida</h6>
-                    <h2>487.90 EUR</h2>
+                <div class="cb1-top-bar">
+                    <div class="payment-filter">
+                        <h6>Filtrar Pagamentos</h6>
+                        <label for="inputPaymentYear" class="form-label">Ano Lectivo</label>
+                        <select id="inputPaymentYear" class="form-select">
+                            <option selected></option>
+                            <option>2025/26</option>
+                            <option>2024/25</option>
+                            <option>2023/24</option>
+                        </select>
+                        <label for="inputPaymentState" class="form-label">Situação do Pagamento</label>
+                        <select id="inputPaymentState" class="form-select">
+                            <option selected></option>
+                            <option>Cancelado</option>
+                            <option>Pagos</option>
+                            <option>Por Pagar</option>
+                            <option>Reembolsos</option>
+                            <option>Substituído por Prestações</option>
+                        </select>
+                        <button type="button" class="btn btn-primary">Pesquisar</button>
+                    </div>
+                    <div class="payment-total">
+                        <h6>Total em Dívida</h6>
+                        <h2>487.90 EUR</h2>
+                    </div>
                 </div>
                 <table class="table">
                     <thead>
@@ -196,7 +198,7 @@
                             <td>2025-12-31</td>
                             <td></td>
                             <td>69.70 EUR</td>
-                            <td><input class="form-check-input" type="checkbox" id="gridCheck"></td>
+                            <td><input class="form-check-input" type="checkbox" id="paymentCheck"></td>
                         </tr>
                         <tr>
                             <td>2025/26</td>
@@ -208,7 +210,7 @@
                             <td>2026-01-31</td>
                             <td></td>
                             <td>69.70 EUR</td>
-                            <td><input class="form-check-input" type="checkbox" id="gridCheck"></td>
+                            <td><input class="form-check-input" type="checkbox" id="paymentCheck"></td>
                         </tr>
                         <tr>
                             <td>2025/26</td>
@@ -220,7 +222,7 @@
                             <td>2026-02-28</td>
                             <td></td>
                             <td>69.70 EUR</td>
-                            <td><input class="form-check-input" type="checkbox" id="gridCheck"></td>
+                            <td><input class="form-check-input" type="checkbox" id="paymentCheck"></td>
                         </tr>
                         <tr>
                             <td>2025/26</td>
@@ -232,7 +234,7 @@
                             <td>2026-03-31</td>
                             <td></td>
                             <td>69.70 EUR</td>
-                            <td><input class="form-check-input" type="checkbox" id="gridCheck"></td>
+                            <td><input class="form-check-input" type="checkbox" id="paymentCheck"></td>
                         </tr>
                         <tr>
                             <td>2025/26</td>
@@ -244,7 +246,7 @@
                             <td>2026-04-30</td>
                             <td></td>
                             <td>69.70 EUR</td>
-                            <td><input class="form-check-input" type="checkbox" id="gridCheck"></td>
+                            <td><input class="form-check-input" type="checkbox" id="paymentCheck"></td>
                         </tr>
                         <tr>
                             <td>2025/26</td>
@@ -256,7 +258,7 @@
                             <td>2026-05-31</td>
                             <td></td>
                             <td>69.70 EUR</td>
-                            <td><input class="form-check-input" type="checkbox" id="gridCheck"></td>
+                            <td><input class="form-check-input" type="checkbox" id="paymentCheck"></td>
                         </tr>
                         <tr>
                             <td>2025/26</td>
@@ -268,51 +270,62 @@
                             <td>2026-06-30</td>
                             <td></td>
                             <td>69.70 EUR</td>
-                            <td><input class="form-check-input" type="checkbox" id="gridCheck"></td>
+                            <td><input class="form-check-input" type="checkbox" id="paymentCheck"></td>
                         </tr>
                     </tbody>
                 </table>
             </div>
             <div class="content-box2">
-                <h6>Opção 1 - Pagamento via Multibanco - Pagamento de Serviços</h6>
+                <div>
+                    <img src="/img/logo_multibanco.gif" alt="Logo do multibanco" class="payment-image">
+                </div>
+                <div>
+                    <h6>Opção 1 - Pagamento via Multibanco - Pagamento de Serviços</h6>
 
-                <p>Através da SIBS, pode proceder aos pagamentos utilizando as referências listadas. Quer seja por Multibanco ou através de homebanking.</p>
-                <h6>Processamento de Transações - <span class="cor-erro">NÃO IMEDIATO</span></h6>
-                <ul>
-                    <li>Tem de efectuar um pagamento de cada vez.</li>
-                    <li>O processamento é efectuado pelo sistema todos os dias pelas 22h00, pelo que só depois de efectuado este processamento o InfoAlunos reflectirá a conta-corrente actual do Aluno.</li>
-                </ul>
+                    <p>Através da SIBS, pode proceder aos pagamentos utilizando as referências listadas. Quer seja por Multibanco ou através de homebanking.</p>
+                    <h6>Processamento de Transações - <span class="cor-erro">NÃO IMEDIATO</span></h6>
+                    <ul>
+                        <li>Tem de efectuar um pagamento de cada vez.</li>
+                        <li>O processamento é efectuado pelo sistema todos os dias pelas 22h00, pelo que só depois de efectuado este processamento o InfoAlunos reflectirá a conta-corrente actual do Aluno.</li>
+                    </ul>
 
-                <h6>Processo de Pagamento</h6>
-                <ul>
-                    <li>No Multibanco ou homebanking, seleccione "Pagamento de Serviços".</li>
-                    <li>Como Entidade introduza 20697, como referência, utilize a Refª MB acima listada.</li>
-                </ul>
+                    <h6>Processo de Pagamento</h6>
+                    <ul>
+                        <li>No Multibanco ou homebanking, seleccione "Pagamento de Serviços".</li>
+                        <li>Como Entidade introduza 20697, como referência, utilize a Refª MB acima listada.</li>
+                    </ul>
 
-                <h6>Atenção - Data Limite de Pagamento Ultrapassada</h6>
+                    <h6>Atenção - Data Limite de Pagamento Ultrapassada</h6>
 
-                <p>Se for <span class="bold-text">ultrapassada a data</span> limite de pagamento serão aplicados <span class="bold-text">juros de mora à taxa legal em vigor.</span></p>
-                <p><span class="bold-text">Depois do pagamento</span>, e de forma automática, é criado um <span class="bold-text">novo registo</span> para pagamento com o valor dos juros de mora calculados.</p>
+                    <p>Se for <span class="bold-text">ultrapassada a data</span> limite de pagamento serão aplicados <span class="bold-text">juros de mora à taxa legal em vigor.</span></p>
+                    <p><span class="bold-text">Depois do pagamento</span>, e de forma automática, é criado um <span class="bold-text">novo registo</span> para pagamento com o valor dos juros de mora calculados.</p>
+                </div>
             </div>
             <div class="content-box3">
-                <h6>Opção 2 - Pagamento via Cartão de Crédito</h6>
+                <div>
+                    <img src="/img/logo_redunicre.gif" alt="Logo redunicre" class="payment-image">
+                </div>
+                <div>
+                    <button type="button" class="btn btn-primary btn-payment">Iniciar Pagamento</button>
+                    <h6>Opção 2 - Pagamento via Cartão de Crédito</h6>
 
-                <p>Através da REDUNICRE, pode proceder aos pagamentos via Cartão de Crédito. Se quiser pode gerar um MBNet para usar esta modalidade.</p>
-                <h6>Processamento de Transações - <span class="cor-erro">IMEDIATO</span></h6>
-                <ul>
-                    <li>Pode pagar vários produtos de uma vez só.</li>
-                    <li>Ao regressar ao InfoAlunos, terá imediatamente os seus dados actualizados.</li>
-                </ul>
-                <h6>Processo de Pagamento</h6>
-                <ul>
-                    <li>Na tabela desta página, clique nas linhas correspondentes, a coluna "Pagar via Cartão de Crédito".</li>
-                    <li>Clique no botão "Iniciar Pagamento".</li>
-                </ul>
+                    <p>Através da REDUNICRE, pode proceder aos pagamentos via Cartão de Crédito. Se quiser pode gerar um MBNet para usar esta modalidade.</p>
+                    <h6>Processamento de Transações - <span class="cor-erro">IMEDIATO</span></h6>
+                    <ul>
+                        <li>Pode pagar vários produtos de uma vez só.</li>
+                        <li>Ao regressar ao InfoAlunos, terá imediatamente os seus dados actualizados.</li>
+                    </ul>
+                    <h6>Processo de Pagamento</h6>
+                    <ul>
+                        <li>Na tabela desta página, clique nas linhas correspondentes, a coluna "Pagar via Cartão de Crédito".</li>
+                        <li>Clique no botão "Iniciar Pagamento".</li>
+                    </ul>
 
-                <h6>Atenção - Data Limite de Pagamento Ultrapassada</h6>
+                    <h6>Atenção - Data Limite de Pagamento Ultrapassada</h6>
 
-                <p>Se for <span class="bold-text">ultrapassada a data</span> limite de pagamento serão aplicados <span class="bold-text">juros de mora à taxa legal em vigor.</span></p>
-                <p><span class="bold-text">Depois do pagamento</span>, e de forma automática, é criado um <span class="bold-text">novo registo</span> para pagamento com o valor dos juros de mora calculados.</p>
+                    <p>Se for <span class="bold-text">ultrapassada a data</span> limite de pagamento serão aplicados <span class="bold-text">juros de mora à taxa legal em vigor.</span></p>
+                    <p><span class="bold-text">Depois do pagamento</span>, e de forma automática, é criado um <span class="bold-text">novo registo</span> para pagamento com o valor dos juros de mora calculados.</p>
+                </div>
             </div>
         </div>
     </div>

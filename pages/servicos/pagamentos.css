@@ -18,7 +18,7 @@
 	border-radius: 8px;
 }
 
-.content-box1 h6, .content-box2 h6{
+.content-box1 h6, .content-box2 h6, .content-box3 h6 {
 	margin-top: 0;
 }
 .content-box1 {
@@ -26,10 +26,15 @@
 }
 
 .content-box2 {
+	display: flex;
+	gap: 15px;
 	grid-area: b2;
 }
 
 .content-box3 {
+	display: flex;
+	position: relative;
+	gap: 15px;
 	grid-area: b3;
 }
 
@@ -40,3 +45,23 @@
 .bold-text {
 	font-weight: bolder;
 }
+
+.cb1-top-bar {
+	display: flex;
+	gap: 30px;
+	margin-bottom: 15px;
+}
+
+:root:has(#paymentCheck:checked) {
+	.btn-payment {
+		visibility: visible;
+	}
+}
+
+.btn-payment {
+	visibility: hidden;
+	position: absolute;
+	right: 30px;
+	top: 5px;
+}
+
