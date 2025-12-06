@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/Stylesheet/styles.css">
+    <link rel="stylesheet" href="/default.css">
+    <link rel="stylesheet" href="pagamentos.css">
+    <title>InfoAlunos: Serviço de Informação dos Alunos</title>
+</head>
+<body>
+    <div class="fullpage-container">
+        <div class="top-bar">
+            <div class="top-bar-content">
+                <div class="top-bar-item">
+                    <!-- <img src="/img/colored-logo.png" alt="Logo da Universidade da Madeira" class="website-logo"> -->
+                    <img src="/img/white-logo.png" alt="Logo da Universidade da Madeira" class="website-logo">
+                </div>
+                <div class="top-bar-item">
+                    <h3 class="site-title">InfoAlunos - Serviço de Informação dos Alunos</h1>
+                </div>
+                <div class="top-bar-user-div">
+                    <label class="tooltip">
+                        <input type="checkbox" class="tooltip-toggle">
+                        <span class="tooltip-button"><img src="https://placehold.co/64x64/png" alt="Foto do utilizador" class="user-image"></span>
+                        <div class="tooltiptext">
+                            <h4>Marcelo Rebelo de Sousa</h4>
+                            <h5>Tecnologias e Programação de Sistemas de Informação</h5>
+                            <input type="checkbox" id="darkmode-toggle">
+                            <label for="darkmode-toggle">
+                                <span class="toggle-track"></span>
+                                <span class="toggle-text">Modo escuro</span>
+                            </label>
+                            <div class="tooltip-link-div">
+                                <a href="#">curso@mail.uma.pt</a>
+                            </div>
+                            <div class="tooltip-link-div">
+                                <a href="#">Alterar Password</a>
+                            </div>
+                            <div class="tooltip-link-div">
+                                <a href="#">Alterar Foto</a>
+                            </div>
+                            <div class="tooltip-link-div">
+                                <a href="#">Sair</a>
+                            </div>
+                        </div>
+                    </label>
+                </div>
+            </div>
+        </div>
+        <div class="navbar">
+            <div class="subnav-content nav-direct-link">
+                <a href="/index.html">Início</a>
+            </div>
+            <details class="subnav" name="subnav-btn">
+                <summary class="subnavbtn">Geral<i class="navbar-dropdown-icon"></i></summary>  <!-- ALTERAR O ICON E DEPOIS REMOVER ESTE COMMENT -->
+                <div class="subnav-content">
+                    <a href="/pages/geral/processos.html">Processos</a>
+                    <a href="/pages/geral/dados-pessoais.html">Dados Pessoais</a>
+                    <a href="/pages/geral/privacidade.html">Privacidade</a>
+                    <a href="/pages/geral/ajuda.html">Ajuda</a>
+                </div>
+            </details>
+            <details class="subnav" name="subnav-btn">
+                <summary class="subnavbtn">Serviços<i class="navbar-dropdown-icon"></i></summary>
+                <div class="subnav-content">
+                    <a href="/pages/servicos/pagamentos.html">Pagamentos</a>
+                    <a href="/pages/servicos/matriculas-inscricoes.html">Matrículas/Inscrições</a>
+                    <a href="/pages/servicos/inscricao-turmas.html">Inscrição em Turmas</a>
+                    <a href="/pages/servicos/requerimentos.html">Requerimentos</a>
+                    <a href="/pages/servicos/cartao-universitario.html">Cartão Universitário</a>
+                    <a href="/pages/servicos/sasuma-bolsas.html">SASUMa-Bolsas</a>
+                </div>
+            </details>
+            <details class="subnav" name="subnav-btn">
+                <summary class="subnavbtn">Concursos<i class="navbar-dropdown-icon"></i></summary>
+                <div class="subnav-content">
+                    <a href="/pages/concursos/candidaturas.html">Candidaturas</a>
+                </div>
+            </details>
+            <details class="subnav" name="subnav-btn">
+                <summary class="subnavbtn">Avaliação<i class="navbar-dropdown-icon"></i></summary>
+                <div class="subnav-content">
+                    <a href="/pages/avaliacao/pautas.html">Pautas</a>
+                    <a href="/pages/avaliacao/reclamacao-notas.html">Reclamação de Notas</a>
+                    <a href="/pages/avaliacao/inqueritos.html">Inquéritos</a>
+                    <a href="/pages/avaliacao/resultado-inqueritos.html">Resultado de Inquéritos</a>
+                    <a href="/pages/avaliacao/inquerito-raides.html">Inquérito RAIDES</a>
+                </div>
+            </details>
+            <details class="subnav" name="subnav-btn">
+                <summary class="subnavbtn">Creditações<i class="navbar-dropdown-icon"></i></summary>
+                <div class="subnav-content">
+                    <a href="/pages/creditacoes/lista-processos.html">Lista Processos</a>
+                    <a href="/pages/creditacoes/novo-processo.html">Novo Processo</a>
+                </div>
+            </details>
+            <details class="subnav" name="subnav-btn">
+                <summary class="subnavbtn">Documentos<i class="navbar-dropdown-icon"></i></summary>
+                <div class="subnav-content">
+                    <a href="/pages/documentos/academicos.html">Académicos</a>
+                    <a href="/pages/documentos/declaracoes.html">Declarações</a>
+                </div>
+            </details>
+            <details class="subnav" name="subnav-btn">
+                <summary class="subnavbtn">Aula<i class="navbar-dropdown-icon"></i></summary>
+                <div class="subnav-content">
+                    <a href="/pages/aula/calendario.html">Calendário</a>
+                    <a href="/pages/aula/sumarios.html">Sumários</a>
+                </div>
+            </details>
+            <details class="subnav" name="subnav-btn">
+                <summary class="subnavbtn">Disciplina<i class="navbar-dropdown-icon"></i></summary>
+                <div class="subnav-content">
+                    <a href="/pages/disciplina/ficha.html">Ficha</a>
+                    <a href="/pages/disciplina/programa.html">Programa</a>
+                    <a href="/pages/disciplina/ficheiros.html">Ficheiros</a>
+                </div>
+            </details>
+            <details class="subnav" name="subnav-btn">
+                <summary class="subnavbtn">Curso<i class="navbar-dropdown-icon"></i></summary>
+                <div class="subnav-content">
+                    <a href="/pages/curso/ficha-curricular.html">Ficha Curricular</a>
+                    <a href="/pages/curso/horarios.html">Horários</a>
+                    <a href="/pages/curso/historico-matriculas.html">Histórico de Matrículas-Inscrições</a>
+                    <a href="/pages/curso/historico-disciplinas.html">Histórico de Disciplinas Aprovadas</a>
+                    <a href="/pages/curso/transicao-bolonha.html">Transição para Bolonha</a>
+                    <a href="/pages/curso/plano-conclusao.html">Plano de conclusão</a>
+                    <a href="/pages/curso/quadro-prescricao.html">Quadro de Prescrição</a>
+                    <a href="/pages/curso/atividades-academicas.html">Atividades Académicas do Aluno</a>
+                </div>
+            </details>
+            <details class="subnav" name="subnav-btn">
+                <summary class="subnavbtn">Instituição<i class="navbar-dropdown-icon"></i></summary>
+                <div class="subnav-content">
+                    <a href="/pages/instituicao/estrutura-organica.html">Estrutura Orgânica</a>
+                </div>
+            </details>
+            <div class="subnav-content nav-direct-link">
+                <a href="/pages/eleicoes.html">Eleições</a>
+            </div>
+        </div>
+        <div class="footer">
+            <p>© Universidade da Madeira - Gabinete de Desenvolvimento de Aplicações Informáticas - <a href="https://www.uma.pt/privacidade-e-termos-de-utilizacao/">Proteção de Dados e Termos de Utilização</a><br>
+            Colégio dos Jesuitas, 9000-081 Funchal | Tel: +351 291 209400 | Fax: +351 291 209410</p>
+        </div>
+        <div class="content">
+            <div class="content-box1">
+                <div class="payment-filter">
+                    <h6>Filtrar Pagamentos</h6>
+                    <label for="inputPaymentYear" class="form-label">Ano Lectivo</label>
+                    <select id="inputPaymentYear" class="form-select">
+                        <option selected></option>
+                        <option>2025/26</option>
+                        <option>2024/25</option>
+                        <option>2023/24</option>
+                    </select>
+                    <label for="inputPaymentState" class="form-label">Situação do Pagamento</label>
+                    <select id="inputPaymentState" class="form-select">
+                        <option selected></option>
+                        <option>Cancelado</option>
+                        <option>Pagos</option>
+                        <option>Por Pagar</option>
+                        <option>Reembolsos</option>
+                        <option>Substituído por Prestações</option>
+                    </select>
+                    <button type="button" class="btn btn-primary">Pesquisar</button>
+                </div>
+                <div class="payment-total">
+                    <h6>Total em Dívida</h6>
+                    <h2>487.90 EUR</h2>
+                </div>
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th scope="col">AL</th>
+                            <th scope="col">B</th>
+                            <th scope="col">Ref MB</th>
+                            <th scope="col">Serviço</th>
+                            <th scope="col">Obs</th>
+                            <th scope="col">Data Emissão</th>
+                            <th scope="col">Data Limite</th>
+                            <th scope="col">Data Pag</th>
+                            <th scope="col">Valor</th>
+                            <th scope="col">Pagar c/ Cartão de Crédito</th>
+                        </tr>
+                    </thead>
+                    <tbody class="table-group-divider">
+                        <tr>
+                            <td>2025/26</td>
+                            <td>B</td>
+                            <td>123456789</td>
+                            <td>4ª Prestação de Propinas de CET's</td>
+                            <td></td>
+                            <td>2025-09-18</td>
+                            <td>2025-12-31</td>
+                            <td></td>
+                            <td>69.70 EUR</td>
+                            <td><input class="form-check-input" type="checkbox" id="gridCheck"></td>
+                        </tr>
+                        <tr>
+                            <td>2025/26</td>
+                            <td>B</td>
+                            <td>123456789</td>
+                            <td>5ª Prestação de Propinas de CET's</td>
+                            <td></td>
+                            <td>2025-09-18</td>
+                            <td>2026-01-31</td>
+                            <td></td>
+                            <td>69.70 EUR</td>
+                            <td><input class="form-check-input" type="checkbox" id="gridCheck"></td>
+                        </tr>
+                        <tr>
+                            <td>2025/26</td>
+                            <td>B</td>
+                            <td>123456789</td>
+                            <td>6ª Prestação de Propinas de CET's</td>
+                            <td></td>
+                            <td>2025-09-18</td>
+                            <td>2026-02-28</td>
+                            <td></td>
+                            <td>69.70 EUR</td>
+                            <td><input class="form-check-input" type="checkbox" id="gridCheck"></td>
+                        </tr>
+                        <tr>
+                            <td>2025/26</td>
+                            <td>B</td>
+                            <td>123456789</td>
+                            <td>7ª Prestação de Propinas de CET's</td>
+                            <td></td>
+                            <td>2025-09-18</td>
+                            <td>2026-03-31</td>
+                            <td></td>
+                            <td>69.70 EUR</td>
+                            <td><input class="form-check-input" type="checkbox" id="gridCheck"></td>
+                        </tr>
+                        <tr>
+                            <td>2025/26</td>
+                            <td>B</td>
+                            <td>123456789</td>
+                            <td>8ª Prestação de Propinas de CET's</td>
+                            <td></td>
+                            <td>2025-09-18</td>
+                            <td>2026-04-30</td>
+                            <td></td>
+                            <td>69.70 EUR</td>
+                            <td><input class="form-check-input" type="checkbox" id="gridCheck"></td>
+                        </tr>
+                        <tr>
+                            <td>2025/26</td>
+                            <td>B</td>
+                            <td>123456789</td>
+                            <td>9ª Prestação de Propinas de CET's</td>
+                            <td></td>
+                            <td>2025-09-18</td>
+                            <td>2026-05-31</td>
+                            <td></td>
+                            <td>69.70 EUR</td>
+                            <td><input class="form-check-input" type="checkbox" id="gridCheck"></td>
+                        </tr>
+                        <tr>
+                            <td>2025/26</td>
+                            <td>B</td>
+                            <td>123456789</td>
+                            <td>10ª Prestação de Propinas de CET's</td>
+                            <td></td>
+                            <td>2025-09-18</td>
+                            <td>2026-06-30</td>
+                            <td></td>
+                            <td>69.70 EUR</td>
+                            <td><input class="form-check-input" type="checkbox" id="gridCheck"></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="content-box2">
+                <h6>Opção 1 - Pagamento via Multibanco - Pagamento de Serviços</h6>
+
+                <p>Através da SIBS, pode proceder aos pagamentos utilizando as referências listadas. Quer seja por Multibanco ou através de homebanking.</p>
+                <h6>Processamento de Transações - <span class="cor-erro">NÃO IMEDIATO</span></h6>
+                <ul>
+                    <li>Tem de efectuar um pagamento de cada vez.</li>
+                    <li>O processamento é efectuado pelo sistema todos os dias pelas 22h00, pelo que só depois de efectuado este processamento o InfoAlunos reflectirá a conta-corrente actual do Aluno.</li>
+                </ul>
+
+                <h6>Processo de Pagamento</h6>
+                <ul>
+                    <li>No Multibanco ou homebanking, seleccione "Pagamento de Serviços".</li>
+                    <li>Como Entidade introduza 20697, como referência, utilize a Refª MB acima listada.</li>
+                </ul>
+
+                <h6>Atenção - Data Limite de Pagamento Ultrapassada</h6>
+
+                <p>Se for <span class="bold-text">ultrapassada a data</span> limite de pagamento serão aplicados <span class="bold-text">juros de mora à taxa legal em vigor.</span></p>
+                <p><span class="bold-text">Depois do pagamento</span>, e de forma automática, é criado um <span class="bold-text">novo registo</span> para pagamento com o valor dos juros de mora calculados.</p>
+            </div>
+            <div class="content-box3">
+                <h6>Opção 2 - Pagamento via Cartão de Crédito</h6>
+
+                <p>Através da REDUNICRE, pode proceder aos pagamentos via Cartão de Crédito. Se quiser pode gerar um MBNet para usar esta modalidade.</p>
+                <h6>Processamento de Transações - <span class="cor-erro">IMEDIATO</span></h6>
+                <ul>
+                    <li>Pode pagar vários produtos de uma vez só.</li>
+                    <li>Ao regressar ao InfoAlunos, terá imediatamente os seus dados actualizados.</li>
+                </ul>
+                <h6>Processo de Pagamento</h6>
+                <ul>
+                    <li>Na tabela desta página, clique nas linhas correspondentes, a coluna "Pagar via Cartão de Crédito".</li>
+                    <li>Clique no botão "Iniciar Pagamento".</li>
+                </ul>
+
+                <h6>Atenção - Data Limite de Pagamento Ultrapassada</h6>
+
+                <p>Se for <span class="bold-text">ultrapassada a data</span> limite de pagamento serão aplicados <span class="bold-text">juros de mora à taxa legal em vigor.</span></p>
+                <p><span class="bold-text">Depois do pagamento</span>, e de forma automática, é criado um <span class="bold-text">novo registo</span> para pagamento com o valor dos juros de mora calculados.</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
