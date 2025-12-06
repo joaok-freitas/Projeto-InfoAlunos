@@ -1,0 +1,77 @@
+.content {
+	grid-area: content;
+	display: grid;
+	grid-template-areas:
+        "b1";
+	padding: 20px;
+	gap: 10px;
+	grid-template-columns: repeat(1, 1fr);
+	grid-template-rows: auto auto auto;
+}
+
+.content-box1 {
+    grid-area: b1;
+	background-color: var(--cor-claro);
+	color: var(--cor-escuro);
+	padding: 20px;
+	box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+	border-radius: 8px;
+}
+
+.content-box1 h2 {
+    text-align: center;
+}
+
+.page-info {
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+    align-items: center;
+}
+
+td, th {
+    border: none;
+	border-bottom: 1px solid var(--cor-secundaria);
+	padding: 8px 15px;
+	background-color: initial;
+	color: light-dark(var(--cor-preto), var(--cor-branco));
+}
+
+tr:hover {
+    background-color: initial;
+}
+
+.cartao-image {
+    position: relative;
+    background-image: url(/img/uni-card.gif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 15px;
+    padding: 1em;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+    min-height: 213px;
+    min-width: 300px;
+}
+
+.cartao-image p {
+    margin: 0;
+    font-size: small;
+}
+
+.cartao-texto{
+    position: absolute;
+    bottom: 14px;
+    left: 14px;
+
+}
+
+.card-info {
+    display: flex;
+    justify-content: space-between;
+    width: 140%;
+}
+
+.cartao-imagem {
+    position: absolute;
+    right: 14px;
+}
