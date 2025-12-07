@@ -26,7 +26,8 @@
 
 .site-title {
 	margin-left: 100px;
-	color: var(--cor-preto)
+	color: var(--cor-branco);
+	font-size: x-large
 }
 
 .top-bar-user-div {
