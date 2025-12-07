@@ -325,6 +325,13 @@ ul[popover] {
 	transition: border-color .2s ease;
 }
 
+.form-control:disabled {
+  background-color: var(--cor-secundaria);
+  color: var(--cor-preto);
+  cursor: not-allowed;
+  opacity: 0.7;
+}
+
 .form-control::placeholder {
 	color: light-dark(var(--cor-escuro), var(--cor-secundaria));
 	font-weight: bolder;
@@ -527,7 +534,7 @@ details[open] .navbar-dropdown-icon::after {
 .tabs__content {
 	order: 1; /* agrupar content */
 	width: 100%;
-	padding: 30px;
+	padding-top: 30px;
 	border-top: 2px solid var(--cor-secundaria);
 	display: none;
 	color: light-dark(var(--cor-preto), var(--cor-branco));
