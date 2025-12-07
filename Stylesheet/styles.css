@@ -507,48 +507,38 @@ details[open] .navbar-dropdown-icon::after {
 
 /* navstabs styles */
 
-.grid {
-	display: grid;
-	grid-template-columns: repeat(3, minmax(200px, 1fr));
-	grid-template-rows: auto 1fr;
+.tabs {
+	display: flex;
+	flex-wrap: wrap;
+	max-width: 400px;
 }
 
-.grid details{
-	/* Arrebenta tudo idk why? literally copy paste form moodle
-	display: grid;
-	grid-template-columns: subgrid;
-	grid-template-rows: subgrid;
-	grid-column: 1 / -1;
-	grid-row: 1 / span 2;
-	*/
-	border-bottom: 1px solid var(--cor-escuro);
-}
-
-.grid summary{
-	--tab-order: attr(data-tab-order type(<integer>));
-	grid-column: var(--tab-order) / span 1;
-	grid-row: 1;
-	display: grid;
-	padding: 1rem;
-	border-bottom: 1px solid var(--cor-escuro);
+.tabs__label { /* estilo das tabs */
+	padding: 10px 16px;
 	cursor: pointer;
-	z-index: 1;
 }
-.grid details[open] :is(summary){
+
+.tabs__radio { /* Esconder os radio buttons */
+	display: none;
+}
+
+.tabs__content {
+	order: 1; /* agrupar content */
+	width: 100%;
+	padding: 30px;
+	border-top: 2px solid var(--cor-secundaria);
+	display: none;
+}
+
+.tabs__radio:checked + .tabs__label { /* estilo da tab ativa */
 	font-weight: bold;
-	pointer-events: none;
-	border: 1px solid var(--cor-escuro);
-	border-top-left-radius: 8px;
-	border-top-right-radius: 8px;
+	color: var(--cor-informacao);
+	border-top: 2px solid var(--cor-informacao);
 	border-bottom: none;
 }
-.grid details::details-content{
-	grid-column: 1 / -1;
-	grid-row: 2;
-	padding: 1rem;
-}
-.grid details:not([open])::details-content{
-	display: none;
+
+.tabs__radio:checked + .tabs__label + .tabs__content {
+	display: initial;
 }
 
 /* pagination styles */

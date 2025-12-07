@@ -254,19 +254,17 @@
 
         <div class="navtab-div separation">
             <h3>15 - Navs e Tabs</h3>
-            <div class="grid">
-                <details name="tabs" open>
-                    <summary data-tab-order="1">Tab1</summary>
-                    <div>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eius molestias repell
-                </details>
-                <details name="tabs">
-                    <summary data-tab-order="2">Tab2</summary>
-                    <div>Voluptatibus quam consectetur fuga dolorem praesentium atque facere nam distinctio
-                </details>
-                <details name="tabs">
-                    <summary data-tab-order="3">Tab3</summary>
-                    <div>Sapiente ea nulla, reiciendis non harum sed delectus error laudantium impedit
-                </details>
+            <div class="tabs">
+                <input type="radio" class="tabs__radio" name="tabs-example" id="tab1" checked>
+                <label for="tab1" class="tabs__label">Tab #1</label>
+                <div class="tabs__content">
+                    CONTENT for Tab #1
+                </div>
+                <input type="radio" class="tabs__radio" name="tabs-example" id="tab2">
+                <label for="tab2" class="tabs__label">Tab #2</label>
+                <div class="tabs__content">
+                    CONTENT for Tab #2
+                </div>
             </div>
         </div>
 
