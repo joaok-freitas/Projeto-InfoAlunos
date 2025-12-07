@@ -1,0 +1,81 @@
+.content {
+	grid-area: content;
+	display: grid;
+	grid-template-areas:
+        "b1 b1"
+        "b2 b3";
+	padding: 20px;
+	gap: 10px;
+	grid-template-columns: repeat(2, 1fr);
+	grid-template-rows: auto auto auto;
+}
+
+.content-box1, .content-box2, .content-box3 {
+	background-color: var(--cor-claro);
+	color: var(--cor-escuro);
+	padding: 20px;
+	box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+	border-radius: 8px;
+}
+
+.content-box1 {
+    position: relative;
+    grid-area: b1;
+}
+.content-box2 {
+    grid-area: b2;
+}
+.content-box3 {
+    grid-area: b3;
+}
+
+.content-box1 h6, .content-box2 h6, .content-box3 h6 {
+    margin-top: 0;
+}
+
+.pesquisa-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.form-select {
+    width: 300px;
+}
+
+.pesquisa-content2 .form-control {
+    width: 150px;;
+}
+
+.pesquisa-content2 .filter-label {
+    margin-left: 50px;
+}
+
+.content-box1 > .btn {
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+}
+
+.content-box3 .tab2-input {
+    width: 100px;
+}
+
+.content-box3 .btn {
+    margin-left: 20px;
+    margin-bottom: 50px;
+}
+
+.content-box3 .tab1-input {
+    width: 200px;
+    align-self: right;
+}
+
+.tab1-content {
+    display: flex;
+    flex-direction: column;
+}
+
+h6.title-margin {
+    margin-top: 20px;
+}
