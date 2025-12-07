@@ -510,12 +510,14 @@ details[open] .navbar-dropdown-icon::after {
 .tabs {
 	display: flex;
 	flex-wrap: wrap;
-	max-width: 400px;
 }
 
 .tabs__label { /* estilo das tabs */
+	font-weight: bold;
+	border-top: 2px solid transparent;
 	padding: 10px 16px;
 	cursor: pointer;
+	color: light-dark(var(--cor-preto), var(--cor-branco));
 }
 
 .tabs__radio { /* Esconder os radio buttons */
@@ -528,10 +530,10 @@ details[open] .navbar-dropdown-icon::after {
 	padding: 30px;
 	border-top: 2px solid var(--cor-secundaria);
 	display: none;
+	color: light-dark(var(--cor-preto), var(--cor-branco));
 }
 
 .tabs__radio:checked + .tabs__label { /* estilo da tab ativa */
-	font-weight: bold;
 	color: var(--cor-informacao);
 	border-top: 2px solid var(--cor-informacao);
 	border-bottom: none;
