@@ -315,7 +315,7 @@ ul[popover] {
 /* Forms styles */
 .form-control, .form-select {
 	padding: 10px;
-	border: 2px solid var(--cor-escuro);
+	border: 2px solid light-dark(var(--cor-escuro), var(--cor-branco));
 	background-color: var(--cor-claro);
 	outline: none;
 	border-radius: 5px;
@@ -363,7 +363,7 @@ ul[popover] {
 	border-color: var(--cor-sucesso);
 }
 
-.form-label {
+.form-label, .form-check-label {
 	color: light-dark(var(--cor-preto), var(--cor-branco));
 }
 
