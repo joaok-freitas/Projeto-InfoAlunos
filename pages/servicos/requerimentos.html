@@ -1,0 +1,586 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/Stylesheet/styles.css">
+    <link rel="stylesheet" href="/default.css">
+    <link rel="stylesheet" href="requerimentos.css">
+    <title>InfoAlunos: Serviço de Informação dos Alunos</title>
+</head>
+<body>
+    <div class="fullpage-container">
+        <div class="top-bar">
+            <div class="top-bar-content">
+                <div class="top-bar-item">
+                    <!-- <img src="/img/colored-logo.png" alt="Logo da Universidade da Madeira" class="website-logo"> -->
+                    <img src="/img/white-logo.png" alt="Logo da Universidade da Madeira" class="website-logo">
+                </div>
+                <div class="top-bar-item">
+                    <h3 class="site-title">InfoAlunos - Serviço de Informação dos Alunos</h3>
+                </div>
+                <div class="top-bar-user-div">
+                    <label class="tooltip">
+                        <input type="checkbox" class="tooltip-toggle">
+                        <span class="tooltip-button"><img src="https://placehold.co/64x64/png" alt="Foto do utilizador" class="user-image"></span>
+                        <div class="tooltiptext">
+                            <h4>Marcelo Rebelo de Sousa</h4>
+                            <h5>Tecnologias e Programação de Sistemas de Informação</h5>
+                            <input type="checkbox" id="darkmode-toggle">
+                            <label for="darkmode-toggle">
+                                <span class="toggle-track"></span>
+                                <span class="toggle-text">Modo escuro</span>
+                            </label>
+                            <div class="tooltip-link-div">
+                                <a href="#">curso@mail.uma.pt</a>
+                            </div>
+                            <div class="tooltip-link-div">
+                                <a href="#">Alterar Password</a>
+                            </div>
+                            <div class="tooltip-link-div">
+                                <a href="#">Alterar Foto</a>
+                            </div>
+                            <div class="tooltip-link-div">
+                                <a href="#">Sair</a>
+                            </div>
+                        </div>
+                    </label>
+                </div>
+            </div>
+        </div>
+        <div class="navbar">
+            <div class="subnav-content nav-direct-link">
+                <a href="/index.html">Início</a>
+            </div>
+            <details class="subnav" name="subnav-btn">
+                <summary class="subnavbtn">Geral<i class="navbar-dropdown-icon"></i></summary>  <!-- ALTERAR O ICON E DEPOIS REMOVER ESTE COMMENT -->
+                <div class="subnav-content">
+                    <a href="/pages/geral/processos.html">Processos</a>
+                    <a href="/pages/geral/dados-pessoais.html">Dados Pessoais</a>
+                    <a href="/pages/geral/privacidade.html">Privacidade</a>
+                    <a href="/pages/geral/ajuda.html">Ajuda</a>
+                </div>
+            </details>
+            <details class="subnav" name="subnav-btn">
+                <summary class="subnavbtn">Serviços<i class="navbar-dropdown-icon"></i></summary>
+                <div class="subnav-content">
+                    <a href="/pages/servicos/pagamentos.html">Pagamentos</a>
+                    <a href="/pages/servicos/matriculas-inscricoes.html">Matrículas/Inscrições</a>
+                    <a href="/pages/servicos/inscricao-turmas.html">Inscrição em Turmas</a>
+                    <a href="/pages/servicos/requerimentos.html">Requerimentos</a>
+                    <a href="/pages/servicos/cartao-universitario.html">Cartão Universitário</a>
+                    <a target="_blank" rel="noopener noreferrer" href="http://www.sasuma.pt/?IDM=PT&ID0=1765029136&ID1=&ID2=0&ID3=3e3cf8a5f53db6eaef66ad737916e2f7">SASUMa-Bolsas</a>
+                </div>
+            </details>
+            <details class="subnav" name="subnav-btn">
+                <summary class="subnavbtn">Concursos<i class="navbar-dropdown-icon"></i></summary>
+                <div class="subnav-content">
+                    <a href="/pages/concursos/candidaturas.html">Candidaturas</a>
+                </div>
+            </details>
+            <details class="subnav" name="subnav-btn">
+                <summary class="subnavbtn">Avaliação<i class="navbar-dropdown-icon"></i></summary>
+                <div class="subnav-content">
+                    <a href="/pages/avaliacao/pautas.html">Pautas</a>
+                    <a href="/pages/avaliacao/reclamacao-notas.html">Reclamação de Notas</a>
+                    <a href="/pages/avaliacao/inqueritos.html">Inquéritos</a>
+                    <a href="/pages/avaliacao/resultado-inqueritos.html">Resultado de Inquéritos</a>
+                    <a href="/pages/avaliacao/inquerito-raides.html">Inquérito RAIDES</a>
+                </div>
+            </details>
+            <details class="subnav" name="subnav-btn">
+                <summary class="subnavbtn">Creditações<i class="navbar-dropdown-icon"></i></summary>
+                <div class="subnav-content">
+                    <a href="/pages/creditacoes/lista-processos.html">Lista Processos</a>
+                    <a href="/pages/creditacoes/novo-processo.html">Novo Processo</a>
+                </div>
+            </details>
+            <details class="subnav" name="subnav-btn">
+                <summary class="subnavbtn">Documentos<i class="navbar-dropdown-icon"></i></summary>
+                <div class="subnav-content">
+                    <a href="/pages/documentos/academicos.html">Académicos</a>
+                    <a href="/pages/documentos/declaracoes.html">Declarações</a>
+                </div>
+            </details>
+            <details class="subnav" name="subnav-btn">
+                <summary class="subnavbtn">Aula<i class="navbar-dropdown-icon"></i></summary>
+                <div class="subnav-content">
+                    <a href="/pages/aula/calendario.html">Calendário</a>
+                    <a href="/pages/aula/sumarios.html">Sumários</a>
+                </div>
+            </details>
+            <details class="subnav" name="subnav-btn">
+                <summary class="subnavbtn">Disciplina<i class="navbar-dropdown-icon"></i></summary>
+                <div class="subnav-content">
+                    <a href="/pages/disciplina/ficha.html">Ficha</a>
+                    <a href="/pages/disciplina/programa.html">Programa</a>
+                    <a href="/pages/disciplina/ficheiros.html">Ficheiros</a>
+                </div>
+            </details>
+            <details class="subnav" name="subnav-btn">
+                <summary class="subnavbtn">Curso<i class="navbar-dropdown-icon"></i></summary>
+                <div class="subnav-content">
+                    <a href="/pages/curso/ficha-curricular.html">Ficha Curricular</a>
+                    <a href="/pages/curso/horarios.html">Horários</a>
+                    <a href="/pages/curso/historico-matriculas.html">Histórico de Matrículas-Inscrições</a>
+                    <a href="/pages/curso/historico-disciplinas.html">Histórico de Disciplinas Aprovadas</a>
+                    <a href="/pages/curso/transicao-bolonha.html">Transição para Bolonha</a>
+                    <a href="/pages/curso/plano-conclusao.html">Plano de conclusão</a>
+                    <a href="/pages/curso/quadro-prescricao.html">Quadro de Prescrição</a>
+                    <a href="/pages/curso/atividades-academicas.html">Atividades Académicas do Aluno</a>
+                </div>
+            </details>
+            <details class="subnav" name="subnav-btn">
+                <summary class="subnavbtn">Instituição<i class="navbar-dropdown-icon"></i></summary>
+                <div class="subnav-content">
+                    <a href="/pages/instituicao/estrutura-organica.html">Estrutura Orgânica</a>
+                </div>
+            </details>
+            <div class="subnav-content nav-direct-link">
+                <a href="/pages/eleicoes.html">Eleições</a>
+            </div>
+        </div>
+        <div class="footer">
+            <p>© Universidade da Madeira - Gabinete de Desenvolvimento de Aplicações Informáticas - <a href="https://www.uma.pt/privacidade-e-termos-de-utilizacao/">Proteção de Dados e Termos de Utilização</a><br>
+            Colégio dos Jesuitas, 9000-081 Funchal | Tel: +351 291 209400 | Fax: +351 291 209410</p>
+        </div>
+        <div class="content">
+            <div class="content-box1">
+                <div class="tabs">
+                    <input type="radio" class="tabs__radio" name="tabs-example" id="tab1" checked>
+                    <label for="tab1" class="tabs__label">Lista de Requerimentos</label>
+                    <div class="tabs__content">
+                        <h6>Para inserir um novo requerimento clique no tabulador 'Submeter Novo/Detalhe'.</h6>
+                        <div class="filter-section">
+                            <label for="inputFilterType" class="form-label">Filtrar por Tipo de Pedido</label>
+                            <select id="inputFilterType" class="form-select">
+                                <option selected></option>
+                                <option>Adiamento de entrega de dissertação/tese/relatório de estágio (com justificação)</option>
+                                <option>Alteração de Inscrição (por via de creditações)</option>
+                                <option>Alteração de Propinas para 10 Prestações (Deliberação CG nº 152/2011)</option>
+                                <option>Alteração do Estatuto a Tempo Integral/Parcial</option>
+                                <option>Anulação de Inscrição em unidades curriculares singulares (Despacho 70/AA/R/2019)</option>
+                                <option>Anulação de Matrícula/Inscrição</option>
+                                <option>Anulação de Unidades Curriculares</option>
+                                <option>Carta de agregação (Diploma)</option>
+                                <option>Carta de curso: Grau de licenciado (Diploma)</option>
+                                <option>Carta de curso: Grau de Mestre (Diploma)</option>
+                                <option>Carta Doutoral (Diploma)</option>
+                                <option>Certidão Aproveitamento (Trabalhador-Estudante)</option>
+                                <option>Certidão de Aproveitamento Escolar, unidades curriculares realizadas</option>
+                                <option>Certidão de Registo de Diploma de Curso Técnico Superior Profissional</option>
+                                <option>Certidão de Registo de Grau</option>
+                                <option>Certidão de Registo de Grau ou de Diploma de Curso Técnico Superior Profissional</option>
+                                <option>Certificado Aproveitamento  Escolar</option>
+                                <option>Certificado Aproveitamento Escolar</option>
+                                <option>Certificado de Carga Horária e Programas de Unidades Curriculares Realizadas</option>
+                                <option>Certificado de Conclusao de Ciclo de Estudos</option>
+                                <option>Certificado de Conclusao de Ciclo de Estudos (Em Inglês)</option>
+                                <option>Certificado de Conclusão de Ciclo de Estudos 1ª vez/sem Diploma</option>
+                                <option>Certificado de Conclusão de Curso (2ª via) (50,00 euros)</option>
+                                <option>Certificado de Conclusão de Curso Breve</option>
+                                <option>Certificado de conclusão de cursos conferentes ou não de grau com o mínimo de  60 ECTS</option>
+                                <option>Certificado de Inscrição,  Matrícula ou Frequência</option>
+                                <option>Certificado de Inscrição, Matrícula ou Frequência</option>
+                                <option>Certificado de Inscrição-Horário</option>
+                                <option>Certificado de Matrícula</option>
+                                <option>Certificado de Unidades Curriculares Aprovadas</option>
+                                <option>Certificado de Unidades Curriculares Realizadas</option>
+                                <option>Comprovativo de Nacionalidade</option>
+                                <option>Declaração de aproveitamento para fins sociais, para estudantes inscritos em tese e/ou dissertação</option>
+                                <option>Declarações Diversas</option>
+                                <option>Declarações e Outros Não Especificados</option>
+                                <option>Devolução de Documentos</option>
+                                <option>Diploma de Conclusão</option>
+                                <option>Diploma de Especialização Tecnológica</option>
+                                <option>Diploma de Estudos Avançados</option>
+                                <option>Entrega da dissertação/tese/relatório de estágio para defesa pública</option>
+                                <option>Época de Recurso (por motivo imputável à UMa)</option>
+                                <option>Época Especial - Abril - Cursos que terminam no 1º Semestre 2011/2012</option>
+                                <option>Estatuto de Atleta Estudante (Dec-Lei nº 55/2019)</option>
+                                <option>Estatuto de Mãe-Estudante (Lei nº 90/2001)</option>
+                                <option>Estatuto de Trabalhador-Estudante</option>
+                                <option>Fotocópias Autenticadas</option>
+                                <option>Inscrição em exame - época especial (por motivo imputável à UMa)</option>
+                                <option>Inscrição em Melhoria de Nota (por motivo imputável à UMa)</option>
+                                <option>Isenção de pagamento de propinas</option>
+                                <option>Justificação de faltas com fundamentação (art.º 11.º do Reg. de Avaliação da UMa)</option>
+                                <option>Medida de Apoio a Alunos com Necessidades Educativas Especiais (artº17º RAAUMa)</option>
+                                <option>Melhoria em Ép Recurso (justificação de não inscrição por motivo imputável à UMa)</option>
+                                <option>Outros Diplomas não conferentes de Grau</option>
+                                <option>Pedido de admissão a provas de doutoramento</option>
+                                <option>Pedido de exame de época especial</option>
+                                <option>Pedido de Reembolso</option>
+                                <option>Pedido de Revisão de Prova (Artigo 15º)</option>
+                                <option>Programas/Plano de Estudos</option>
+                                <option>Reclamação</option>
+                                <option>Redução de Propinas (de acordo com o regulamento de propinas)</option>
+                                <option>Regularização de Dívidas</option>
+                                <option>Requerimento não especificado</option>
+                                <option>Requerimentos não especificados</option>
+                                <option>Suplemento ao diploma (2ª via)</option>
+                            </select>
+                            <label for="inputFilterDispatch" class="form-label">Filtrar por Despacho</label>
+                            <select id="inputFilterDispatch" class="form-select">
+                                <option selected></option>
+                                <option>1 do Despacho nº 104/R/07</option>
+                                <option>Actas</option>
+                                <option>Aguarda Análise</option>
+                                <option>Aguarda Dados</option>
+                                <option>Aprovado</option>
+                                <option>Consultar a pág. dos maiores de 23 anos</option>
+                                <option>Contactar Assuntos Académicos (UAA)</option>
+                                <option>Contactar Departamento/Informática</option>
+                                <option>Contactar Gabinete de Apoio ao Estudante</option>
+                                <option>Contactar Sector Comunic.e Informática</option>
+                                <option>Deferido</option>
+                                <option>Deferido c/ Alterações</option>
+                                <option>Deferido/Indeferido</option>
+                                <option>Doc. a Levantar no Gabinete de Apoio ao Estudante</option>
+                                <option>Doc. a levantar nos Assuntos Académicos</option>
+                                <option>Doc. a Preencher e Levantar Balcão (UAA)</option>
+                                <option>Doc. a Preencher e Levantar no Gabinete de Apoio ao Estudante</option>
+                                <option>Documentos Entregues ao Aluno</option>
+                                <option>Em Análise</option>
+                                <option>Emitido(a)/Documento a levantar no Gabinete de Apoio ao Estudante</option>
+                                <option>Emitido(a)/Enviado Expedição Correio</option>
+                                <option>Emitido/Doc levantar no GE Internacional</option>
+                                <option>Enviado para recuperação de dívida (Desp./Resol.)</option>
+                                <option>Indeferido</option>
+                                <option>Informar-se do parecer jurídico</option>
+                                <option>Prorrogação de mestrados antes 2010/11</option>
+                                <option>Resolvido</option>
+                                <option>Sem direito a expedição por correio</option>
+                                <option>Sem Efeito/Anulado</option>
+                            </select>
+                            <button class="btn btn-primario">Filtrar</button>
+                        </div>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-exclamation-triangle-fill" viewBox="0 0 16 16">
+                        <symbol id="info-warning" viewBox="0 0 16 16">
+                            <path d="M8.982 1.566a1.13 1.13 0 0 0-1.96 0L.165 13.233c-.457.778.091 1.767.98 1.767h13.713c.889 0 1.438-.99.98-1.767zM8 5c.535 0 .954.462.9.995l-.35 3.507a.552.552 0 0 1-1.1 0L7.1 5.995A.905.905 0 0 1 8 5m.002 6a1 1 0 1 1 0 2 1 1 0 0 1 0-2"/>
+                        </symbol>
+                    </svg>
+                    <div class="alert alert-warning" role="alert">
+                        <div>
+                            <svg role="img" aria-label="Info:"><use xlink:href="#info-warning"/></svg> Os pedidos com emolumentos só serão processados após boa cobrança. Consulte no menu Serviços > Pagamentos como efecutar os pagamentos por liquidar. 
+                        </div>
+                    </div>
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th scope="col">Cod. Entrada</th>
+                                <th scope="col">Tipo</th>
+                                <th scope="col">Ano Letivo</th>
+                                <th scope="col">Assunto</th>
+                                <th scope="col">Data Pedido</th>
+                                <th scope="col">Data Entrada<br>Data Saída</th>
+                                <th scope="col">Despacho<br>Obs</th>
+                                <th scope="col">Emolumentos</th>
+                                <th scope="col">Pago</th>
+                            </tr>
+                        </thead>
+                        <tbody class="table-group-divider">
+                            <tr>
+                                <th scope="row">1234/25</th>
+                                <td>Declarações e Outros Não Especificados</td>
+                                <td>2025/26</td>
+                                <td>declaração da prova +23</td>
+                                <td>2025-07-23</td>
+                                <td>2025-07-23<br>2025-07-24</td>
+                                <td>Documentos Entregues ao Aluno</td>
+                                <td>✓</td>
+                                <td>✓</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    </div>
+                    <input type="radio" class="tabs__radio" name="tabs-example" id="tab2">
+                    <label for="tab2" class="tabs__label">Submeter Novo/Detalhe</label>
+                    <div class="tabs__content">
+                        <h6>Despacho</h6>
+                        <div class="section">
+                            <div>
+                                <label for="inputDispatchData" class="form-label">Data do Despacho:</label>
+                                <input type="text" class="form-control" id="inputDispatchData" disabled>
+                                <label for="inputDispatch" class="form-label">Despacho:</label>
+                                <input type="text" class="form-control" id="inputDispatch" disabled>
+                                <label for="inputJustification" class="form-label">Justificação:</label>
+                                <input type="text" class="form-control" id="inputJustification" disabled>
+                            </div>
+                            <div>
+                                <label for="inputEntryCode" class="form-label">Cod. Entrada:</label>
+                                <input type="text" class="form-control" id="inputEntryCode" disabled>
+                                <label for="inputEntryDate" class="form-label">Data Entrada:</label>
+                                <input type="text" class="form-control" id="inputEntryDate" disabled>
+                                <label for="inputOrigin" class="form-label">Origem:</label>
+                                <input type="text" class="form-control" id="inputOrigin" disabled>
+                                <label for="inputPostingDate" class="form-label">Data de afixação:</label>
+                                <input type="text" class="form-control" id="inputPostingDate" disabled>
+                            </div>
+                        </div>
+                        <h6>Pedido</h6>
+                        <div class="section">
+                            <div>
+                                <label for="inputCourse" class="form-label">Curso:</label>
+                                <select id="inputCourse" class="form-select">
+                                    <option selected></option>
+                                    <option>Tecnologias e Programação de Sistemas de Informação (CTeSP)</option>
+                                </select>
+                                <label for="inputAcademicYear" class="form-label">Ano Letivo:</label>
+                                <input type="text" class="form-control" id="inputAcademicYear" disabled>
+                                <label for="inputRequest" class="form-label">Pedido:</label>
+                                <input type="text" class="form-control" id="inputRequest" disabled>
+                                <label for="inputSubject" class="form-label">Assunto:</label>
+                                <input type="text" class="form-control" id="inputSubject">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="gridUrgentCheck">
+                                    <label class="form-check-label" for="gridUrgentCheck">Taxa de Urgência</label>
+                                </div>
+                                <button class="btn btn-secondary">Anexar Documento</button>
+                            </div>
+                            <div>
+                                <label for="inputStudentNumber" class="form-label">Nº Aluno:</label>
+                                <input type="text" class="form-control" id="inputStudentNumber" value="1234567" disabled>
+                                <label for="inputEntity" class="form-label">Entidade:</label>
+                                <input type="text" class="form-control" id="inputEntity" value="Marcelo Rebelo de Sousa" disabled>
+                                <label for="inputRequestDate" class="form-label">Data do Pedido:</label>
+                                <input type="text" class="form-control" id="inputRequestDate" disabled>
+                                <label for="inputObservations" class="form-label">Observações:</label>
+                                <input type="text" class="form-control" id="inputObservations" disabled>
+                            </div>
+                        </div>
+                        <h6>Expedição por Correio</h6>
+                        <div class="section">
+                            <div>
+                                <label for="inputCountry" class="form-label">País:</label>
+                                <select id="inputCountry" class="form-select">
+                                    <option selected></option>
+                                    <option>Portugal</option>
+                                    <option>Afeganistão</option>
+                                    <option>África do Sul</option>
+                                    <option>Albânia</option>
+                                    <option>Alemanha</option>
+                                    <option>Andorra</option>
+                                    <option>Angola</option>
+                                    <option>Anguila</option>
+                                    <option>Antígua e Barbuda</option>
+                                    <option>Antilhas Holandesas</option>
+                                    <option>Arábia Saudita</option>
+                                    <option>Argélia</option>
+                                    <option>Argentina</option>
+                                    <option>Arménia</option>
+                                    <option>Aruba</option>
+                                    <option>Austrália</option>
+                                    <option>Áustria</option>
+                                    <option>Azerbeijão</option>
+                                    <option>Bahamas</option>
+                                    <option>Bahrain</option>
+                                    <option>Bangladesh</option>
+                                    <option>Barbados</option>
+                                    <option>Bélgica</option>
+                                    <option>Belize</option>
+                                    <option>Benim</option>
+                                    <option>Bermudas</option>
+                                    <option>Bielorrússia</option>
+                                    <option>Bolívia</option>
+                                    <option>Bonaire, Santo Eustáquio e Saba</option>
+                                    <option>Bósnia-Herzegovina</option>
+                                    <option>Botswana</option>
+                                    <option>Bourkina Faso</option>
+                                    <option>Brasil</option>
+                                    <option>Brunei</option>
+                                    <option>Bulgária</option>
+                                    <option>Burundi</option>
+                                    <option>Butão</option>
+                                    <option>Cabo Verde</option>
+                                    <option>Camarões</option>
+                                    <option>Cambodja</option>
+                                    <option>Canadá</option>
+                                    <option>Cazaquistão</option>
+                                    <option>Centro Africana</option>
+                                    <option>Chéquia</option>
+                                    <option>Chile</option>
+                                    <option>China</option>
+                                    <option>Chipre</option>
+                                    <option>Colômbia</option>
+                                    <option>Congo</option>
+                                    <option>Coreia do Norte</option>
+                                    <option>Coreia do Sul</option>
+                                    <option>Costa do Marfim</option>
+                                    <option>Costa Rica</option>
+                                    <option>Croácia</option>
+                                    <option>Cuba</option>
+                                    <option>Dinamarca</option>
+                                    <option>Djibouti</option>
+                                    <option>Domínica</option>
+                                    <option>Egito</option>
+                                    <option>Emiratos Árabes Unidos</option>
+                                    <option>Equador</option>
+                                    <option>Eritreia</option>
+                                    <option>Eslováquia</option>
+                                    <option>Eslovénia</option>
+                                    <option>Espanha</option>
+                                    <option>Estados Federados da Micronésia</option>
+                                    <option>Estados Unidos da América</option>
+                                    <option>Estónia</option>
+                                    <option>Etiópia</option>
+                                    <option>Federação Russa</option>
+                                    <option>Feroe</option>
+                                    <option>Fiji</option>
+                                    <option>Filipinas</option>
+                                    <option>Finlândia</option>
+                                    <option>França</option>
+                                    <option>Gabão</option>
+                                    <option>Gâmbia</option>
+                                    <option>Geórgia</option>
+                                    <option>Ghana</option>
+                                    <option>Gibraltar</option>
+                                    <option>Grécia</option>
+                                    <option>Gronelândia</option>
+                                    <option>Guadalupe</option>
+                                    <option>Guam</option>
+                                    <option>Guatemala</option>
+                                    <option>Guiana</option>
+                                    <option>Guiana Francesa</option>
+                                    <option>Guiné</option>
+                                    <option>Guiné Equatorial</option>
+                                    <option>Guiné-Bissau</option>
+                                    <option>Haiti</option>
+                                    <option>Holanda</option>
+                                    <option>Honduras</option>
+                                    <option>Hong Kong</option>
+                                    <option>Hungria</option>
+                                    <option>Iémen</option>
+                                    <option>Ilha Bouvet</option>
+                                    <option>Ilhas Aland</option>
+                                    <option>Ilhas Caimão</option>
+                                    <option>Ilhas Maldivas</option>
+                                    <option>Ilhas Maurícias</option>
+                                    <option>Indonésia</option>
+                                    <option>Irão</option>
+                                    <option>Iraque</option>
+                                    <option>Irlanda</option>
+                                    <option>Islândia</option>
+                                    <option>Israel</option>
+                                    <option>Itália</option>
+                                    <option>Jamaica</option>
+                                    <option>Japão</option>
+                                    <option>Jordânia</option>
+                                    <option>Jugoslávia</option>
+                                    <option>Kosovo</option>
+                                    <option>Kuwait</option>
+                                    <option>Lesoto</option>
+                                    <option>Letónia</option>
+                                    <option>Líbano</option>
+                                    <option>Libéria</option>
+                                    <option>Líbia</option>
+                                    <option>Liechetenstein</option>
+                                    <option>Lituânia</option>
+                                    <option>Luxemburgo</option>
+                                    <option>Macau</option>
+                                    <option>Macedónia</option>
+                                    <option>Madagáscar</option>
+                                    <option>Malásia</option>
+                                    <option>Malawi</option>
+                                    <option>Mali</option>
+                                    <option>Malta</option>
+                                    <option>Marrocos</option>
+                                    <option>Martinica</option>
+                                    <option>Mauritânia</option>
+                                    <option>México</option>
+                                    <option>Moçambique</option>
+                                    <option>Moldova</option>
+                                    <option>Mónaco</option>
+                                    <option>Mongólia</option>
+                                    <option>Montenegro</option>
+                                    <option>Myanmar</option>
+                                    <option>Namíbia</option>
+                                    <option>Nauru</option>
+                                    <option>Nepal</option>
+                                    <option>Nicarágua</option>
+                                    <option>Níger</option>
+                                    <option>Nigéria</option>
+                                    <option>Noruega</option>
+                                    <option>Nova Caledónia</option>
+                                    <option>Nova Zelândia</option>
+                                    <option>Oman</option>
+                                    <option>Panamá</option>
+                                    <option>Papua Nova Guiné</option>
+                                    <option>Paquistão</option>
+                                    <option>Paraguai</option>
+                                    <option>Perú</option>
+                                    <option>Polinésia Francesa</option>
+                                    <option>Polónia</option>
+                                    <option>Qatar</option>
+                                    <option>Quénia</option>
+                                    <option>Quirguizistão</option>
+                                    <option>Reino Unido</option>
+                                    <option>República da Índia</option>
+                                    <option>República Democrática do Congo</option>
+                                    <option>República Dominicana</option>
+                                    <option>Roménia</option>
+                                    <option>Ruanda</option>
+                                    <option>Saipan</option>
+                                    <option>Salvador</option>
+                                    <option>Samoa</option>
+                                    <option>Samoa Americana</option>
+                                    <option>São Bartolomeu</option>
+                                    <option>São Marino</option>
+                                    <option>São Tomé e Príncipe</option>
+                                    <option>Senegal</option>
+                                    <option>Serra Leoa</option>
+                                    <option>Sérvia</option>
+                                    <option>Sérvia e Montenegro</option>
+                                    <option>Singapura</option>
+                                    <option>Síria</option>
+                                    <option>Sri Lanka</option>
+                                    <option>Suazilândia</option>
+                                    <option>Suécia</option>
+                                    <option>Suíça</option>
+                                    <option>Tailândia</option>
+                                    <option>Taiwan</option>
+                                    <option>Tajiquistão</option>
+                                    <option>Tanzânia</option>
+                                    <option>Timor-Leste</option>
+                                    <option>Tonga</option>
+                                    <option>Trinidade e Tobago</option>
+                                    <option>Tunísia</option>
+                                    <option>Turquia</option>
+                                    <option>Ucrânia</option>
+                                    <option>Uganda</option>
+                                    <option>Uruguai</option>
+                                    <option>Usbequistão</option>
+                                    <option>Venezuela</option>
+                                    <option>Vietnam</option>
+                                    <option>Zaire</option>
+                                    <option>Zâmbia</option>
+                                    <option>Zimbabwe</option>
+                                </select>
+                                <label for="inputExpedition" class="form-label">Expedição:</label>
+                                <input type="text" class="form-control" id="inputExpedition" disabled>
+                                <label for="inputAdress" class="form-label">Morada:</label>
+                                <input type="text" class="form-control" id="inputAdress">
+                                <label for="inputPostalCode" class="form-label">Código Postal:</label>
+                                <input type="text" class="form-control" id="inputPostalCode">
+                                <label for="inputLocality" class="form-label">Localidade:</label>
+                                <input type="text" class="form-control" id="inputLocality">
+                            </div>
+                            <div>
+                                <button class="btn btn-secondary">Limpar Campos (Novo Pedido)</button>
+                                <button class="btn btn-secondary" disabled>Cancelar Processo</button>
+                                <button class="btn btn-success">Guardar Processo</button>
+                                <h6>Emolumentos do Processo</h6>
+                                <p>Sem dados</p>
+                                <h6>Histórico dos Estados do Processo</h6>
+                                <p>Sem dados</p>
+                                <h6>Documentos Associados ao Processo</h6>
+                                <p>Sem dados</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
