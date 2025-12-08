@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/Stylesheet/styles.css">
+    <link rel="stylesheet" href="/default.css">
+    <link rel="stylesheet" href="ficha-curricular.css">
+    <title>InfoAlunos: Serviço de Informação dos Alunos</title>
+</head>
+<body>
+    <div class="fullpage-container">
+        <div class="top-bar">
+            <div class="top-bar-content">
+                <div class="top-bar-item">
+                    <!-- <img src="/img/colored-logo.png" alt="Logo da Universidade da Madeira" class="website-logo"> -->
+                    <img src="/img/white-logo.png" alt="Logo da Universidade da Madeira" class="website-logo">
+                </div>
+                <div class="top-bar-item">
+                    <h3 class="site-title">InfoAlunos - Serviço de Informação dos Alunos</h3>
+                </div>
+                <div class="top-bar-user-div">
+                    <label class="tooltip">
+                        <input type="checkbox" class="tooltip-toggle">
+                        <span class="tooltip-button"><img src="https://placehold.co/64x64/png" alt="Foto do utilizador" class="user-image"></span>
+                        <div class="tooltiptext">
+                            <h4>Marcelo Rebelo de Sousa</h4>
+                            <h5>Tecnologias e Programação de Sistemas de Informação</h5>
+                            <input type="checkbox" id="darkmode-toggle">
+                            <label for="darkmode-toggle">
+                                <span class="toggle-track"></span>
+                                <span class="toggle-text">Modo escuro</span>
+                            </label>
+                            <div class="tooltip-link-div">
+                                <a href="#">curso@mail.uma.pt</a>
+                            </div>
+                            <div class="tooltip-link-div">
+                                <a href="#">Alterar Password</a>
+                            </div>
+                            <div class="tooltip-link-div">
+                                <a href="#">Alterar Foto</a>
+                            </div>
+                            <div class="tooltip-link-div">
+                                <a href="#">Sair</a>
+                            </div>
+                        </div>
+                    </label>
+                </div>
+            </div>
+        </div>
+        <div class="navbar">
+            <div class="subnav-content nav-direct-link">
+                <a href="/index.html">Início</a>
+            </div>
+            <details class="subnav" name="subnav-btn">
+                <summary class="subnavbtn">Geral<i class="navbar-dropdown-icon"></i></summary>  <!-- ALTERAR O ICON E DEPOIS REMOVER ESTE COMMENT -->
+                <div class="subnav-content">
+                    <a href="/pages/geral/processos.html">Processos</a>
+                    <a href="/pages/geral/dados-pessoais.html">Dados Pessoais</a>
+                    <a href="/pages/geral/privacidade.html">Privacidade</a>
+                    <a href="/pages/geral/ajuda.html">Ajuda</a>
+                </div>
+            </details>
+            <details class="subnav" name="subnav-btn">
+                <summary class="subnavbtn">Serviços<i class="navbar-dropdown-icon"></i></summary>
+                <div class="subnav-content">
+                    <a href="/pages/servicos/pagamentos.html">Pagamentos</a>
+                    <a href="/pages/servicos/matriculas-inscricoes.html">Matrículas/Inscrições</a>
+                    <a href="/pages/servicos/inscricao-turmas.html">Inscrição em Turmas</a>
+                    <a href="/pages/servicos/requerimentos.html">Requerimentos</a>
+                    <a href="/pages/servicos/cartao-universitario.html">Cartão Universitário</a>
+                    <a target="_blank" rel="noopener noreferrer" href="http://www.sasuma.pt/?IDM=PT&ID0=1765029136&ID1=&ID2=0&ID3=3e3cf8a5f53db6eaef66ad737916e2f7">SASUMa-Bolsas</a>
+                </div>
+            </details>
+            <details class="subnav" name="subnav-btn">
+                <summary class="subnavbtn">Concursos<i class="navbar-dropdown-icon"></i></summary>
+                <div class="subnav-content">
+                    <a href="/pages/concursos/candidaturas.html">Candidaturas</a>
+                </div>
+            </details>
+            <details class="subnav" name="subnav-btn">
+                <summary class="subnavbtn">Avaliação<i class="navbar-dropdown-icon"></i></summary>
+                <div class="subnav-content">
+                    <a href="/pages/avaliacao/pautas.html">Pautas</a>
+                    <a href="/pages/avaliacao/reclamacao-notas.html">Reclamação de Notas</a>
+                    <a href="/pages/avaliacao/inqueritos.html">Inquéritos</a>
+                    <a href="/pages/avaliacao/resultado-inqueritos.html">Resultado de Inquéritos</a>
+                    <a href="/pages/avaliacao/inquerito-raides.html">Inquérito RAIDES</a>
+                </div>
+            </details>
+            <details class="subnav" name="subnav-btn">
+                <summary class="subnavbtn">Creditações<i class="navbar-dropdown-icon"></i></summary>
+                <div class="subnav-content">
+                    <a href="/pages/creditacoes/lista-processos.html">Lista Processos</a>
+                    <a href="/pages/creditacoes/novo-processo.html">Novo Processo</a>
+                </div>
+            </details>
+            <details class="subnav" name="subnav-btn">
+                <summary class="subnavbtn">Documentos<i class="navbar-dropdown-icon"></i></summary>
+                <div class="subnav-content">
+                    <a href="/pages/documentos/academicos.html">Académicos</a>
+                    <a href="/pages/documentos/declaracoes.html">Declarações</a>
+                </div>
+            </details>
+            <details class="subnav" name="subnav-btn">
+                <summary class="subnavbtn">Aula<i class="navbar-dropdown-icon"></i></summary>
+                <div class="subnav-content">
+                    <a href="/pages/aula/calendario.html">Calendário</a>
+                    <a href="/pages/aula/sumarios.html">Sumários</a>
+                </div>
+            </details>
+            <details class="subnav" name="subnav-btn">
+                <summary class="subnavbtn">Disciplina<i class="navbar-dropdown-icon"></i></summary>
+                <div class="subnav-content">
+                    <a href="/pages/disciplina/ficha.html">Ficha</a>
+                    <a href="/pages/disciplina/programa.html">Programa</a>
+                    <a href="/pages/disciplina/ficheiros.html">Ficheiros</a>
+                </div>
+            </details>
+            <details class="subnav" name="subnav-btn">
+                <summary class="subnavbtn">Curso<i class="navbar-dropdown-icon"></i></summary>
+                <div class="subnav-content">
+                    <a href="/pages/curso/ficha-curricular.html">Ficha Curricular</a>
+                    <a href="/pages/curso/horarios.html">Horários</a>
+                    <a href="/pages/curso/historico-matriculas.html">Histórico de Matrículas-Inscrições</a>
+                    <a href="/pages/curso/historico-disciplinas.html">Histórico de Disciplinas Aprovadas</a>
+                    <a href="/pages/curso/transicao-bolonha.html">Transição para Bolonha</a>
+                    <a href="/pages/curso/plano-conclusao.html">Plano de conclusão</a>
+                    <a href="/pages/curso/quadro-prescricao.html">Quadro de Prescrição</a>
+                    <a href="/pages/curso/atividades-academicas.html">Atividades Académicas do Aluno</a>
+                </div>
+            </details>
+            <details class="subnav" name="subnav-btn">
+                <summary class="subnavbtn">Instituição<i class="navbar-dropdown-icon"></i></summary>
+                <div class="subnav-content">
+                    <a href="/pages/instituicao/estrutura-organica.html">Estrutura Orgânica</a>
+                </div>
+            </details>
+            <div class="subnav-content nav-direct-link">
+                <a href="/pages/eleicoes.html">Eleições</a>
+            </div>
+        </div>
+        <div class="footer">
+            <p>© Universidade da Madeira - Gabinete de Desenvolvimento de Aplicações Informáticas - <a href="https://www.uma.pt/privacidade-e-termos-de-utilizacao/">Proteção de Dados e Termos de Utilização</a><br>
+            Colégio dos Jesuitas, 9000-081 Funchal | Tel: +351 291 209400 | Fax: +351 291 209410</p>
+        </div>
+        <div class="content">
+            <div class="content-box1">
+                <h6>Histórico de Inscrições do Aluno</h6>
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th scope="col">Ano Lect</th>
+                            <th scope="col">Curso</th>
+                            <th scope="col">Tipo</th>
+                            <th scope="col">Especialidade</th>
+                            <th scope="col">Ano</th>
+                            <th scope="col">Ingresso</th>
+                            <th scope="col">Estatuto</th>
+                            <th scope="col">Est</th>
+                            <th scope="col">Des</th>
+                            <th scope="col">Conc</th>
+                            <th scope="col">Inscrição</th>
+                            <th scope="col">Conclusão</th>
+                            <th scope="col">Diploma</th>
+                            <th scope="col">Dipl Entregue</th>
+                        </tr>
+                    </thead>
+                    <tbody class="table-group-divider">
+                        <tr>
+                            <td>2025/26</td>
+                            <td>11024.10.0 	2020/21 	Tec Progr Sistema Inf</td>
+                            <td>Curso Técnico Superior Profissional</td>
+                            <td>S/Ramos - Esp.</td>
+                            <td>1</td>
+                            <td>Concurso Especial - Tit.Ex.Esp.Aval.Cap.Acesso ao Ens.Sup. p/ Maiores de 23</td>
+                            <td>N</td>
+                            <td>A</td>
+                            <td>N</td>
+                            <td>N</td>
+                            <td>18-09-2025</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </table>
+                <p>Estado da Inscrição: T- Temporária | A - Activo | C - Congelado | I - Inactivo</p>
+
+                <h6 class="title-margin">Unidades Curriculares Inscrito/Aprovadas</h6>
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <td scope="col" colspan="13">Ano Lectivo:  2025/26  -  Curso:   Tecnologias e Programação de Sistemas de Informação  Diploma de Técnico Superior Profissional (Curso Técnico Superior Profissional)   11024.10.0   -  Plano  2020/21   -  Ramo:  Sem Ramos - Especialidades</th>
+                        </tr>
+                        <tr>
+                            <th scope="col" colspan="2">Disciplina</th>
+                            <th scope="col">Ano</th>
+                            <th scope="col">Período</th>
+                            <th scope="col">ECTS/UC</th>
+                            <th scope="col">AC</th>
+                            <th scope="col">Nível</th>
+                            <th scope="col">Op Comp</th>
+                            <th scope="col">Nota</th>
+                            <th scope="col">Aprov.</th>
+                            <th scope="col">Melhoria</th>
+                            <th scope="col">Dt Melh.</th>
+                            <th scope="col">Avaliação</th>
+                        </tr>
+                    </thead>
+                    <tbody class="table-group-divider">
+                        <tr>
+                            <td>206142</td>
+                            <td>Design Hipermédia</td>
+                            <td>1</td>
+                            <td>S1</td>
+                            <td>6.50</td>
+                            <td>CIN</td>
+                            <td>T</td>
+                            <td>N</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>206143</td>
+                            <td>Introdução à Programação</td>
+                            <td>1</td>
+                            <td>S1</td>
+                            <td>6.50</td>
+                            <td>CIN</td>
+                            <td>T</td>
+                            <td>N</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>206134</td>
+                            <td>Matemática</td>
+                            <td>1</td>
+                            <td>S1</td>
+                            <td>5.50</td>
+                            <td>MAT</td>
+                            <td>T</td>
+                            <td>N</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>206144</td>
+                            <td>Sistemas Operativos e Redes</td>
+                            <td>1</td>
+                            <td>S1</td>
+                            <td>6.50</td>
+                            <td>CIN</td>
+                            <td>T</td>
+                            <td>N</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>206135</td>
+                            <td>Técnicas de Expressão do Português</td>
+                            <td>1</td>
+                            <td>S1</td>
+                            <td>5.00</td>
+                            <td>LLM</td>
+                            <td>T</td>
+                            <td>N</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>206137</td>
+                            <td>Desenvolvimento Web - Back-End</td>
+                            <td>1</td>
+                            <td>S2</td>
+                            <td>6.50</td>
+                            <td>CIN</td>
+                            <td>T</td>
+                            <td>N</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>206138</td>
+                            <td>Desenvolvimento Web - Front-End</td>
+                            <td>1</td>
+                            <td>S2</td>
+                            <td>6.50</td>
+                            <td>CIN</td>
+                            <td>T</td>
+                            <td>N</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>206132</td>
+                            <td>Inglês Técnico</td>
+                            <td>1</td>
+                            <td>S2</td>
+                            <td>5.00</td>
+                            <td>LLE</td>
+                            <td>T</td>
+                            <td>N</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>206136</td>
+                            <td>Programação Orientada por Objetos</td>
+                            <td>1</td>
+                            <td>S2</td>
+                            <td>6.00</td>
+                            <td>CIN</td>
+                            <td>T</td>
+                            <td>N</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>205285</td>
+                            <td>Sistemas Gestores de Bases de Dados I</td>
+                            <td>1</td>
+                            <td>S2</td>
+                            <td>6.00</td>
+                            <td>CIN</td>
+                            <td>B</td>
+                            <td>N</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
