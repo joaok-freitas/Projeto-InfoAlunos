@@ -2,16 +2,16 @@
 	grid-area: content;
 	display: grid;
 	grid-template-areas:
-		"tb1 tb1 tb1 tb2 tb2 tb2"
-		"cb cb cb cb cb cb"
-		"b1 b1 b2 b2 b3 b3";
+		"tb1 tb2"
+		"cb cb"
+		"bb bb";
 	padding: 20px;
 	gap: 10px;
-	grid-template-columns: repeat(6, 1fr);
+	grid-template-columns: repeat(2, 1fr);
 	grid-template-rows: auto auto auto;
 }
 
-.content-box1, .content-box2, .content-box3, .center-box, .top-box1, .top-box2 {
+.bottom-box, .center-box, .top-box1, .top-box2 {
 	background-color: var(--cor-claro);
 	color: var(--cor-escuro);
 	padding: 20px;
@@ -19,16 +19,8 @@
 	border-radius: 8px;
 }
 
-.content-box1 {
-	grid-area: b1;
-}
-
-.content-box2 {
-	grid-area: b2;
-}
-
-.content-box3 {
-	grid-area: b3;
+.bottom-box {
+	grid-area: bb;
 	overflow-y: auto;
 	max-height: 250px;
 }
