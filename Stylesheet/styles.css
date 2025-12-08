@@ -368,7 +368,9 @@ ul[popover] {
 }
 
 /* Lists styles */
-
+li {
+	color: light-dark(var(--cor-preto), var(--cor-branco));
+}
 
 /* Modal styles */
 .box {
@@ -622,6 +624,10 @@ table {
 td, th {
 	border: 1px solid var(--cor-escuro);
 	padding: 8px;
+}
+
+td {
+	color: light-dark(var(--cor-preto), var(--cor-branco));
 }
 
 tr:nth-child(even){background-color: var(--cor-claro);}
