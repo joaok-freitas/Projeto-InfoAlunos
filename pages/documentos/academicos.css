@@ -1,0 +1,42 @@
+.content {
+	grid-area: content;
+	display: grid;
+	grid-template-areas:
+        "b1";
+	padding: 20px;
+	gap: 10px;
+	grid-template-columns: repeat(1, 1fr);
+	grid-template-rows: auto auto auto;
+}
+
+.content-box1 {
+    grid-area: b1;
+	background-color: var(--cor-claro);
+	color: var(--cor-escuro);
+	padding: 20px;
+	box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+	border-radius: 8px;
+}
+.content-box1 h6 {
+    margin-top: 0;
+}
+
+.search-div > .form-select {
+    width: 80%;
+}
+
+.search-div > .btn {
+    margin-left: 30px;
+}
+
+.icon-pdf {
+    background-image: url(/img/pdf-icon.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    min-width: 32px;
+    min-height: 32px;
+}
+
+.icon-cell {
+    display: flex;
+}
