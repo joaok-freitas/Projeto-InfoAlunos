@@ -1,0 +1,62 @@
+.content {
+	grid-area: content;
+	display: grid;
+	grid-template-areas:
+        "b1"
+        "b2";
+	padding: 20px;
+	gap: 10px;
+	grid-template-columns: repeat(1, 1fr);
+	grid-template-rows: auto auto auto;
+}
+
+.content-box1, .content-box2 {
+	background-color: var(--cor-claro);
+	color: var(--cor-escuro);
+	padding: 20px;
+	box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+	border-radius: 8px;
+}
+
+.content-box1 {
+    grid-area: b1;
+}
+
+.content-box2 {
+    position: relative;
+    grid-area: b2;
+}
+
+.content h2, .content h3 {
+    color: var(--cor-informacao);
+}
+
+.hidden-toggle {
+    display: none;
+}
+
+:root:has(#option2:checked) {
+    .hidden-toggle {
+        display: block;
+    }
+}
+
+.in-line {
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 20px;
+}
+
+.radial-buttons {
+    margin-bottom: 30px;
+}
+
+.content-box2 .btn-success {
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+}
+
+.section {
+    margin-bottom: 80px;
+}
