@@ -1,0 +1,61 @@
+.content {
+	grid-area: content;
+	display: grid;
+	grid-template-areas:
+        "b1"
+        "b2";
+	padding: 20px;
+	gap: 10px;
+	grid-template-columns: repeat(1, 1fr);
+	grid-template-rows: auto auto auto;
+}
+
+.content-box1, .content-box2{
+	background-color: var(--cor-claro);
+	color: var(--cor-escuro);
+	padding: 20px;
+	box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+	border-radius: 8px;
+}
+
+.content-box1 {
+    grid-area: b1;
+}
+
+.content-box2 {
+    grid-area: b2;
+}
+
+.content-box1 h6, .content-box2 h6 {
+    margin-top: 0;
+}
+
+.content-box2 td {
+    background-color: var(--cor-secundaria);
+    filter: brightness(0.75);
+    height: 100px;
+    width: 100px;
+}
+
+td.calendar-item {
+    position: relative;
+    background-color: var(--cor-secundaria);
+    color: var(--cor-preto);
+    filter: unset;
+    padding: 5px;
+}
+
+span.class-item {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    font-size: 80%;
+}
+
+span.calendar-day {
+    position: absolute;
+    bottom: 2px;
+    right: 2px;
+    font-size: 150%;
+    font-weight: bold;
+}
