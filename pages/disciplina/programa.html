@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/Stylesheet/styles.css">
+    <link rel="stylesheet" href="/default.css">
+    <link rel="stylesheet" href="eleicoes.css">
+    <link rel="stylesheet" href="ficha.css"> <!-- Exatamente a mesma página -->
+    <title>InfoAlunos: Serviço de Informação dos Alunos</title>
+</head>
+<body>
+    <div class="fullpage-container">
+        <div class="top-bar">
+            <div class="top-bar-content">
+                <div class="top-bar-item">
+                    <!-- <img src="/img/colored-logo.png" alt="Logo da Universidade da Madeira" class="website-logo"> -->
+                    <img src="/img/white-logo.png" alt="Logo da Universidade da Madeira" class="website-logo">
+                </div>
+                <div class="top-bar-item">
+                    <h3 class="site-title">InfoAlunos - Serviço de Informação dos Alunos</h3>
+                </div>
+                <div class="top-bar-user-div">
+                    <label class="tooltip">
+                        <input type="checkbox" class="tooltip-toggle">
+                        <span class="tooltip-button"><img src="https://placehold.co/64x64/png" alt="Foto do utilizador" class="user-image"></span>
+                        <div class="tooltiptext">
+                            <h4>Marcelo Rebelo de Sousa</h4>
+                            <h5>Tecnologias e Programação de Sistemas de Informação</h5>
+                            <input type="checkbox" id="darkmode-toggle">
+                            <label for="darkmode-toggle">
+                                <span class="toggle-track"></span>
+                                <span class="toggle-text">Modo escuro</span>
+                            </label>
+                            <div class="tooltip-link-div">
+                                <a href="#">curso@mail.uma.pt</a>
+                            </div>
+                            <div class="tooltip-link-div">
+                                <a href="#">Alterar Password</a>
+                            </div>
+                            <div class="tooltip-link-div">
+                                <a href="#">Alterar Foto</a>
+                            </div>
+                            <div class="tooltip-link-div">
+                                <a href="#">Sair</a>
+                            </div>
+                        </div>
+                    </label>
+                </div>
+            </div>
+        </div>
+        <div class="navbar">
+            <div class="subnav-content nav-direct-link">
+                <a href="/index.html">Início</a>
+            </div>
+            <details class="subnav" name="subnav-btn">
+                <summary class="subnavbtn">Geral<i class="navbar-dropdown-icon"></i></summary>
+                <div class="subnav-content">
+                    <a href="/pages/geral/processos.html">Processos</a>
+                    <a href="/pages/geral/dados-pessoais.html">Dados Pessoais</a>
+                    <a href="/pages/geral/privacidade.html">Privacidade</a>
+                    <a href="/pages/geral/ajuda.html">Ajuda</a>
+                </div>
+            </details>
+            <details class="subnav" name="subnav-btn">
+                <summary class="subnavbtn">Serviços<i class="navbar-dropdown-icon"></i></summary>
+                <div class="subnav-content">
+                    <a href="/pages/servicos/pagamentos.html">Pagamentos</a>
+                    <a href="/pages/servicos/matriculas-inscricoes.html">Matrículas/Inscrições</a>
+                    <a href="/pages/servicos/inscricao-turmas.html">Inscrição em Turmas</a>
+                    <a href="/pages/servicos/requerimentos.html">Requerimentos</a>
+                    <a href="/pages/servicos/cartao-universitario.html">Cartão Universitário</a>
+                    <a target="_blank" rel="noopener noreferrer" href="http://www.sasuma.pt/?IDM=PT&ID0=1765029136&ID1=&ID2=0&ID3=3e3cf8a5f53db6eaef66ad737916e2f7">SASUMa-Bolsas</a>
+                </div>
+            </details>
+            <details class="subnav" name="subnav-btn">
+                <summary class="subnavbtn">Concursos<i class="navbar-dropdown-icon"></i></summary>
+                <div class="subnav-content">
+                    <a href="/pages/concursos/candidaturas.html">Candidaturas</a>
+                </div>
+            </details>
+            <details class="subnav" name="subnav-btn">
+                <summary class="subnavbtn">Avaliação<i class="navbar-dropdown-icon"></i></summary>
+                <div class="subnav-content">
+                    <a href="/pages/avaliacao/pautas.html">Pautas</a>
+                    <a href="/pages/avaliacao/reclamacao-notas.html">Reclamação de Notas</a>
+                    <a href="/pages/avaliacao/inqueritos.html">Inquéritos</a>
+                    <a href="/pages/avaliacao/resultado-inqueritos.html">Resultado de Inquéritos</a>
+                    <a href="/pages/avaliacao/inquerito-raides.html">Inquérito RAIDES</a>
+                </div>
+            </details>
+            <details class="subnav" name="subnav-btn">
+                <summary class="subnavbtn">Creditações<i class="navbar-dropdown-icon"></i></summary>
+                <div class="subnav-content">
+                    <a href="/pages/creditacoes/lista-processos.html">Lista Processos</a>
+                    <a href="/pages/creditacoes/novo-processo.html">Novo Processo</a>
+                </div>
+            </details>
+            <details class="subnav" name="subnav-btn">
+                <summary class="subnavbtn">Documentos<i class="navbar-dropdown-icon"></i></summary>
+                <div class="subnav-content">
+                    <a href="/pages/documentos/academicos.html">Académicos</a>
+                    <a href="/pages/documentos/declaracoes.html">Declarações</a>
+                </div>
+            </details>
+            <details class="subnav" name="subnav-btn">
+                <summary class="subnavbtn">Aula<i class="navbar-dropdown-icon"></i></summary>
+                <div class="subnav-content">
+                    <a href="/pages/aula/calendario.html">Calendário</a>
+                    <a href="/pages/aula/sumarios.html">Sumários</a>
+                </div>
+            </details>
+            <details class="subnav" name="subnav-btn">
+                <summary class="subnavbtn">Disciplina<i class="navbar-dropdown-icon"></i></summary>
+                <div class="subnav-content">
+                    <a href="/pages/disciplina/ficha.html">Ficha</a>
+                    <a href="/pages/disciplina/programa.html">Programa</a>
+                    <a href="/pages/disciplina/ficheiros.html">Ficheiros</a>
+                </div>
+            </details>
+            <details class="subnav" name="subnav-btn">
+                <summary class="subnavbtn">Curso<i class="navbar-dropdown-icon"></i></summary>
+                <div class="subnav-content">
+                    <a href="/pages/curso/ficha-curricular.html">Ficha Curricular</a>
+                    <a href="/pages/curso/horarios.html">Horários</a>
+                    <a href="/pages/curso/historico-matriculas.html">Histórico de Matrículas-Inscrições</a>
+                    <a href="/pages/curso/historico-disciplinas.html">Histórico de Disciplinas Aprovadas</a>
+                    <a href="/pages/curso/transicao-bolonha.html">Transição para Bolonha</a>
+                    <a href="/pages/curso/plano-conclusao.html">Plano de conclusão</a>
+                    <a href="/pages/curso/quadro-prescricao.html">Quadro de Prescrição</a>
+                    <a href="/pages/curso/atividades-academicas.html">Atividades Académicas do Aluno</a>
+                </div>
+            </details>
+            <details class="subnav" name="subnav-btn">
+                <summary class="subnavbtn">Instituição<i class="navbar-dropdown-icon"></i></summary>
+                <div class="subnav-content">
+                    <a href="/pages/instituicao/estrutura-organica.html">Estrutura Orgânica</a>
+                </div>
+            </details>
+            <div class="subnav-content nav-direct-link">
+                <a href="/pages/eleicoes.html">Eleições</a>
+            </div>
+        </div>
+        <div class="footer">
+            <p>© Universidade da Madeira - Gabinete de Desenvolvimento de Aplicações Informáticas - <a href="https://www.uma.pt/privacidade-e-termos-de-utilizacao/">Proteção de Dados e Termos de Utilização</a><br>
+            Colégio dos Jesuitas, 9000-081 Funchal | Tel: +351 291 209400 | Fax: +351 291 209410</p>
+        </div>
+        <div class="content">
+            <div class="content-box1">
+                <h6>Pesquisa de Disciplinas</h6>
+                <label for="inputInquery" class="form-label">Ano Letivo</label>
+                <select id="inputInquery" class="form-select">
+                    <option></option>
+                    <option selected>2025/26</option>
+                    <option>2024/25</option>
+                    <option>2023/24</option>
+                    <option>2022/23</option>
+                    <option>2021/22</option>
+                    <option>2020/21</option>
+                </select>
+                <label for="inputChair" class="form-label">Disciplina</label>
+                <select id="inputChair" class="form-select">
+                    <option></option>
+                    <option>Desenvolvimento Web - Back-End_CTeSP_TPSI [ S2 ]</option>
+                    <option>Desenvolvimento Web - Front-End_CTeSP_TPSI [ S2 ]</option>
+                    <option>Design Hipermédia_CTeSP_TPSI [ S1 ]</option>
+                    <option>Inglês Técnico_CTeSP_TPSI [ S2 ]</option>
+                    <option>Introdução à Programação_CTeSP_TPSI [ S1 ]</option>
+                    <option>Matemática_CTeSP_TPSI [ S1 ]</option>
+                    <option>Programação Orientada por Objetos_CTeSP_TPSI [ S2 ]</option>
+                    <option>Sistemas Gestores de Bases de Dados I_CTeSP_TPSI [ S2 ]</option>
+                    <option>Sistemas Operativos e Redes_CTeSP_TPSI [ S1 ]</option>
+                    <option selected>Técnicas de Expressão do Português_CTeSP_TPSI [ S1 ]</option>
+                </select>
+                <div class="table-list">
+                    <h6>Lista de Disciplinas</h6>
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th scope="col">AL</th>
+                                <th scope="col">Course</th>
+                                <th scope="col">Curso</th>
+                                <th scope="col">Especialidade</th>
+                                <th scope="col">ALP</th>
+                                <th scope="col">S</th>
+                                <th scope="col">UC</th>
+                                <th scope="col">CH</th>
+                            </tr>
+                        </thead>
+                        <tbody class="table-group-divider">
+                            <tr>
+                                <td>2025/26</td>
+                                <td>Técnicas de Expressão do Português</td>
+                                <td>Tec Pro Sis Inf</td>
+                                <td>S/Ramos - Esp.</td>
+                                <td>2020/21</td>
+                                <td>S1</td>
+                                <td>5.00</td>
+                                <td>140.00</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <p>AL - Ano Lectivo | ALP - Ano Lectivo do Plano | S - Semestre | UC - Unidades de Crédito | CH - Carga Horária</p>
+                </div>
+            </div>
+            <div class="content-box2">
+                <div class="tabs">
+                    <input type="radio" class="tabs__radio" name="tabs-example" id="tab1">
+                    <label for="tab1" class="tabs__label">Objectivos / Avaliação</label>
+                    <div class="tabs__content">
+                        <div class="layout1-container">
+                            <div class="container-box">
+                                <div>
+                                    <h6>Objectivos da Disciplina:</h6>
+                                    <p>1 Adequar as competências linguístico-comunicativas ou discursivas às necessidades do perfil técnico.</p>
+                                    <p>2 Treinar a expressão escrita em Português e aperfeiçoar as técnicas de expressão oral. </p>
+                                </div>
+                                <div>
+                                    <h6>Tradução em Inglês dos Objectivos:</h6>
+                                    <p>1 Adapt linguistic-communicative or discursive skills to the needs of the technical profile.</p>
+                                    <p>2 Train written expression in Portuguese and improve oral expression techniques.</p>
+                                </div>
+                            </div>
+                            <div class="container-box">
+                                <div>
+                                    <h6>Critérios de avaliação:</h6>
+                                    <p>Tipo de Classificacao: Quantitativa (0-20)</p>
+                                    <p>Metodologia de Avaliação: De acordo com o previsto para os Cursos Técnicos Superiores Profissionais.</p>
+                                </div>
+                                <div>
+                                    <h6>Tradução para Inglês dos Critérios de avaliação:</h6>
+                                    <p>Classification Type: Quantitative (0-20)</p>
+                                    <p>Evaluation Methodology: In accordance with the expected for the Professional Higher Technical Courses.</p>
+                                </div>
+                            </div>
+                            <label for="inputPrint" class="form-label">Relatório a imprimir</label>
+                            <select id="inputPrint" class="form-select">
+                                <option></option>
+                                <option selected>Ficha(s) de Disciplina(s)</option>
+                            </select>
+                            <button class="btn btn-secondary">Imprimir</button>
+                        </div>
+                    </div>
+                    <input type="radio" class="tabs__radio" name="tabs-example" id="tab2">
+                    <label for="tab2" class="tabs__label">Bibliografia</label>
+                    <div class="tabs__content">
+                        <div class="tab2-container">
+                            <div class="container-box">
+                                <div>
+                                    <h6>Bibliografia Principal:</h6>
+                                    <p>Cunha, Celso & Cintra, Lindley (1984). Nova Gramática do Português Contemporâneo. Lisboa: Sá da Costa.<br>
+                                    Azeredo, M. Olga et al. (1983). Da Comunicação à Expressão. Porto: Editorial Asa.<br>
+                                    Ballenato Prieto, Guillermo (2014). Comunicação Eficaz. Lisboa: Escolar Editora.<br>
+                                    Ballenato Prieto, Guillermo (2014). Falar em Público. Arte e Técnica da Oratória. Lisboa: Escolar Editora..<br>
+                                    Caetano, Joaquim & Rasquilha, Luís (2004). Gestão da Comunicação. Lisboa: Quimera Editores..<br>
+                                    Caetano, Joaquim et al. (2010). Publicidade. Fundamentos e Estratégias. Lisboa: Escolar Editora..<br>
+                                    Câmara, J. Mattoso Jr. (1961). Manual de Expressão Oral e Escrita. Rio de Janeiro: J. Ozen Editor..<br>
+                                    Carrera, Filipe (2012). Comunicar 2.0. A Arte de Bem Comunicar no Século XXI. Lisboa: Edições Silabo.<br>
+                                    Casteleiro, J. M. (Coord.) (2001). Dicionário da Língua Portuguesa Contemporânea. Lisboa: Academia das Ciências de Lisboa, Verbo Editora.<br>
+                                    Delgado-Martins, M. R. (2000). Literacia e Sociedade. Delgado-Martins, M. R., 2000, Literacia e Sociedade, Lisboa: Caminho.<br>
+                                    Frada, J. J. Cúcio (1991). Guia Prático para Elaboração e Apresentação de Trabalhos Científicos. Lisboa: Edições Cosmos.<br>
+                                    Mendonça, Ana (2003). Métodos e Técnicas de Expressão Oral. Ensinos Básico e Secundário. Porto: Asa Editores.<br>
+                                    Nascimento, Zacarias & Pinto, José (2006). A Dinâmica da Escrita. Como Escrever com Êxito. Lisboa: Plátano Editora.<br>
+                                    Pemberton, Maria (2010). Falar com Eficácia. Mem Martins: Publicações Europa-América..<br>
+                                    REI, J. Esteves (1995). Curso de Redação I. A frase. Porto: Porto Editora.<br>
+                                    REI, J. Esteves (1995). Curso de Redação II. O texto. Porto: Porto Editora.<br>
+                                    s. aut. (s. d.). Erros comuns na oratória. s. ed..<br>
+                                    s. aut. (s. d.). A arte de falar em público. s. ed.<br>
+                                    s. aut. (s. d.). Como falar bem: gestos. s. ed..<br>
+                                    s. aut. (s. d.). Como falar bem: voz, intensidade e articulação. s. ed..<br>
+                                    s. aut (s. d.). Como falar bem: postura. s. ed..<br>
+                                    AAVV (2013). Gramática do Português, Volume I. Lisboa: Fundação Calouste Gulbenkian.<br>
+                                    AAVV (2010). Publicitor. Comunicação 360º Online-offline. Lisboa: Dom Quixote.<br>
+                                    Matos, M. R., Tavares, M. J. & Reis, C. (2010). Assim é que é falar? 201 Perguntas, respostas e regras sobre o português falado e escrito. Lisboa: Planeta.</p>
+                                </div>
+                            </div>
+                            <div class="container-box">
+                                <div>
+                                    <h6>Outras Fontes Bibliográficas/Documentos de Apoio:</h6>
+                                </div>
+                            </div>
+                            <label for="inputPrint" class="form-label">Relatório a imprimir</label>
+                            <select id="inputPrint" class="form-select">
+                                <option></option>
+                                <option selected>Ficha(s) de Disciplina(s)</option>
+                            </select>
+                            <button class="btn btn-secondary">Imprimir</button>
+                        </div>
+                    </div>
+                    <input type="radio" class="tabs__radio" name="tabs-example" id="tab3" checked>
+                    <label for="tab3" class="tabs__label">Programa</label>
+                    <div class="tabs__content">
+                        <div class="layout1-container">
+                            <div class="container-box">
+                                <div>
+                                    <h6>Programa resumido:</h6>
+                                </div>
+                                <div>
+                                    <h6>Tradução para Inglês do Programa resumido:</h6>
+                                </div>
+                            </div>
+                            <div>
+                                <h6>Programa Detalhado</h6>
+                                <div class="searchbox-div">
+                                    <label for="inputProgram" class="form-label">Escolha o Tipo de Programa:</label>
+                                    <select id="inputProgram" class="form-select">
+                                        <option></option>
+                                        <option>Programa de Ensino teórico-prático (vazio)</option>
+                                        <option selected>Programa (12 items)</option>
+                                    </select>
+                                </div>
+                                <table class="table">
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">Item (ex: 1, 1.2,...)</th>
+                                            <th scope="col">Tópico</th>
+                                            <th scope="col">Tradução para Inglês do Tópico de Programa</th>
+                                            <th scope="col">Horas de Contacto</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody class="table-group-divider">
+                                        <tr>
+                                            <td>1</td>
+                                            <td>A língua falada e a língua escrita</td>
+                                            <td>The spoken language and the written language</td>
+                                            <td></td>
+                                        </tr>
+                                        <tr>
+                                            <td>1.1</td>
+                                            <td>Caraterísticas da oralidade e da escrita</td>
+                                            <td>Characteristics of orality and writing</td>
+                                            <td></td>
+                                        </tr>
+                                        <tr>
+                                            <td>1.2</td>
+                                            <td>Linguagem verbal e interações sociais</td>
+                                            <td>Verbal language and social interactions</td>
+                                            <td></td>
+                                        </tr>
+                                        <tr>
+                                            <td>2</td>
+                                            <td>Técnicas de Expressão escrita</td>
+                                            <td>Written Expression Techniques</td>
+                                            <td></td>
+                                        </tr>
+                                        <tr>
+                                            <td>2.1</td>
+                                            <td>Da frase ao parágrafo e a estrutura do texto</td>
+                                            <td>From sentence to paragraph and text structure</td>
+                                            <td></td>
+                                        </tr>
+                                        <tr>
+                                            <td>2.2</td>
+                                            <td>Os articuladores do discurso e a clareza, coerência e coesão do texto</td>
+                                            <td>The articulators of the discourse and the clarity, coherence and cohesion of the text</td>
+                                            <td></td>
+                                        </tr>
+                                        <tr>
+                                            <td>3</td>
+                                            <td>Textos utilitários e as suas finalidades</td>
+                                            <td>Utility texts and their purposes</td>
+                                            <td></td>
+                                        </tr>
+                                        <tr>
+                                            <td>3.1</td>
+                                            <td>Textos expositivo-explicativos, projetos e relatórios de atividades, currículos</td>
+                                            <td>Expository-explanatory texts, projects and activity reports, curricula</td>
+                                            <td></td>
+                                        </tr>
+                                        <tr>
+                                            <td>3.2</td>
+                                            <td>Textos informativos, resumo, editorial, relato, questionário</td>
+                                            <td>Informative texts, summary, editorial, report, questionnaire</td>
+                                            <td></td>
+                                        </tr>
+                                        <tr>
+                                            <td>4</td>
+                                            <td>Técnicas de Expressão oral</td>
+                                            <td>Speaking techniques</td>
+                                            <td></td>
+                                        </tr>
+                                        <tr>
+                                            <td>4.1</td>
+                                            <td>A exposição oral e a sua preparação</td>
+                                            <td>Oral exposure and its preparation</td>
+                                            <td></td>
+                                        </tr>
+                                        <tr>
+                                            <td>4.2</td>
+                                            <td>A situação de comunicação e os meios de apoio</td>
+                                            <td>The communication situation and means of support</td>
+                                            <td></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <label for="inputPrint" class="form-label">Relatório a imprimir</label>
+                            <select id="inputPrint" class="form-select">
+                                <option></option>
+                                <option selected>Ficha(s) de Disciplina(s)</option>
+                            </select>
+                            <button class="btn btn-secondary">Imprimir</button>
+                        </div>
+                    </div>
+                    <input type="radio" class="tabs__radio" name="tabs-example" id="tab4">
+                    <label for="tab4" class="tabs__label">Outros Dados</label>
+                    <div class="tabs__content">
+                        <div class="layout1-container">
+                            <div class="container-box">
+                                <div>
+                                    <h6>Atendimento:</h6>
+                                </div>
+                                <div>
+                                    <h6>Tradução do Atendimento: </h6>
+                                </div>
+                            </div>
+                            <div class="container-box">
+                                <div>
+                                    <h6>Observações:</h6>
+                                </div>
+                                <div>
+                                    <h6>Tradução das Observações: </h6>
+                                </div>
+                            </div>
+                            <label for="inputPrint" class="form-label">Relatório a imprimir</label>
+                            <select id="inputPrint" class="form-select">
+                                <option></option>
+                                <option selected>Ficha(s) de Disciplina(s)</option>
+                            </select>
+                            <button class="btn btn-secondary">Imprimir</button>
+                        </div>
+                    </div>
+                    <input type="radio" class="tabs__radio" name="tabs-example" id="tab5">
+                    <label for="tab5" class="tabs__label">Corpo Docente</label>
+                    <div class="tabs__content">
+                        <div class="layout1-container">
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th scope="col">Docente</th>
+                                        <th scope="col">Centro</th>
+                                        <th scope="col">Função</th>
+                                        <th scope="col">eMail</th>
+                                        <th scope="col">Extensão</th>
+                                    </tr>
+                                </thead>
+                                <tbody class="table-group-divider">
+                                    <tr>
+                                        <td>Sara Rita Costa</td>
+                                        <td>Escola Superior de Tecnologias e Gestão</td>
+                                        <td>Ensino teórico-prático</td>
+                                        <td>sararita@email.pt</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Sara Rita Costa</td>
+                                        <td>Escola Superior de Tecnologias e Gestão</td>
+                                        <td>Regência</td>
+                                        <td>sararita@email.pt</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Sara Rita Costa</td>
+                                        <td>Escola Superior de Tecnologias e Gestão</td>
+                                        <td>Responsável pelas Pautas</td>
+                                        <td>sararita@email.pt</td>
+                                        <td></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <label for="inputPrint" class="form-label">Relatório a imprimir</label>
+                            <select id="inputPrint" class="form-select">
+                                <option></option>
+                                <option selected>Ficha(s) de Disciplina(s)</option>
+                            </select>
+                            <button class="btn btn-secondary">Imprimir</button>
+                        </div>
+                    </div>
+                    <input type="radio" class="tabs__radio" name="tabs-example" id="tab6">
+                    <label for="tab6" class="tabs__label">Documentos</label>
+                    <div class="tabs__content">
+                        <div class="layout1-container">
+                                <div class="searchbox-div">
+                                    <label for="inputFilter" class="form-label">Filtrar por Categoria</label>
+                                    <select id="inputFilter" class="form-select">
+                                        <option selected></option>
+                                        <option>Categorias Gerais (Docentes)</option>
+                                        <option>Sebentas</option>
+                                        <option>Artigos</option>
+                                        <option>Exames Tipo</option>
+                                        <option>Exercicios</option>
+                                        <option>Apontamentos</option>
+                                        <option>Classificações Parciais</option>
+                                        <option>Trabalhos de avaliação para os Alunos</option>
+                                        <option>Outras Categorias</option>
+                                    </select>
+                                </div>
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th colspan="2" scope="col">Ficheiro</th>
+                                        <th scope="col">Categoria</th>
+                                        <th scope="col">Data</th>
+                                        <th scope="col">Inserido por</th>
+                                    </tr>
+                                </thead>
+                                <tbody class="table-group-divider">
+                                    <tr>
+                                        <td><img src="/img/pdf-icon.svg" alt="PDF Icon"></td>
+                                        <td><span class="fake-link">Ficha gravação (23.16 KB)</span></td>
+                                        <td>Apontamentos</td>
+                                        <td>2025-09-25 18:50</td>
+                                        <td>Sara Costa</td>
+                                    </tr>
+                                    <tr>
+                                        <td><img src="/img/pdf-icon.svg" alt="PDF Icon"></td>
+                                        <td><span class="fake-link">Guião da Entrevista (127.83 KB)</span></td>
+                                        <td>Apontamentos</td>
+                                        <td>2025-09-25 18:50</td>
+                                        <td>Sara Costa</td>
+                                    </tr>
+                                    <tr>
+                                        <td><img src="/img/pdf-icon.svg" alt="PDF Icon"></td>
+                                        <td><span class="fake-link">Lista de verificação (1.36 MB)</span></td>
+                                        <td>Apontamentos</td>
+                                        <td>2025-09-25 18:50</td>
+                                        <td>Sara Costa</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <label for="inputPrint" class="form-label">Relatório a imprimir</label>
+                            <select id="inputPrint" class="form-select">
+                                <option></option>
+                                <option selected>Ficha(s) de Disciplina(s)</option>
+                            </select>
+                            <button class="btn btn-secondary">Imprimir</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
