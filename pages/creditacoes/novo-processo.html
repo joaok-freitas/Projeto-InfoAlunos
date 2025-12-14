@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/Stylesheet/styles.css">
+    <link rel="stylesheet" href="/default.css">
+    <link rel="stylesheet" href="novo-processo.css">
+    <title>InfoAlunos: Serviço de Informação dos Alunos</title>
+</head>
+<body>
+    <div class="fullpage-container">
+        <div class="top-bar">
+            <div class="top-bar-content">
+                <div class="top-bar-item">
+                    <!-- <img src="/img/colored-logo.png" alt="Logo da Universidade da Madeira" class="website-logo"> -->
+                    <img src="/img/white-logo.png" alt="Logo da Universidade da Madeira" class="website-logo">
+                </div>
+                <div class="top-bar-item">
+                    <h3 class="site-title">InfoAlunos - Serviço de Informação dos Alunos</h3>
+                </div>
+                <div class="top-bar-user-div">
+                    <label class="tooltip">
+                        <input type="checkbox" class="tooltip-toggle">
+                        <span class="tooltip-button"><img src="https://placehold.co/64x64/png" alt="Foto do utilizador" class="user-image"></span>
+                        <div class="tooltiptext">
+                            <h4>Marcelo Rebelo de Sousa</h4>
+                            <h5>Tecnologias e Programação de Sistemas de Informação</h5>
+                            <input type="checkbox" id="darkmode-toggle">
+                            <label for="darkmode-toggle">
+                                <span class="toggle-track"></span>
+                                <span class="toggle-text">Modo escuro</span>
+                            </label>
+                            <div class="tooltip-link-div">
+                                <a href="#">curso@mail.uma.pt</a>
+                            </div>
+                            <div class="tooltip-link-div">
+                                <a href="#">Alterar Password</a>
+                            </div>
+                            <div class="tooltip-link-div">
+                                <a href="#">Alterar Foto</a>
+                            </div>
+                            <div class="tooltip-link-div">
+                                <a href="#">Sair</a>
+                            </div>
+                        </div>
+                    </label>
+                </div>
+            </div>
+        </div>
+        <div class="navbar">
+            <div class="subnav-content nav-direct-link">
+                <a href="/index.html">Início</a>
+            </div>
+            <details class="subnav" name="subnav-btn">
+                <summary class="subnavbtn">Geral<i class="navbar-dropdown-icon"></i></summary>  <!-- ALTERAR O ICON E DEPOIS REMOVER ESTE COMMENT -->
+                <div class="subnav-content">
+                    <a href="/pages/geral/processos.html">Processos</a>
+                    <a href="/pages/geral/dados-pessoais.html">Dados Pessoais</a>
+                    <a href="/pages/geral/privacidade.html">Privacidade</a>
+                    <a href="/pages/geral/ajuda.html">Ajuda</a>
+                </div>
+            </details>
+            <details class="subnav" name="subnav-btn">
+                <summary class="subnavbtn">Serviços<i class="navbar-dropdown-icon"></i></summary>
+                <div class="subnav-content">
+                    <a href="/pages/servicos/pagamentos.html">Pagamentos</a>
+                    <a href="/pages/servicos/matriculas-inscricoes.html">Matrículas/Inscrições</a>
+                    <a href="/pages/servicos/inscricao-turmas.html">Inscrição em Turmas</a>
+                    <a href="/pages/servicos/requerimentos.html">Requerimentos</a>
+                    <a href="/pages/servicos/cartao-universitario.html">Cartão Universitário</a>
+                    <a target="_blank" rel="noopener noreferrer" href="http://www.sasuma.pt/?IDM=PT&ID0=1765029136&ID1=&ID2=0&ID3=3e3cf8a5f53db6eaef66ad737916e2f7">SASUMa-Bolsas</a>
+                </div>
+            </details>
+            <details class="subnav" name="subnav-btn">
+                <summary class="subnavbtn">Concursos<i class="navbar-dropdown-icon"></i></summary>
+                <div class="subnav-content">
+                    <a href="/pages/concursos/candidaturas.html">Candidaturas</a>
+                </div>
+            </details>
+            <details class="subnav" name="subnav-btn">
+                <summary class="subnavbtn">Avaliação<i class="navbar-dropdown-icon"></i></summary>
+                <div class="subnav-content">
+                    <a href="/pages/avaliacao/pautas.html">Pautas</a>
+                    <a href="/pages/avaliacao/reclamacao-notas.html">Reclamação de Notas</a>
+                    <a href="/pages/avaliacao/inqueritos.html">Inquéritos</a>
+                    <a href="/pages/avaliacao/resultado-inqueritos.html">Resultado de Inquéritos</a>
+                    <a href="/pages/avaliacao/inquerito-raides.html">Inquérito RAIDES</a>
+                </div>
+            </details>
+            <details class="subnav" name="subnav-btn">
+                <summary class="subnavbtn">Creditações<i class="navbar-dropdown-icon"></i></summary>
+                <div class="subnav-content">
+                    <a href="/pages/creditacoes/lista-processos.html">Lista Processos</a>
+                    <a href="/pages/creditacoes/novo-processo.html">Novo Processo</a>
+                </div>
+            </details>
+            <details class="subnav" name="subnav-btn">
+                <summary class="subnavbtn">Documentos<i class="navbar-dropdown-icon"></i></summary>
+                <div class="subnav-content">
+                    <a href="/pages/documentos/academicos.html">Académicos</a>
+                    <a href="/pages/documentos/declaracoes.html">Declarações</a>
+                </div>
+            </details>
+            <details class="subnav" name="subnav-btn">
+                <summary class="subnavbtn">Aula<i class="navbar-dropdown-icon"></i></summary>
+                <div class="subnav-content">
+                    <a href="/pages/aula/calendario.html">Calendário</a>
+                    <a href="/pages/aula/sumarios.html">Sumários</a>
+                </div>
+            </details>
+            <details class="subnav" name="subnav-btn">
+                <summary class="subnavbtn">Disciplina<i class="navbar-dropdown-icon"></i></summary>
+                <div class="subnav-content">
+                    <a href="/pages/disciplina/ficha.html">Ficha</a>
+                    <a href="/pages/disciplina/programa.html">Programa</a>
+                    <a href="/pages/disciplina/ficheiros.html">Ficheiros</a>
+                </div>
+            </details>
+            <details class="subnav" name="subnav-btn">
+                <summary class="subnavbtn">Curso<i class="navbar-dropdown-icon"></i></summary>
+                <div class="subnav-content">
+                    <a href="/pages/curso/ficha-curricular.html">Ficha Curricular</a>
+                    <a href="/pages/curso/horarios.html">Horários</a>
+                    <a href="/pages/curso/historico-matriculas.html">Histórico de Matrículas-Inscrições</a>
+                    <a href="/pages/curso/historico-disciplinas.html">Histórico de Disciplinas Aprovadas</a>
+                    <a href="/pages/curso/transicao-bolonha.html">Transição para Bolonha</a>
+                    <a href="/pages/curso/plano-conclusao.html">Plano de conclusão</a>
+                    <a href="/pages/curso/quadro-prescricao.html">Quadro de Prescrição</a>
+                    <a href="/pages/curso/atividades-academicas.html">Atividades Académicas do Aluno</a>
+                </div>
+            </details>
+            <details class="subnav" name="subnav-btn">
+                <summary class="subnavbtn">Instituição<i class="navbar-dropdown-icon"></i></summary>
+                <div class="subnav-content">
+                    <a href="/pages/instituicao/estrutura-organica.html">Estrutura Orgânica</a>
+                </div>
+            </details>
+            <div class="subnav-content nav-direct-link">
+                <a href="/pages/eleicoes.html">Eleições</a>
+            </div>
+        </div>
+        <div class="footer">
+            <p>© Universidade da Madeira - Gabinete de Desenvolvimento de Aplicações Informáticas - <a href="https://www.uma.pt/privacidade-e-termos-de-utilizacao/">Proteção de Dados e Termos de Utilização</a><br>
+            Colégio dos Jesuitas, 9000-081 Funchal | Tel: +351 291 209400 | Fax: +351 291 209410</p>
+        </div>
+        <div class="content">
+            <div class="content-box1">
+                <div class="tabs">
+                    <input type="radio" class="tabs__radio" name="tabs-example" id="tab1" checked>
+                    <label for="tab1" class="tabs__label">Novo/Alterar</label>
+                    <div class="tabs__content">
+                        <div class="first-section">
+                            <div>
+                                <label for="inputYear" class="form-label">Ano Letivo (para escolha do Curso):<span class="color-perigo">*</span></label>
+                                <select id="inputYear" class="form-select">
+                                    <option selected></option>
+                                    <option>2025/26</option>
+                                </select>
+                                <label for="inputCourse" class="form-label">Curso (a creditar):<span class="color-perigo">*</span></label>
+                                <select id="inputCourse" class="form-select">
+                                    <option selected></option>
+                                    <option>...</option>
+                                </select>
+                                <label for="inputStatus" class="form-label">Alterar Estado/Pedido:</label>
+                                <select id="inputStatus" class="form-select">
+                                    <option selected></option>
+                                    <option>...</option>
+                                </select>
+                            </div>
+                            <div>
+                                <label for="inputCurrentJustification" class="form-label">Justificação Atual:</label>
+                                <span>Sem dados</span><br><br>
+                                <label for="inputJustification" class="form-label">Justificação para alterar estado:</label>
+                                <textarea class="form-control" id="inputJustification" maxlength="500" rows="3" style="resize: vertical;"></textarea>
+                            </div>
+                        </div>
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <td></td>
+                                    <th colspan="6" scope="colgroup">A Creditar (a preencher pelo Dir. Curso)</th>
+                                </tr>
+                                <tr>
+                                    <th scope="col">Formação Académica Original</th>
+                                    <th scope="col">Ano Letivo:</th>
+                                    <th scope="col">Área</th>
+                                    <th scope="col">Nível</th>
+                                    <th scope="col">Class.</th>
+                                    <th scope="col">ECTS</th>
+                                    <th scope="col">Estado</th>
+                                </tr>
+                            </thead>
+                            <tbody class="table-group-divider">
+                                <tr>
+                                    <td>
+                                        <div class="table-inputs">
+                                            <label for="inputInstitution" class="form-label">Inst.</label>
+                                            <input type="text" class="form-control" id="inputInstitution">
+                                            <label for="inputCourse" class="form-label">Curso</label>
+                                            <input type="text" class="form-control" id="inputCourse">
+                                        </div>
+                                    </td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="table-inputs">
+                                            <label for="inputUCurr" class="form-label">UCurr.</label>
+                                            <input type="text" class="form-control" id="inputUCurr">
+                                            <label for="inputProg" class="form-label">Prog.</label>
+                                            <input type="text" class="form-control" id="inputProg">
+                                        </div>
+                                    </td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="table-inputs">
+                                            <label for="inputArea" class="form-label">Área</label>
+                                            <input type="text" class="form-control" id="inputArea">
+                                            <label for="inputLevel" class="form-label">Nível</label>
+                                            <input type="text" class="form-control" id="inputLevel">
+                                            <label for="inputClass" class="form-label">Class.</label>
+                                            <input type="text" class="form-control" id="inputClass">
+                                            <label for="inputQuantity" class="form-label">Qt.</label>
+                                            <input type="text" class="form-control" id="inputQuantity">
+                                            <label for="inputUnit" class="form-label">Unid.</label>
+                                            <input type="text" class="form-control" id="inputUnit">
+                                        </div>
+                                    </td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <p><span class="color-perigo">"E"</span>: Formação Externa. Quando tem esta indicação a formação não é da Universidade da Madeira e deve ser verificada.</p>
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th colspan="3">Formação Não Académica</th>
+                                    <th colspan="6" scope="colgroup">A Creditar (a preencher pelo Dir. Curso)</th>
+                                </tr>
+                                <tr>
+                                    <th scope="col">Descrição:</th>
+                                    <th scope="col">Prog.</th>
+                                    <th scope="col"></th>
+                                    <th scope="col">Ano Letivo:</th>
+                                    <th scope="col">Área</th>
+                                    <th scope="col">Nível</th>
+                                    <th scope="col"></th>
+                                    <th scope="col">ECTS</th>
+                                    <th scope="col">Estado</th>
+                                </tr>
+                            </thead>
+                            <tbody class="table-group-divider">
+                                <tr>
+                                    <td>
+                                        <div class="table-inputs">
+                                            <textarea class="form-control" id="inputDescription" maxlength="500" rows="2" style="resize: vertical;"></textarea>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <select id="inputProg" class="form-select">
+                                            <option selected></option>
+                                            <option>Erasmus</option>
+                                            <option>Leonardo da Vinci</option>
+                                            <option>Universidade de Laval</option>
+                                            <option>Programa de Bolsas Luso-Brasileiras (Santander)</option>
+                                            <option>Programa Vasco da Gama</option>
+                                            <option>Programa Almeida Garret</option>
+                                            <option>Protocolo DH2</option>
+                                            <option>Programa CMU</option>
+                                            <option>Transição de Plano</option>
+                                            <option>Programa de Bolsas Ibero-Americanas (Santander)</option>
+                                            <option>Protocolo UEA</option>
+                                            <option>Convénio entre a UMa e Universidade Federal de Minas Gerais</option>
+                                            <option>Programa Mobilidade AULP</option>
+                                            <option>Protocolo São Tomé e Príncipe - UMa</option>
+                                            <option>Estudante em situação de emergência humanitária - conflito na Ucrânia</option>
+                                            <option>Protocolo entre a UMa e Universidade de Pádua</option>
+                                        </select>
+                                    </td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th colspan="3">Módulos/Trabalhos - RESERVADO AOS SERVIÇOS</th>
+                                    <th colspan="6" scope="colgroup">A Creditar (a preencher pelo Dir. Curso)</th>
+                                </tr>
+                                <tr>
+                                    <th scope="col">Descrição:</th>
+                                    <th scope="col">Prog.</th>
+                                    <th scope="col"></th>
+                                    <th scope="col">Ano Letivo:</th>
+                                    <th scope="col">Área</th>
+                                    <th scope="col">Nível</th>
+                                    <th scope="col"></th>
+                                    <th scope="col">ECTS</th>
+                                    <th scope="col">Estado</th>
+                                </tr>
+                            </thead>
+                            <tbody class="table-group-divider">
+                                <tr>
+                                    <td>
+                                        <div class="table-inputs">
+                                            <textarea class="form-control" id="inputDescription" maxlength="500" rows="2" style="resize: vertical;"></textarea>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <input type="text" class="form-control" id="inputProg" disabled>
+                                    </td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <div class="attachments-div">
+                            <label for="inputFile1" class="form-label">Anexar Documento 1:</label>
+                            <input type="file" id="inputFile1" placeholder="Nenhum ficheiro selecionado"><br>
+                            <label for="inputFile2" class="form-label">Anexar Documento 2:</label>
+                            <input type="file" id="inputFile2" placeholder="Nenhum ficheiro selecionado"><br>
+                            <label for="inputFile3" class="form-label">Anexar Documento 3:</label>
+                            <input type="file" id="inputFile3" placeholder="Nenhum ficheiro selecionado">
+                            <p>Os campos assinalados com <span class="color-perigo">*</span> são de preenchimento obrigatório.</p>
+                            <button class="btn btn-primario">Guardar Processo</button>
+                        </div>
+                    </div>
+                    <input type="radio" class="tabs__radio" name="tabs-example" id="tab2">
+                    <label for="tab2" class="tabs__label">Plano de Formação</label>
+                    <div class="tabs__content">
+                        <p>Sem resultados. Seleccione um processo de creditação.</p>
+                    </div>
+                    <input type="radio" class="tabs__radio" name="tabs-example" id="tab3">
+                    <label for="tab3" class="tabs__label">Documentos e Histórico</label>
+                    <div class="tabs__content">
+                        <div class="section">
+                            <div>
+                                <h6>Histórico dos Estados do Processo</h6>
+                                <p>Sem dados</p>
+                                <h6>Emolumentos do Processo</h6>
+                                <p>Sem dados</p>
+                            </div>
+                            <div>
+                                <h6>Documentos Associados ao Processo</h6>
+                                <p>Não foram encontrados ficheiros ou não seleccionou um processo.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

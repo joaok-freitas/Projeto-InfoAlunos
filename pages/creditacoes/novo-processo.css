@@ -1,0 +1,80 @@
+.content {
+	grid-area: content;
+	display: grid;
+	grid-template-areas:
+        "b1";
+	padding: 20px;
+	gap: 10px;
+	grid-template-columns: repeat(1, 1fr);
+	grid-template-rows: auto auto auto;
+}
+
+.content-box1 {
+    grid-area: b1;
+	background-color: var(--cor-claro);
+	color: var(--cor-escuro);
+	padding: 20px;
+	box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+	border-radius: 8px;
+}
+
+.content-box1 h6 {
+    margin-top: 0;
+}
+
+.section div {
+    width: 100%;
+}
+
+.content-box1 .section {
+    display: flex;
+    justify-content: space-between;
+}
+
+.attachments-div {
+    position: relative;
+}
+
+.attachments-div .btn {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.attachments-div p {
+    position: absolute;
+    margin: 0;
+    right: 0;
+    top: 0;
+}
+
+.attachments-div input[type="file"] {
+    margin-top: 10px;
+}
+
+.first-section div {
+    width: 45%;
+}
+
+.first-section {
+    display: flex;
+    justify-content: space-between;
+}
+
+.color-perigo {
+    color: var(--cor-perigo);
+}
+
+.table-inputs {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+td {
+    background-color: var(--cor-claro);
+}
+
+table {
+    margin: 40px 0
+}
