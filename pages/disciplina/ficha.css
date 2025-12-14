@@ -10,7 +10,7 @@
 	grid-template-rows: auto auto auto;
 }
 
-.content-box1 {
+.content-box1, .content-box2 {
 	background-color: var(--cor-claro);
 	color: var(--cor-escuro);
 	padding: 20px;
@@ -26,6 +26,43 @@
     grid-area: b2;
 }
 
-.content-box1 h6 {
+.content-box1 h6, .content-box2 h6 {
     margin-top: 0;
+}
+
+.table-list {
+    margin-top: 15px;
+}
+
+.layout1-container .container-box {
+    display: flex;
+    justify-content: space-between;
+}
+
+.container-box > div {
+    width: 48%;
+    min-height: 200px;;
+}
+
+.layout1-container > .form-select{
+    width: 10%;
+}
+
+.tab2-container .container-box > div {
+    width: 100%;
+}
+
+.tab2-container .container-box > div p {
+    font-size: smaller;
+    margin-bottom: 30px;
+}
+
+.searchbox-div .form-select {
+    width: 30%;
+}
+
+.fake-link {
+    color: var(--cor-informacao);
+    text-decoration: underline;
+    cursor: pointer;
 }
