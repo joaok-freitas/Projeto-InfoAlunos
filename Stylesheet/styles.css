@@ -616,32 +616,51 @@ details[open] .navbar-dropdown-icon::after {
 
 /* tables styles */
 
-table {
+.table {
+    width: 100%;
 	border-collapse: collapse;
-	width: 100%;
+    background-color: var(--cor-claro);
+    color: var(--cor-escuro);
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+    margin: 20px 0;
 }
 
-td, th {
-	border: 1px solid var(--cor-escuro);
-	padding: 8px;
+.table thead tr {
+    background-color: var(--cor-claro);
+    color: light-dark(var(--cor-preto), var(--cor-branco));
 }
 
-td {
-	color: light-dark(var(--cor-preto), var(--cor-branco));
+.table thead th {
+    padding: 15px;
+    text-align: left;
+    font-weight: 700;
+    font-size: 0.85rem;
+    letter-spacing: 0.03em;
+	border: 1px solid var(--cor-secundaria);
 }
 
-tr:nth-child(even){background-color: var(--cor-claro);}
-
-tr:hover {background-color: var(--cor-sucesso);}
-
-th {
-	padding-top: 12px;
-	padding-bottom: 12px;
-	text-align: left;
-	background-color: var(--cor-informacao);
-	color: var(--cor-claro);
+.table-group-divider { /* estilo do divisor */
+    border-top: 3px solid var(--cor-primaria);
 }
 
+.table tbody th,
+.table tbody td {
+    padding: 14px 15px;
+    border: 1px solid var(--cor-secundaria);
+}
+
+.table tbody tr { /* hover */
+    transition: all 0.2s ease;
+}
+
+.table tbody tr:hover { /* azul na esquerda no hover */
+    background-color: var(--cor-claro);
+    box-shadow: inset 5px 0 0 var(--cor-primaria); 
+}
+
+.table td, .table th {
+    color: light-dark(var(--cor-preto), var(--cor-branco));
+}
 
 /* tooltip styles */
 
