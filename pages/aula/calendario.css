@@ -31,7 +31,7 @@
 }
 
 .content-box2 td {
-    background-color: var(--cor-secundaria);
+    background-color: var(--cor-claro);
     filter: brightness(0.75);
     height: 100px;
     width: 100px;
@@ -39,8 +39,8 @@
 
 td.calendar-item {
     position: relative;
-    background-color: var(--cor-secundaria);
-    color: var(--cor-preto);
+    background-color: var(--cor-claro);
+    color: light-dark(var(--cor-preto), var(--cor-branco));
     filter: unset;
     padding: 5px;
 }
