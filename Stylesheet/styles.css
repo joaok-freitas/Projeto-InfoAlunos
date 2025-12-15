@@ -514,6 +514,27 @@ details[open] .navbar-dropdown-icon::after {
 	background-color: var(--cor-secundaria);
 } */
 
+@media (max-width: 768px) {
+
+    .navbar details {
+        border-bottom: 1px solid var(--cor-secundaria);
+    }
+
+    .navbar summary {
+        padding: 15px;
+        font-size: 15px;
+    }
+
+    .subnav-content a {
+        padding-left: 20px;
+        padding-top: 12px;
+        padding-bottom: 12px;
+        font-size: 14px;
+    }
+}
+
+
+
 /* navstabs styles */
 
 .tabs {
@@ -662,6 +683,14 @@ details[open] .navbar-dropdown-icon::after {
     color: light-dark(var(--cor-preto), var(--cor-branco));
 }
 
+@media (max-width: 768px) {
+    table {
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+}
+
 /* tooltip styles */
 
 .tooltip-stylesheet-div { /* only for stylesheet */
@@ -728,6 +757,21 @@ details[open] .navbar-dropdown-icon::after {
 	border-style: solid;
 	border-color: transparent transparent var(--cor-secundaria) transparent;
 }
+
+@media (max-width: 768px) {
+    .tooltiptext {
+        left: 50%;
+        transform: translateX(-50%);
+        min-width: 90vw;
+        top: 110%;
+    }
+
+    .tooltiptext::after {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}
+
 
 /* Mostrar tooltip quando checked */
 .tooltip-toggle:checked ~ .tooltiptext {
