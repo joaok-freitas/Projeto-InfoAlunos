@@ -11,11 +11,6 @@
 
 .content-box1 {
     grid-area: b1;
-	background-color: var(--cor-claro);
-	color: var(--cor-escuro);
-	padding: 20px;
-	box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
-	border-radius: 8px;
 }
 
 .content-box1 h6 {

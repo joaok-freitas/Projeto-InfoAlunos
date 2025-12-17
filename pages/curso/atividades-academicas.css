@@ -10,14 +10,6 @@
 	grid-template-rows: auto auto auto;
 }
 
-.content-box1, .content-box2 {
-	background-color: var(--cor-claro);
-	color: var(--cor-escuro);
-	padding: 20px;
-	box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
-	border-radius: 8px;
-}
-
 .content-box1 {
     position: relative;
     grid-area: b1;
