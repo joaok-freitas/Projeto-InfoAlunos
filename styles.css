@@ -27,6 +27,7 @@
 
 .center-box {
 	grid-area: cb;
+	overflow-x: auto;
 }
 
 .top-box1 {
@@ -87,3 +88,16 @@
 .fake-link:hover {
 	text-decoration: underline;
 }
+
+@media (max-width: 768px) {
+    .content {
+        display: grid;
+        grid-template-areas:
+            "tb1"
+            "tb2"
+            "cb"
+            "bb";
+        grid-template-columns: 1fr
+    }
+}
+
