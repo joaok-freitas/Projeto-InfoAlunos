@@ -19,3 +19,13 @@
 .content-box2 {
 	grid-area: b2;
 }
+
+@media (max-width: 768px) {
+    .content {
+        display: grid;
+        grid-template-areas:
+            "b1"
+            "b2";
+        grid-template-columns: 1fr
+    }
+}

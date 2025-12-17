@@ -38,3 +38,15 @@
 .search-div > .btn {
     margin-left: 30px;
 }
+
+@media (max-width: 768px) {
+    .content {
+        display: grid;
+        grid-template-areas:
+            "b1"
+            "b2"
+            "b3"
+            "b4";
+        grid-template-columns: 1fr
+    }
+}
