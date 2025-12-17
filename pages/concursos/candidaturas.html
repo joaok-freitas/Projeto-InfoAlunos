@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/Stylesheet/styles.css">
+    <link rel="stylesheet" href="/default.css">
+    <link rel="stylesheet" href="candidaturas.css">
+    <title>InfoAlunos: Serviço de Informação dos Alunos</title>
+</head>
+<body>
+    <div class="fullpage-container">
+        <div class="top-bar">
+            <div class="top-bar-content">
+                <div class="top-bar-item">
+                    <!-- <img src="/img/colored-logo.png" alt="Logo da Universidade da Madeira" class="website-logo"> -->
+                    <img src="/img/white-logo.png" alt="Logo da Universidade da Madeira" class="website-logo">
+                </div>
+                <div class="top-bar-item">
+                    <h3 class="site-title">InfoAlunos - Serviço de Informação dos Alunos</h3>
+                </div>
+                <div class="top-bar-user-div">
+                    <label class="tooltip">
+                        <input type="checkbox" class="tooltip-toggle">
+                        <span class="tooltip-button"><img src="https://placehold.co/64x64/png" alt="Foto do utilizador" class="user-image"></span>
+                        <div class="tooltiptext">
+                            <h4>Marcelo Rebelo de Sousa</h4>
+                            <h5>Tecnologias e Programação de Sistemas de Informação</h5>
+                            <input type="checkbox" id="darkmode-toggle">
+                            <label for="darkmode-toggle">
+                                <span class="toggle-track"></span>
+                                <span class="toggle-text">Modo escuro</span>
+                            </label>
+                            <div class="tooltip-link-div">
+                                <a href="#">curso@mail.uma.pt</a>
+                            </div>
+                            <div class="tooltip-link-div">
+                                <a href="#">Alterar Password</a>
+                            </div>
+                            <div class="tooltip-link-div">
+                                <a href="#">Alterar Foto</a>
+                            </div>
+                            <div class="tooltip-link-div">
+                                <a href="#">Sair</a>
+                            </div>
+                        </div>
+                    </label>
+                </div>
+            </div>
+        </div>
+        <div class="navbar">
+            <div class="subnav-content nav-direct-link">
+                <a href="/index.html">Início</a>
+            </div>
+            <details class="subnav" name="subnav-btn">
+                <summary class="subnavbtn">Geral<i class="navbar-dropdown-icon"></i></summary>
+                <div class="subnav-content">
+                    <a href="/pages/geral/processos.html">Processos</a>
+                    <a href="/pages/geral/dados-pessoais.html">Dados Pessoais</a>
+                    <a href="/pages/geral/privacidade.html">Privacidade</a>
+                    <a href="/pages/geral/ajuda.html">Ajuda</a>
+                </div>
+            </details>
+            <details class="subnav" name="subnav-btn">
+                <summary class="subnavbtn">Serviços<i class="navbar-dropdown-icon"></i></summary>
+                <div class="subnav-content">
+                    <a href="/pages/servicos/pagamentos.html">Pagamentos</a>
+                    <a href="/pages/servicos/matriculas-inscricoes.html">Matrículas/Inscrições</a>
+                    <a href="/pages/servicos/inscricao-turmas.html">Inscrição em Turmas</a>
+                    <a href="/pages/servicos/requerimentos.html">Requerimentos</a>
+                    <a href="/pages/servicos/cartao-universitario.html">Cartão Universitário</a>
+                    <a target="_blank" rel="noopener noreferrer" href="http://www.sasuma.pt/?IDM=PT&ID0=1765029136&ID1=&ID2=0&ID3=3e3cf8a5f53db6eaef66ad737916e2f7">SASUMa-Bolsas</a>
+                </div>
+            </details>
+            <details class="subnav" name="subnav-btn">
+                <summary class="subnavbtn">Concursos<i class="navbar-dropdown-icon"></i></summary>
+                <div class="subnav-content">
+                    <a href="/pages/concursos/candidaturas.html">Candidaturas</a>
+                </div>
+            </details>
+            <details class="subnav" name="subnav-btn">
+                <summary class="subnavbtn">Avaliação<i class="navbar-dropdown-icon"></i></summary>
+                <div class="subnav-content">
+                    <a href="/pages/avaliacao/pautas.html">Pautas</a>
+                    <a href="/pages/avaliacao/reclamacao-notas.html">Reclamação de Notas</a>
+                    <a href="/pages/avaliacao/inqueritos.html">Inquéritos</a>
+                    <a href="/pages/avaliacao/resultado-inqueritos.html">Resultado de Inquéritos</a>
+                    <a href="/pages/avaliacao/inquerito-raides.html">Inquérito RAIDES</a>
+                </div>
+            </details>
+            <details class="subnav" name="subnav-btn">
+                <summary class="subnavbtn">Creditações<i class="navbar-dropdown-icon"></i></summary>
+                <div class="subnav-content">
+                    <a href="/pages/creditacoes/lista-processos.html">Lista Processos</a>
+                    <a href="/pages/creditacoes/novo-processo.html">Novo Processo</a>
+                </div>
+            </details>
+            <details class="subnav" name="subnav-btn">
+                <summary class="subnavbtn">Documentos<i class="navbar-dropdown-icon"></i></summary>
+                <div class="subnav-content">
+                    <a href="/pages/documentos/academicos.html">Académicos</a>
+                    <a href="/pages/documentos/declaracoes.html">Declarações</a>
+                </div>
+            </details>
+            <details class="subnav" name="subnav-btn">
+                <summary class="subnavbtn">Aula<i class="navbar-dropdown-icon"></i></summary>
+                <div class="subnav-content">
+                    <a href="/pages/aula/calendario.html">Calendário</a>
+                    <a href="/pages/aula/sumarios.html">Sumários</a>
+                </div>
+            </details>
+            <details class="subnav" name="subnav-btn">
+                <summary class="subnavbtn">Disciplina<i class="navbar-dropdown-icon"></i></summary>
+                <div class="subnav-content">
+                    <a href="/pages/disciplina/ficha.html">Ficha</a>
+                    <a href="/pages/disciplina/programa.html">Programa</a>
+                    <a href="/pages/disciplina/ficheiros.html">Ficheiros</a>
+                </div>
+            </details>
+            <details class="subnav" name="subnav-btn">
+                <summary class="subnavbtn">Curso<i class="navbar-dropdown-icon"></i></summary>
+                <div class="subnav-content">
+                    <a href="/pages/curso/ficha-curricular.html">Ficha Curricular</a>
+                    <a href="/pages/curso/horarios.html">Horários</a>
+                    <a href="/pages/curso/historico-matriculas.html">Histórico de Matrículas-Inscrições</a>
+                    <a href="/pages/curso/historico-disciplinas.html">Histórico de Disciplinas Aprovadas</a>
+                    <a href="/pages/curso/transicao-bolonha.html">Transição para Bolonha</a>
+                    <a href="/pages/curso/plano-conclusao.html">Plano de conclusão</a>
+                    <a href="/pages/curso/quadro-prescricao.html">Quadro de Prescrição</a>
+                    <a href="/pages/curso/atividades-academicas.html">Atividades Académicas do Aluno</a>
+                </div>
+            </details>
+            <details class="subnav" name="subnav-btn">
+                <summary class="subnavbtn">Instituição<i class="navbar-dropdown-icon"></i></summary>
+                <div class="subnav-content">
+                    <a href="/pages/instituicao/estrutura-organica.html">Estrutura Orgânica</a>
+                </div>
+            </details>
+            <div class="subnav-content nav-direct-link">
+                <a href="/pages/eleicoes.html">Eleições</a>
+            </div>
+        </div>
+        <div class="footer">
+            <p>© Universidade da Madeira - Gabinete de Desenvolvimento de Aplicações Informáticas - <a href="https://www.uma.pt/privacidade-e-termos-de-utilizacao/">Proteção de Dados e Termos de Utilização</a><br>
+            Colégio dos Jesuitas, 9000-081 Funchal | Tel: +351 291 209400 | Fax: +351 291 209410</p>
+        </div>
+        <div class="content">
+            <div class="content-box1">
+                <h6>Pesquisa de candidatura</h6>
+                <label for="inputConcurso" class="form-label">Concurso</label>
+                <select id="inputConcurso" class="form-select">
+                    <option selected></option>
+                    <option>2025/26 | Doutoramento 2025/26 | 1ª Fase</option>
+                    <option> 2025/26 | Microcredencial Segurança Informática I | 1ª Fase</option>
+                </select>
+                <label for="inputCourse" class="form-label">Curso</label>
+                <select id="inputCourse" class="form-select">
+                    <option></option>
+                    <option>3º Ciclo | Ciências Biológicas</option>
+                    <option>3º Ciclo | Engenharia Eletrotécnica</option>
+                    <option>3º Ciclo | Engenharia Informática</option>
+                    <option>3º Ciclo | Física</option>
+                    <option>3º Ciclo | Ilhas Atlânticas: História, Património e Quadro Jurídico-Institucional</option>
+                    <option>3º Ciclo | Literaturas e Culturas Insulares</option>
+                </select>
+            </div>
+            <div class="content-box2">
+                <input type="radio" name="tables" id="table1" hidden>
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th scope="col"></th>
+                            <th scope="col"></th>
+                            <th scope="col">Concurso</th>
+                            <th scope="col">Fase</th>
+                            <th scope="col">Tipo Curso</th>
+                            <th scope="col">Curso</th>
+                            <th scope="col">Vagas</th>
+                            <th scope="col">Candidatura</th>
+                            <th scope="col">Cand.Aluno</th>
+                            <th scope="col"></th>
+                        </tr>
+                        <tr>
+                            <th scope="col"></th>
+                            <th scope="col"><label class="table-button" for="table1"></label></th>
+                            <th scope="col">Doutoramento 2025/26</th>
+                            <th scope="col">1ª Fase</th>
+                            <th scope="col">3º Ciclo</th>
+                            <th scope="col">Ciências Biológicas</th>
+                            <th scope="col">10</th>
+                            <th scope="col">De 2025-05-16 a 2026-06-11</th>
+                            <th scope="col"></th>
+                            <th scope="col"><button class="btn btn-primary">Preencher Candidatura</button></th>
+                        </tr>
+                    </thead>
+                    <tbody class="table-group-divider">
+                        <tr>
+                            <td></td>
+                            <td colspan="2">Contingentes<br>Total vagas: 10</td>
+                            <td></td>
+                            <td colspan="3">
+                                Informação Complementar<br>
+                                Edital: Edital PT<br>
+                                Notice EN<br>
+                                Idioma Lecionação: Português<br>
+                                Endereço Email Curso: diretor.email@mail.uma.pt<br>
+                                Diretor de Curso: Pessoa
+                            </td>
+                            <td colspan="3">
+                                Processo e Calendário de Inscrição<br><br>
+                                Período da Inscrição:<br>
+                                2025-05-19 - 2026-06-11 | Matrícula 3º Ciclo - 1º Semestre
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <input type="radio" name="tables" id="table2" hidden>
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th scope="col"></th>
+                            <th scope="col"><label class="table-button" for="table2"></label></th>
+                            <th scope="col">Doutoramento 2025/26</th>
+                            <th scope="col">1ª Fase</th>
+                            <th scope="col">3º Ciclo</th>
+                            <th scope="col">Engenharia Eletrotécnica</th>
+                            <th scope="col">5</th>
+                            <th scope="col">De 2025-05-16 a 2026-06-11</th>
+                            <th scope="col"></th>
+                            <th scope="col"><button class="btn btn-primary">Preencher Candidatura</button></th>
+                        </tr>
+                    </thead>
+                    <tbody class="table-group-divider">
+                        <tr>
+                            <td></td>
+                            <td colspan="2">Contingentes<br>Total vagas: 5</td>
+                            <td></td>
+                            <td colspan="3">
+                                Informação Complementar<br>
+                                Edital: Edital PT<br>
+                                Notice EN<br>
+                                Idioma Lecionação: Português<br>
+                                Endereço Email Curso: diretor.email@mail.uma.pt<br>
+                                Diretor de Curso: Pessoa
+                            </td>
+                            <td colspan="3">
+                                Processo e Calendário de Inscrição<br><br>
+                                Período da Inscrição:<br>
+                                2025-05-19 - 2026-06-11 | Matrícula 3º Ciclo - 1º Semestre
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <input type="radio" name="tables" id="table3" hidden>
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th scope="col"></th>
+                            <th scope="col"><label class="table-button" for="table3"></label></th>
+                            <th scope="col">Doutoramento 2025/26</th>
+                            <th scope="col">1ª Fase</th>
+                            <th scope="col">3º Ciclo</th>
+                            <th scope="col">Engenharia Informática</th>
+                            <th scope="col">10</th>
+                            <th scope="col">De 2025-05-16 a 2026-06-11</th>
+                            <th scope="col"></th>
+                            <th scope="col"><button class="btn btn-primary">Preencher Candidatura</button></th>
+                        </tr>
+                    </thead>
+                    <tbody class="table-group-divider">
+                        <tr>
+                            <td></td>
+                            <td colspan="2">Contingentes<br>Total vagas: 10</td>
+                            <td></td>
+                            <td colspan="3">
+                                Informação Complementar<br>
+                                Edital: Edital PT<br>
+                                Notice EN<br>
+                                Idioma Lecionação: Português<br>
+                                Endereço Email Curso: diretor.email@mail.uma.pt<br>
+                                Diretor de Curso: Pessoa
+                            </td>
+                            <td colspan="3">
+                                Processo e Calendário de Inscrição<br><br>
+                                Período da Inscrição:<br>
+                                2025-05-19 - 2026-06-11 | Matrícula 3º Ciclo - 1º Semestre
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <input type="radio" name="tables" id="table4" hidden>
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th scope="col"></th>
+                            <th scope="col"><label class="table-button" for="table4"></label></th>
+                            <th scope="col">Doutoramento 2025/26</th>
+                            <th scope="col">1ª Fase</th>
+                            <th scope="col">3º Ciclo</th>
+                            <th scope="col">Engenharia Informática</th>
+                            <th scope="col">5</th>
+                            <th scope="col">De 2025-05-16 a 2026-06-11</th>
+                            <th scope="col"></th>
+                            <th scope="col"><button class="btn btn-primary">Preencher Candidatura</button></th>
+                        </tr>
+                    </thead>
+                    <tbody class="table-group-divider">
+                        <tr>
+                            <td></td>
+                            <td colspan="2">Contingentes<br>Total vagas: 10</td>
+                            <td></td>
+                            <td colspan="3">
+                                Informação Complementar<br>
+                                Edital: Edital PT<br>
+                                Notice EN<br>
+                                Idioma Lecionação: Português<br>
+                                Endereço Email Curso: diretor.email@mail.uma.pt<br>
+                                Diretor de Curso: Pessoa
+                            </td>
+                            <td colspan="3">
+                                Processo e Calendário de Inscrição<br><br>
+                                Período da Inscrição:<br>
+                                2025-05-19 - 2026-06-11 | Matrícula 3º Ciclo - 1º Semestre
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <input type="radio" name="tables" id="table5" hidden>
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th scope="col"></th>
+                            <th scope="col"><label class="table-button" for="table5"></label></th>
+                            <th scope="col">Doutoramento 2025/26</th>
+                            <th scope="col">1ª Fase</th>
+                            <th scope="col">3º Ciclo</th>
+                            <th scope="col">Engenharia Informática</th>
+                            <th scope="col">10</th>
+                            <th scope="col">De 2025-05-16 a 2026-06-11</th>
+                            <th scope="col"></th>
+                            <th scope="col"><button class="btn btn-primary">Preencher Candidatura</button></th>
+                        </tr>
+                    </thead>
+                    <tbody class="table-group-divider">
+                        <tr>
+                            <td></td>
+                            <td colspan="2">Contingentes<br>Total vagas: 10</td>
+                            <td></td>
+                            <td colspan="3">
+                                Informação Complementar<br>
+                                Edital: Edital PT<br>
+                                Notice EN<br>
+                                Idioma Lecionação: Português<br>
+                                Endereço Email Curso: diretor.email@mail.uma.pt<br>
+                                Diretor de Curso: Pessoa
+                            </td>
+                            <td colspan="3">
+                                Processo e Calendário de Inscrição<br><br>
+                                Período da Inscrição:<br>
+                                2025-05-19 - 2026-06-11 | Matrícula 3º Ciclo - 1º Semestre
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
