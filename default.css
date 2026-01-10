@@ -24,7 +24,13 @@
 	color: var(--cor-branco);
 }
 
+.footer a {
+    color: var(--cor-branco);
+}
+
 .site-title {
+    margin-block-start: 1em;
+    margin-block-end: 1em;
 	margin-left: 100px;
 	color: var(--cor-branco);
 	font-size: x-large
@@ -132,4 +138,37 @@
     clip: rect(0, 0, 0, 0); 
     white-space: nowrap; /* prevents text wrapping */
     border: 0;
+}
+
+
+.h4 {
+    display: block;
+    margin-block-start: 1.33em;
+    margin-block-end: 1.33em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+    unicode-bidi: isolate;
+}
+
+.h5 {
+    display: block;
+    font-size: 0.83em;
+    margin-block-start: 1.67em;
+    margin-block-end: 1.67em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+    unicode-bidi: isolate;
+}
+
+.h6 {
+    display: block;
+    font-size: 0.67em;
+    margin-block-start: 2.33em;
+    margin-block-end: 2.33em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+    unicode-bidi: isolate;
 }

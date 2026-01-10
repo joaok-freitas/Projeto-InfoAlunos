@@ -13,7 +13,7 @@
     grid-area: b1;
 }
 
-h1.center-text {
+.center-text {
     text-align: center;
     color: var(--cor-informacao);
 }
